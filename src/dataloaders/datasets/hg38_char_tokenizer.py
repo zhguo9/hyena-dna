@@ -71,15 +71,19 @@ class CharacterTokenizer(PreTrainedTokenizer):
     def vocab_size(self) -> int:
         return len(self._vocab_str_to_int)
 
+    # 将输入文本中的字符转换为单独的字符token
     def _tokenize(self, text: str) -> List[str]:
         return list(text)
 
+    # 将token转换为整数ID
     def _convert_token_to_id(self, token: str) -> int:
         return self._vocab_str_to_int.get(token, self._vocab_str_to_int["[UNK]"])
 
+    # 将整数ID转换为token
     def _convert_id_to_token(self, index: int) -> str:
         return self._vocab_int_to_str[index]
 
+    # 将字符级别的令牌列表重新组合成原始文本字符串。
     def convert_tokens_to_string(self, tokens):
         return "".join(tokens)
 
