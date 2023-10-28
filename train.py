@@ -658,8 +658,7 @@ def train(config):
         model = SequenceLightningModule.load_from_checkpoint(
             config.train.pretrained_model_path,
             config=config,
-            # strict=config.train.pretrained_model_strict_load,
-            strict=False,
+            strict=config.train.pretrained_model_strict_load,
         )
 
     # Run initial validation epoch (useful for debugging, finetuning)
