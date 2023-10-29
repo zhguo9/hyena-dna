@@ -55,7 +55,8 @@ class ICLGenomicsDataset(torch.utils.data.Dataset):
         label_to_token: dict=None,
         dataset_name="human_nontata_promoters",
         d_output=2, # default binary classification
-        dest_path=None,
+        # dest_path=None,
+        dest_path="/content/dna/data/",
         tokenizer=None,
         tokenizer_name=None,
         use_padding=None,
