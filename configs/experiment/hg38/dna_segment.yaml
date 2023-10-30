@@ -16,7 +16,7 @@ model:
   residual_in_fp32: True
   pad_vocab_size_multiple: 8
 #  add one line below according to the config.json
-  return_hidden_state: True
+#  return_hidden_state: True
   layer:
     _name_: hyena
     emb_dim: 5

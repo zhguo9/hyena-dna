@@ -667,10 +667,13 @@ def train(config):
         trainer.validate(model)
 
     if config.train.ckpt is not None:
+        print("------ train with ckpt -----------")
         trainer.fit(model, ckpt_path=config.train.ckpt)
     else:
+        print("------ train without ckpt -----------")
         trainer.fit(model)
     if config.train.test:
+        print("------ test -----------")
         trainer.test(model)
 
 
