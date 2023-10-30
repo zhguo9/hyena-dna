@@ -1,19 +1,7 @@
 # @package _global_
 defaults:
-  - /pipeline:
+  - /pipeline: dna_segment
   - override /scheduler: cosine_warmup_timm
-
-# there are 8 datasets in this suite, choose 1 at a time, with their corresponding settings
-# name                                num_seqs        num_classes     median len    std
-# dummy_mouse_enhancers_ensembl       1210            2               2381          984.4
-# demo_coding_vs_intergenomic_seqs    100_000         2               200           0
-# demo_human_or_worm                  100_000         2               200           0
-# human_enhancers_cohn                27791           2               500           0
-# human_enhancers_ensembl             154842          2               269           122.6
-# human_ensembl_regulatory            289061          3               401           184.3
-# human_nontata_promoters             36131           2               251           0
-# human_ocr_ensembl                   174756          2               315           108.1
-
 
 model:
   _name_: dna_embedding
@@ -27,6 +15,8 @@ model:
   fused_dropout_add_ln: True
   residual_in_fp32: True
   pad_vocab_size_multiple: 8
+#  add one line below according to the config.json
+  return_hidden_state: True
   layer:
     _name_: hyena
     emb_dim: 5
