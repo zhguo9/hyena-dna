@@ -649,17 +649,23 @@ def create_trainer(config, **kwargs):
 def train(config):
     if config.train.seed is not None:
         pl.seed_everything(config.train.seed, workers=True)
+    print("Creating trainer...\n")
     trainer = create_trainer(config)
+    print("Creating trainer Over.\n")
+
+
     model = SequenceLightningModule(config)
 
     # Load pretrained_model if specified
     if config.train.get("pretrained_model_path", None) is not None:
+        print("正在从指定路径加载预训练模型的权重...")
         # PTL style.  Note, method returns a new model object, and need to pass config.
         model = SequenceLightningModule.load_from_checkpoint(
             config.train.pretrained_model_path,
             config=config,
             strict=config.train.pretrained_model_strict_load,
         )
+        print("加载预训练模型完毕。")
 
     # Run initial validation epoch (useful for debugging, finetuning)
     if config.train.validate_at_start:
