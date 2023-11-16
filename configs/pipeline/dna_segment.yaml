@@ -2,7 +2,7 @@
 defaults:
   - /trainer: default
   - /loader: default
-  - /dataset: genomic_benchmark
+  - /dataset: dna_segment
   - /task: multiclass_classification
   - /optimizer: adamw
   - /scheduler: plateau
