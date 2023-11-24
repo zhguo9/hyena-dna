@@ -81,10 +81,12 @@ def torch_fromstring(seq_strs):
     seq_chrs = list(map(torch.from_numpy, np_seq_chrs))
     return torch.stack(seq_chrs) if batched else seq_chrs[0]
 
+# 把字符串转换成对应的序列索引
 def str_to_seq_indices(seq_strs):
     seq_chrs = torch_fromstring(seq_strs)
     return seq_indices_embed[seq_chrs.long()]
 
+# 把字符串转换成对应的独热编码
 def str_to_one_hot(seq_strs):
     seq_chrs = torch_fromstring(seq_strs)
     return one_hot_embed[seq_chrs.long()]
@@ -102,6 +104,9 @@ def seq_indices_to_one_hot(t, padding = -1):
 string_complement_map = {'A': 'T', 'C': 'G', 'G': 'C', 'T': 'A', 'a': 't', 'c': 'g', 'g': 'c', 't': 'a'}
 
 def string_reverse_complement(seq):
+    """
+        获取互补链
+    """
     rev_comp = ''
     for base in seq[::-1]:
         if base in string_complement_map:
@@ -112,10 +117,16 @@ def string_reverse_complement(seq):
     return rev_comp
 
 def seq_indices_reverse_complement(seq_indices):
+    """
+        获取互补的索引编码
+    """
     complement = reverse_complement_map[seq_indices.long()]
     return torch.flip(complement, dims = (-1,))
 
 def one_hot_reverse_complement(one_hot):
+    """
+        获取翻转的独热编码
+    """
     *_, n, d = one_hot.shape
     assert d == 4, 'must be one hot encoding with last dimension equal to 4'
     return torch.flip(one_hot, (-1, -2))
@@ -179,7 +190,7 @@ class GenomicBenchmarkDataset(torch.utils.data.Dataset):
                     content = f.read()
                 self.all_seqs.append(content)
                 self.all_labels.append(label_mapper[label_type])
-                
+
     def __len__(self):
         return len(self.all_labels)
 
@@ -203,7 +214,7 @@ class GenomicBenchmarkDataset(torch.utils.data.Dataset):
         if self.add_eos:
             # append list seems to be faster than append tensor
             seq.append(self.tokenizer.sep_token_id)
-        
+
         # convert to tensor
         seq = torch.LongTensor(seq)  # hack, remove the initial cls tokens for now
 
@@ -240,7 +251,7 @@ if __name__ == '__main__':
     ds = GenomicBenchmarkDataset(
         max_length = max_length,
         use_padding = use_padding,
-        split = 'train', # 
+        split = 'train', #
         tokenizer=tokenizer,
         tokenizer_name='char',
         dest_path=dest_path,
