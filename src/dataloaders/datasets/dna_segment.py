@@ -153,7 +153,7 @@ class DNASegmentDataset(torch.utils.data.Dataset):
             self,
             split,
             max_length,
-            dataset_name="human_nontata_promoters",
+            dataset_name="K12",
             d_output=2,  # default binary classification
             dest_path=None,
             tokenizer=None,
@@ -187,19 +187,18 @@ class DNASegmentDataset(torch.utils.data.Dataset):
         for i, x in enumerate(base_path.iterdir()):
             label_mapper[x.stem] = i
 
-        for label_type in label_mapper.keys():
-            for path in (base_path / label_type).iterdir():
-                with open(path, "r") as f:
-                    content = f.read()
-                self.all_seqs.append(content)
-                self.all_labels.append(label_mapper[label_type])
+        for path in base_path.iterdir():
+            with open(path, "r") as f:
+                lines = f.readlines()
+                self.all_seqs.extend(lines)
+        print(self.all_seqs)
 
     def __len__(self):
         return len(self.all_labels)
 
     def __getitem__(self, idx):
         x = self.all_seqs[idx]
-        y = self.all_labels[idx]
+        # y = self.all_labels[idx]
 
         # apply rc_aug here if using
         if self.rc_aug and coin_flip():
@@ -222,9 +221,9 @@ class DNASegmentDataset(torch.utils.data.Dataset):
         seq = torch.LongTensor(seq)  # hack, remove the initial cls tokens for now
 
         # need to wrap in list
-        target = torch.LongTensor([y])  # offset by 1, includes eos
+        # target = torch.LongTensor([y])  # offset by 1, includes eos
 
-        return seq, target
+        return seq
 
 
 if __name__ == '__main__':
@@ -237,7 +236,7 @@ if __name__ == '__main__':
 
     max_length = 300  # max len of seq grabbed
     use_padding = True
-    dest_path = "data/genomic_benchmark/"
+    dest_path = "data/dna_segment/"
 
     tokenizer = CharacterTokenizer(
         characters=['A', 'C', 'G', 'T', 'N'],

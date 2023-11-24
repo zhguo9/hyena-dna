@@ -190,7 +190,7 @@ class GenomicBenchmarkDataset(torch.utils.data.Dataset):
                     content = f.read()
                 self.all_seqs.append(content)
                 self.all_labels.append(label_mapper[label_type])
-
+        print(self.all_seqs)
     def __len__(self):
         return len(self.all_labels)
 
