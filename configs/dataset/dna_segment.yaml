@@ -1,5 +1,5 @@
 _name_: dna_segment
-dataset_name: segment_dataset
+dataset_name: K12
 dest_path: null
 max_length: 1024
 d_output: ${.${.dataset_name}.classes}
@@ -13,3 +13,6 @@ shuffle: true  # set this as default!
 segment_dataset:
   train_len: 100
   classes: 2
+K12:
+  train_len: 100
+  classes: 1
