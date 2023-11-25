@@ -203,7 +203,6 @@ class DNASegmentDataset(torch.utils.data.Dataset):
     def __getitem__(self, idx):
         x = self.all_seqs[idx]
         # y = self.all_labels[idx]
-        print(x)
         # apply rc_aug here if using
         if self.rc_aug and coin_flip():
             x = string_reverse_complement(x)
@@ -228,7 +227,6 @@ class DNASegmentDataset(torch.utils.data.Dataset):
         # target = torch.LongTensor([y])  # offset by 1, includes eos
         target = (1,2,3,4)
         target = torch.LongTensor(target)
-        print(seq)
         return seq, target
 
 
