@@ -14,5 +14,5 @@ segment_dataset:
   train_len: 100
   classes: 2
 K12:
-  train_len: 100
+  train_len: 463
   classes: 1
