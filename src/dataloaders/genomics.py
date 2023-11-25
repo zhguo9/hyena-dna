@@ -294,8 +294,8 @@ class DnaSegment(HG38):
         print("dataset for train:")
         print("Length of dataset:", len(self.dataset_train))
         for i in range(min(5, len(self.dataset_train))):  # 打印前5个样本
-            seq, label = self.dataset_train[i]
-            print(f"Sample {i + 1}: Sequence - {seq}, Label - {label}")
+            seq = self.dataset_train[i]
+            print(f"Sample {i + 1}: Sequence - {seq}")
 
     def test_dataloader(self, *args: Any, **kwargs: Any) -> Union[DataLoader, List[DataLoader]]:
         """ The test dataloader, it's a dummy loader just to make the trainer happy, we don't use it."""
