@@ -188,13 +188,13 @@ class DNASegmentDataset(torch.utils.data.Dataset):
             label_mapper[x.stem] = i
 
         for path in base_path.iterdir():
-            with open(path, "r") as f:
+            with open(path, "r", encoding="gbk") as f:
                 lines = f.readlines()
                 self.all_seqs.extend(lines)
         print(self.all_seqs)
 
     def __len__(self):
-        return len(self.all_labels)
+        return len(self.all_seqs)
 
     def __getitem__(self, idx):
         x = self.all_seqs[idx]
@@ -255,7 +255,7 @@ if __name__ == '__main__':
         dest_path=dest_path,
         # add_eos=False,
     )
-
+    # print(len(ds))
     # it = iter(ds)
     # elem = next(it)
     # print('elem[0].shape', elem[0].shape)
