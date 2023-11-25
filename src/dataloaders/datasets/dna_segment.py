@@ -225,7 +225,7 @@ class DNASegmentDataset(torch.utils.data.Dataset):
 
         # need to wrap in list
         # target = torch.LongTensor([y])  # offset by 1, includes eos
-        target = (1,2,3,4)
+        target = 1
         target = torch.LongTensor(target)
         return seq, target
 
