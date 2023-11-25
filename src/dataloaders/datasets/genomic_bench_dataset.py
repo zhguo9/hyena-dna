@@ -190,7 +190,6 @@ class GenomicBenchmarkDataset(torch.utils.data.Dataset):
                     content = f.read()
                 self.all_seqs.append(content)
                 self.all_labels.append(label_mapper[label_type])
-        print(self.all_seqs)
     def __len__(self):
         return len(self.all_labels)
 
@@ -220,7 +219,7 @@ class GenomicBenchmarkDataset(torch.utils.data.Dataset):
 
         # need to wrap in list
         target = torch.LongTensor([y])  # offset by 1, includes eos
-
+        print(seq, target)
         return seq, target
 
 
@@ -258,8 +257,8 @@ if __name__ == '__main__':
         # add_eos=False,
     )
 
-    # it = iter(ds)
-    # elem = next(it)
+    it = iter(ds)
+    elem = next(it)
     # print('elem[0].shape', elem[0].shape)
     # print(elem)
     # breakpoint()

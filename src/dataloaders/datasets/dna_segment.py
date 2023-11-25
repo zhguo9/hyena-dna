@@ -189,9 +189,13 @@ class DNASegmentDataset(torch.utils.data.Dataset):
 
         for path in base_path.iterdir():
             with open(path, "r", encoding="gbk") as f:
-                lines = f.readlines()
-                self.all_seqs.extend(lines)
-        print(self.all_seqs)
+                line = f.readline()
+                while line:
+                    # print(line)
+                    self.all_seqs.append(line)
+                    line = f.readline()
+
+
 
     def __len__(self):
         return len(self.all_seqs)
@@ -199,7 +203,7 @@ class DNASegmentDataset(torch.utils.data.Dataset):
     def __getitem__(self, idx):
         x = self.all_seqs[idx]
         # y = self.all_labels[idx]
-
+        print(x)
         # apply rc_aug here if using
         if self.rc_aug and coin_flip():
             x = string_reverse_complement(x)
@@ -222,8 +226,10 @@ class DNASegmentDataset(torch.utils.data.Dataset):
 
         # need to wrap in list
         # target = torch.LongTensor([y])  # offset by 1, includes eos
-
-        return seq
+        target = (1,2,3,4)
+        target = torch.LongTensor(target)
+        print(seq)
+        return seq, target
 
 
 if __name__ == '__main__':
@@ -255,9 +261,9 @@ if __name__ == '__main__':
         dest_path=dest_path,
         # add_eos=False,
     )
-    # print(len(ds))
-    # it = iter(ds)
-    # elem = next(it)
+    print("len of dataSet:", len(ds))
+    it = iter(ds)
+    elem = next(it)
     # print('elem[0].shape', elem[0].shape)
     # print(elem)
     # breakpoint()
