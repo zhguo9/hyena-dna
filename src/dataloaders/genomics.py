@@ -293,7 +293,7 @@ class DnaSegment(HG38):
         ]
         print("dataset for train:")
         print("Length of dataset:", len(self.dataset_train))
-        for i in range(min(5, len(self.dataset_train))):  # 打印前5个样本
+        for i in range(min(1, len(self.dataset_train))):  # 打印前1个样本
             seq, target = self.dataset_train[i]
             print(f"Sample {i + 1}: Sequence - {seq} Target - {target}")
 
