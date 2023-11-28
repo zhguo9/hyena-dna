@@ -6,7 +6,6 @@ def find_sequence_at_positions(fna_file, tsv_file, output_file):
             sequence = "".join(line.strip() for line in file.readlines() if not line.startswith(">"))
     except FileNotFoundError:
         return "FNA文件不存在或无法读取"
-
     # 读取位点信息并查找序列
     try:
         with open(tsv_file, 'r') as file:
@@ -14,10 +13,13 @@ def find_sequence_at_positions(fna_file, tsv_file, output_file):
     except FileNotFoundError:
         return "TSV文件不存在"
 
-    results = []
-
+    results = set()
+    i = 1
     for line in lines:
+        # print(i)
+        i = i + 1
         parts = line.strip().split('\t')
+        # print(parts)
         if len(parts) >= 3 and parts[8] != "protein-coding":  # 添加筛选条件
             start_position = int(parts[1])
             end_position = int(parts[2])
@@ -25,13 +27,13 @@ def find_sequence_at_positions(fna_file, tsv_file, output_file):
 
             if 1 <= start_position <= len(sequence) and 1 <= end_position <= len(sequence) and start_position <= end_position:
                 subsequence = sequence[start_position - 1 - pad :end_position + pad]
-
+                print(parts)
                 if strand == "minus":  # 处理反向序列
                     subsequence = reverse_complement(subsequence)
 
                 if len(subsequence) <= 1000:  # 添加长度筛选条件
-                    results.append((subsequence))
-
+                    results.add(subsequence)
+                    # print(subsequence)
     if not results:
         return "没有找到有效的位点范围"
 
@@ -57,4 +59,4 @@ output_file = "../data/dna_segment/K12/train/processed.tsv"   # 指定输出文�
 
 result = find_sequence_at_positions(fna_file, tsv_file, output_file)
 
-print(result)
+# print(result)

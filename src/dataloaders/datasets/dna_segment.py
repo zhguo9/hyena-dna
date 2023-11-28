@@ -188,36 +188,42 @@ class DNASegmentDataset(torch.utils.data.Dataset):
             label_mapper[x.stem] = i
 
         pad = 1
-        positionHash = {'b': 0, 'e': 1, 'i': 2}
+        begin = 0
+        iN = 1
+        end = 2
 
         for path in base_path.iterdir():
+            print(path)
             with open(path, "r", encoding="gbk") as f:
                 line = f.readline()
                 while line:
+                    line = line.rstrip()
+                    line = line[0:4]
                     # 把 in 加入
                     for i in range(pad):
-                        extra = str(i) + 'I' + 'S'
+                        extra = str(i) + 'D' + 'S'
                         self.all_seqs.append((line + extra))
-                        self.all_labels.append(positionHash['i'])
+                        self.all_labels.append(iN)
 
                     # 把end加入
-                    extra = str(pad) + "I" + 'S'
+                    extra = str(pad) + "D" + 'S'
                     self.all_seqs.append((line + extra))
-                    self.all_labels.append(positionHash['e'])
+                    self.all_labels.append(end)
 
                     # 把 begin 加入
-                    extra = str(pad + 1) + "I" + 'S'
+                    extra = str(pad + 1) + "D" + 'S'
                     self.all_seqs.append((line + extra))
-                    self.all_labels.append(positionHash['b'])
+                    self.all_labels.append(begin)
 
                     # 把 in 加入
                     for i in range(pad):
-                        extra = str(pad + 1 + i) + 'I' + 'S'
+                        extra = str(pad + 2 + i) + 'D' + 'S'
                         self.all_seqs.append((line + extra))
-                        self.all_labels.append(positionHash['i'])
+                        self.all_labels.append(iN)
 
                     line = f.readline()
-
+        for i in range(len(self.all_seqs)):
+            print(i,"x : ",self.all_seqs[i], "y : ", self.all_labels[i])
 
 
     def __len__(self):
@@ -226,6 +232,7 @@ class DNASegmentDataset(torch.utils.data.Dataset):
     def __getitem__(self, idx):
         x = self.all_seqs[idx]
         y = self.all_labels[idx]
+        position = int(x[-3])
         # apply rc_aug here if using
         if self.rc_aug and coin_flip():
             x = string_reverse_complement(x)
@@ -250,6 +257,8 @@ class DNASegmentDataset(torch.utils.data.Dataset):
         target = torch.LongTensor([y])  # offset by 1, includes eos
         # target = 0
         # target = torch.LongTensor([target])
+        seq[-3] = position
+        print(x,y,seq,target)
         return seq, target
 
 
@@ -266,7 +275,7 @@ if __name__ == '__main__':
     dest_path = "data/dna_segment/"
 
     tokenizer = CharacterTokenizer(
-        characters=['A', 'C', 'G', 'T', 'N', 'I', 'S'],
+        characters=['A', 'C', 'G', 'T', 'N', 'D', 'S'],
         # not sure why tokenizer needs max len
         model_max_length=max_length + 2,  # add 2 since default adds eos/eos tokens, crop later
         add_special_tokens=False,

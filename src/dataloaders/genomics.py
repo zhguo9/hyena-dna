@@ -221,7 +221,7 @@ class DnaSegment(HG38):
     l_output = 0
 
     def __init__(self, dataset_name, dest_path=None, tokenizer_name='char', d_output=None, rc_aug=False,
-                 max_length=1024, use_padding=True, max_length_val=None, max_length_test=None,
+                 max_length=40, use_padding=True, max_length_val=None, max_length_test=None,
                  padding_side='left', val_ratio=0.0005, val_split_seed=2357, add_eos=False,
                  detokenize=False, val_only=False, batch_size=32, batch_size_eval=None, num_workers=1,
                  shuffle=True, pin_memory=False, drop_last=False, fault_tolerant=False, ddp=False,
@@ -269,7 +269,7 @@ class DnaSegment(HG38):
         if self.tokenizer_name == 'char':
             print("**Using Char-level tokenizer**")
             self.tokenizer = CharacterTokenizer(
-                characters=['A', 'C', 'G', 'T', 'N'],
+                characters=['A', 'C', 'G', 'T', 'N', 'D', 'S'],
                 model_max_length=self.max_length + 2,  # add 2 since default adds eos/eos tokens, crop later
                 add_special_tokens=False,
                 padding_side=self.padding_side,
@@ -291,11 +291,11 @@ class DnaSegment(HG38):
                                     return_augs=False)
             for split, max_len in zip(['train', 'val'], [self.max_length, self.max_length_val])
         ]
-        print("dataset for train:")
-        print("Length of dataset:", len(self.dataset_train))
-        for i in range(min(1, len(self.dataset_train))):  # 打印前1个样本
-            seq, target = self.dataset_train[i]
-            print(f"Sample {i + 1}: Sequence - {seq} Target - {target}")
+        # print("dataset for train:")
+        # print("Length of dataset:", len(self.dataset_train))
+        # for i in range(min(1, len(self.dataset_train))):  # 打印前1个样本
+        #     seq, target = self.dataset_train[i]
+        #     print(f"Sample {i + 1}: Sequence - {seq} Target - {target}")
 
     def test_dataloader(self, *args: Any, **kwargs: Any) -> Union[DataLoader, List[DataLoader]]:
         """ The test dataloader, it's a dummy loader just to make the trainer happy, we don't use it."""

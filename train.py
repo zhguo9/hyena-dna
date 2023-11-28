@@ -138,6 +138,7 @@ class SequenceLightningModule(pl.LightningModule):
         self.dataset = SequenceDataset.registry[self.hparams.dataset._name_](
             **self.hparams.dataset
         )
+        print("max length :",self.hparams.dataset.max_length)
 
         # Check hparams
         self._check_config()
