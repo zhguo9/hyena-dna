@@ -27,7 +27,6 @@ def find_sequence_at_positions(fna_file, tsv_file, output_file):
 
             if 1 <= start_position <= len(sequence) and 1 <= end_position <= len(sequence) and start_position <= end_position:
                 subsequence = sequence[start_position - 1 - pad :end_position + pad]
-                print(parts)
                 if strand == "minus":  # 处理反向序列
                     subsequence = reverse_complement(subsequence)
 
