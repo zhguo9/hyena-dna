@@ -258,7 +258,7 @@ class DNASegmentDataset(torch.utils.data.Dataset):
         # target = 0
         # target = torch.LongTensor([target])
         seq[-3] = position
-        # print(x,y,seq,target)
+        print(x,y,seq,target)
         return seq, target
 
 
