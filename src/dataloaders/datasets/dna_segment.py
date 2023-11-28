@@ -198,7 +198,7 @@ class DNASegmentDataset(torch.utils.data.Dataset):
                 line = f.readline()
                 while line:
                     line = line.rstrip()
-                    line = line[0:25]
+                    line = line[0:29]
                     # 把 in 加入
                     for i in range(pad):
                         extra = str(i) + 'D' + 'S'
@@ -258,7 +258,7 @@ class DNASegmentDataset(torch.utils.data.Dataset):
         # target = 0
         # target = torch.LongTensor([target])
         seq[-3] = position
-        print(x,y,seq,target)
+        # print(x,y,seq,target)
         return seq, target
 
 
