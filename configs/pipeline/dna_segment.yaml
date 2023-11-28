@@ -3,6 +3,11 @@ defaults:
   - /trainer: default
   - /loader: default
   - /dataset: dna_segment
+#    Available options in 'task':
+#      lm
+#      multiclass_classification
+#      multilabel_classification
+#      regression
   - /task: multiclass_classification
   - /optimizer: adamw
   - /scheduler: plateau

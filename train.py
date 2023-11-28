@@ -319,6 +319,7 @@ class SequenceLightningModule(pl.LightningModule):
 
     def _shared_step(self, batch, batch_idx, prefix="train"):
 
+        # batch 包含 128(batch_size)个x组成的张量，128个y组成的张量
         self._process_state(batch, batch_idx, train=(prefix == "train"))
         x, y, w = self.forward(batch)
 

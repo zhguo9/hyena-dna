@@ -11,6 +11,32 @@ import src.utils.train
 log = src.utils.train.get_logger(__name__)
 
 
+# 这段代码定义了几种不同类型的解码器，它们在处理输入数据时有一些不同的方式。以下是每个解码器的简要说明：
+#
+# Decoder 类：
+# 这是所有其他解码器的基类，它定义了一个通用的接口，包括 forward 方法和 step 方法。forward 方法接受输入张量 x 和一些其他参数，并返回输出张量。step 方法用于处理序列中的单个步骤。
+
+# SequenceDecoder 类：
+# 这是一个序列解码器，用于处理具有可变长度序列的输入。它可以在序列的不同部分执行不同的处理，例如
+# 提取最后一部分、第一部分、池化处理或求和处理。可以通过设置 mode 参数来选择不同的处理方式。
+# 此解码器还支持输出长度的自定义，以及在池化模式下，支持输入序列长度的自定义。
+
+# TokenDecoder 类：
+# 这是一个用于标记级别分类任务的解码器。它将输入序列映射到输出类别的分数。
+# NDDecoder 类：
+#
+# 这是用于单目标任务（例如分类或回归）的解码器。它支持两种模式：'pool' 和 'full'，通过设置 mode 参数进行选择。'pool' 模式对整个序列进行平均池化，而 'full' 模式则直接使用整个序列。
+# StateDecoder 类：
+#
+# 这个解码器使用来自模型主干的输出状态来解码。它通过将状态传递给一个线性层来生成最终的输出。
+# RetrievalHead 类和 RetrievalDecoder 类：
+#
+# RetrievalHead 类定义了一个检索头部，它接受两个输入，执行一些处理，然后输出分类结果。RetrievalDecoder 类结合了一个标准的 FeatureDecoder 和检索头部，用于在通过 FeatureDecoder 处理特征后应用检索头部。
+# PackedDecoder 类：
+#
+# 这是一个处理打包序列（packed sequence）的解码器，它使用 PyTorch 中的 nn.utils.rnn.pad_packed_sequence 函数来解包序列。
+# 每个解码器类型具有不同的用途和适用场景，具体选择取决于你的任务和模型设计。例如，如果你处理可变长度序列，你可能会选择 SequenceDecoder；如果你的任务是标记级别的分类，你可能会选择 TokenDecoder。
+
 class Decoder(nn.Module):
     """This class doesn't do much but just signals the interface that Decoders are expected to adhere to
     TODO: is there a way to enforce the signature of the forward method?

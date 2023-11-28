@@ -139,16 +139,20 @@ class BaseTask:
         """Passes a batch through the encoder, backbone, and decoder"""
         # z holds arguments such as sequence length
         x, y, *z = batch # z holds extra dataloader info such as resolution
+        # print("\n","shape of x :",x.shape,"shape of y : ",y.shape)
         if len(z) == 0:
             z = {}
         else:
             assert len(z) == 1 and isinstance(z[0], dict), "Dataloader must return dictionary of extra arguments"
             z = z[0]
-
+        # print("shape of x before encoder:",x.shape)
         x, w = encoder(x, **z) # w can model-specific constructions such as key_padding_mask for transformers or state for RNNs
+        # print("shape of x after encoder:",x.shape)
         x, state = model(x, **w, state=_state)
+        # print("shape of x after model:", x.shape)
         self._state = state
         x, w = decoder(x, state=state, **z)
+        # print("shape of x after decoder:",x.shape)
         return x, y, w
 
 
