@@ -187,12 +187,35 @@ class DNASegmentDataset(torch.utils.data.Dataset):
         for i, x in enumerate(base_path.iterdir()):
             label_mapper[x.stem] = i
 
+        pad = 1
+        positionHash = {'b': 0, 'e': 1, 'i': 2}
+
         for path in base_path.iterdir():
             with open(path, "r", encoding="gbk") as f:
                 line = f.readline()
                 while line:
-                    # print(line)
-                    self.all_seqs.append(line)
+                    # 把 in 加入
+                    for i in range(pad):
+                        extra = str(i) + 'I' + 'S'
+                        self.all_seqs.append((line + extra))
+                        self.all_labels.append(positionHash['i'])
+
+                    # 把end加入
+                    extra = str(pad) + "I" + 'S'
+                    self.all_seqs.append((line + extra))
+                    self.all_labels.append(positionHash['e'])
+
+                    # 把 begin 加入
+                    extra = str(pad + 1) + "I" + 'S'
+                    self.all_seqs.append((line + extra))
+                    self.all_labels.append(positionHash['b'])
+
+                    # 把 in 加入
+                    for i in range(pad):
+                        extra = str(pad + 1 + i) + 'I' + 'S'
+                        self.all_seqs.append((line + extra))
+                        self.all_labels.append(positionHash['i'])
+
                     line = f.readline()
 
 
@@ -202,7 +225,7 @@ class DNASegmentDataset(torch.utils.data.Dataset):
 
     def __getitem__(self, idx):
         x = self.all_seqs[idx]
-        # y = self.all_labels[idx]
+        y = self.all_labels[idx]
         # apply rc_aug here if using
         if self.rc_aug and coin_flip():
             x = string_reverse_complement(x)
@@ -224,9 +247,9 @@ class DNASegmentDataset(torch.utils.data.Dataset):
         seq = torch.LongTensor(seq)  # hack, remove the initial cls tokens for now
 
         # need to wrap in list
-        # target = torch.LongTensor([y])  # offset by 1, includes eos
-        target = 0
-        target = torch.LongTensor([target])
+        target = torch.LongTensor([y])  # offset by 1, includes eos
+        # target = 0
+        # target = torch.LongTensor([target])
         return seq, target
 
 
@@ -243,7 +266,7 @@ if __name__ == '__main__':
     dest_path = "data/dna_segment/"
 
     tokenizer = CharacterTokenizer(
-        characters=['A', 'C', 'G', 'T', 'N'],
+        characters=['A', 'C', 'G', 'T', 'N', 'I', 'S'],
         # not sure why tokenizer needs max len
         model_max_length=max_length + 2,  # add 2 since default adds eos/eos tokens, crop later
         add_special_tokens=False,
