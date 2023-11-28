@@ -198,7 +198,7 @@ class DNASegmentDataset(torch.utils.data.Dataset):
                 line = f.readline()
                 while line:
                     line = line.rstrip()
-                    line = line[0:4]
+                    line = line[0:30]
                     # 把 in 加入
                     for i in range(pad):
                         extra = str(i) + 'D' + 'S'
