@@ -222,8 +222,8 @@ class DNASegmentDataset(torch.utils.data.Dataset):
                         self.all_labels.append(iN)
 
                     line = f.readline()
-        for i in range(len(self.all_seqs)):
-            print(i,"x : ",self.all_seqs[i], "y : ", self.all_labels[i])
+        # for i in range(len(self.all_seqs)):
+        #     print(i,"x : ",self.all_seqs[i], "y : ", self.all_labels[i])
 
 
     def __len__(self):
@@ -258,7 +258,7 @@ class DNASegmentDataset(torch.utils.data.Dataset):
         # target = 0
         # target = torch.LongTensor([target])
         seq[-3] = position
-        print(x,y,seq,target)
+        # print(x,y,seq,target)
         return seq, target
 
 
