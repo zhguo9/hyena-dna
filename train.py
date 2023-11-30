@@ -389,6 +389,12 @@ class SequenceLightningModule(pl.LightningModule):
         super().test_epoch_end(outputs)
 
     def training_step(self, batch, batch_idx, dataloader_idx=0):
+        # x, y, w = self.forward(batch)  # Get predictions (x) and labels (y)
+
+        # Add print statements to output x, y, and actual labels
+        # print("Predictions (x):", x)
+        # print("Labels (y):", torch.reshape(y, (1,128)))
+        # print("Actual Labels (actual_y):",torch.reshape(batch[1], (1, 128)))  # Assuming actual labels are in the second position of the batch
         loss = self._shared_step(batch, batch_idx, prefix="train")
 
         # Log the loss explicitly so it shows up in WandB
