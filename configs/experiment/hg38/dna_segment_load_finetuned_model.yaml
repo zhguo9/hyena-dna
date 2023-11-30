@@ -1,18 +1,7 @@
 # @package _global_
 defaults:
-  - /pipeline: genomic_benchmark
+  - /pipeline: dna_segment
   - override /scheduler: cosine_warmup_timm
-
-# there are 8 datasets in this suite, choose 1 at a time, with their corresponding settings
-# name                                num_seqs        num_classes     median len    std
-# dummy_mouse_enhancers_ensembl       1210            2               2381          984.4
-# demo_coding_vs_intergenomic_seqs    100_000         2               200           0
-# demo_human_or_worm                  100_000         2               200           0
-# human_enhancers_cohn                27791           2               500           0
-# human_enhancers_ensembl             154842          2               269           122.6
-# human_ensembl_regulatory            289061          3               401           184.3
-# human_nontata_promoters             36131           2               251           0
-# human_ocr_ensembl                   174756          2               315           108.1
 
 model:
   _name_: dna_embedding
@@ -52,7 +41,7 @@ trainer:
   devices: 1
   num_nodes: 1
   accumulate_grad_batches: ${div_up:${train.global_batch_size}, ${eval:${trainer.devices} * ${dataset.batch_size} * ${trainer.num_nodes}}}
-  max_epochs: 100
+  max_epochs: 3
   precision: 16  # bf16 only a100
   gradient_clip_val: 1.0
   # strategy: null
@@ -61,14 +50,14 @@ trainer:
 dataset:
   # batch_size: 32  # Per GPU
   batch_size: 128
-  max_length: 256 # select max that you want for this dataset
-  dataset_name: 'human_nontata_promoters'
-  dest_path: '/local-scratch/nigam/projects/mwornow/projects/safari-internal/data/genomic_benchmark/'
-  d_output: 2  # binary classification by default
+  max_length: 32 # select max that you want for this dataset
+  dataset_name: 'K12'
+#  dest_path: '/local-scratch/nigam/projects/mwornow/projects/safari-internal/data/genomic_benchmark/'
+  d_output: 3  # binary classification by default
   use_padding: True
   padding_side: 'left'
   add_eos: False
-  train_len: 36131  # update this according to above table
+#  train_len: 36131  # update this according to above table
   __l_max: ${.max_length}
   tokenizer_name: char
   # rc_aug: true  # reverse complement augmentation.  Didn't seem to help for human_nontata_promoters, but could be wrong

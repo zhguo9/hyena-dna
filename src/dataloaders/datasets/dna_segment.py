@@ -259,6 +259,10 @@ class DNASegmentDataset(torch.utils.data.Dataset):
         # target = torch.LongTensor([target])
         seq[-3] = position
         # print(x,y,seq,target)
+        # print("origin sequence:", x)
+        # print("origin label : ", y)
+        # print("processed sequence : ", seq)
+        # print("processed label :", target)
         return seq, target
 
 
@@ -270,7 +274,7 @@ if __name__ == '__main__':
 
     """
 
-    max_length = 300  # max len of seq grabbed
+    max_length = 32  # max len of seq grabbed
     use_padding = True
     dest_path = "data/dna_segment/"
 
