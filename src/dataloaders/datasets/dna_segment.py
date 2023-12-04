@@ -8,6 +8,7 @@ import functools
 # import polars as pl
 # import pandas as pd
 import torch
+import re
 from random import randrange, random
 import random
 import numpy as np
@@ -249,7 +250,11 @@ class DNASegmentDataset(torch.utils.data.Dataset):
     def __getitem__(self, idx):
         x = self.all_seqs[idx]
         y = self.all_labels[idx]
-        position = int(x[-3])
+        match = re.search(r'\d+', x)
+        if match:
+            position = int(match.group(0))
+        else :
+            position = 1
         # apply rc_aug here if using
         if self.rc_aug and coin_flip():
             x = string_reverse_complement(x)

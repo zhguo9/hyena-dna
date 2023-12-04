@@ -1,5 +1,9 @@
-import random
-for i in range(20):
-    inNumBef = random.randint(1, 3)
-    inNumAft = random.randint(1, 3)
-    print(inNumAft,inNumBef)
+import re
+x = "CGCGATGATCACCAC57DS"
+print(x[-6:])
+match = re.search(r"\d+",x)
+if match:
+    position = int(match.group(0))
+else:
+    position = 1
+print(position)
