@@ -213,23 +213,23 @@ class DNASegmentDataset(torch.utils.data.Dataset):
                     inNumAft = random.randint(1,3)
                     # 把 in 加入
                     for i in range(before - inNumBef, before):
-                        extra = str(i) + 'D' + 'S'
+                        extra = 'D' + 'D' + 'S' + str(i)
                         self.all_seqs.append((line + extra))
                         self.all_labels.append(iN)
 
                     # 把end加入
-                    extra = str(before) + "D" + 'S'
+                    extra =  'D' + "D" + 'S' + str(before)
                     self.all_seqs.append((line + extra))
                     self.all_labels.append(end)
 
                     # 把 begin 加入
-                    extra = str(before + 1) + "D" + 'S'
+                    extra = 'D' + "D" + 'S' + str(before + 1)
                     self.all_seqs.append((line + extra))
                     self.all_labels.append(begin)
 
                     # 把 in 加入
-                    for i in range(after, after + inNumAft):
-                        extra = str(i + 1) + 'D' + 'S'
+                    for i in range(inNumAft):
+                        extra = 'D' + 'D' + 'S' + str(before + i + 2)
                         self.all_seqs.append((line + extra))
                         self.all_labels.append(iN)
 
@@ -255,6 +255,11 @@ class DNASegmentDataset(torch.utils.data.Dataset):
             position = int(match.group(0))
         else :
             position = 1
+
+        while x and x[-1].isdigit():
+            x = x[:-1]
+        # position = 11 / position
+
         # apply rc_aug here if using
         if self.rc_aug and coin_flip():
             x = string_reverse_complement(x)
@@ -285,7 +290,7 @@ class DNASegmentDataset(torch.utils.data.Dataset):
         # print("origin label : ", y)
         # print("processed sequence : ", seq)
         # print("processed label :", target)
-        # print(seq, target)
+        print(seq, target)
         return seq, target
 
 
@@ -321,13 +326,15 @@ if __name__ == '__main__':
     print("len of dataSet:", len(ds))
     it = iter(ds)
     elem = next(it)
-    for _ in range(2000):  # 这里的 3 表示你想要执行的循环次数
+    for _ in range(8):  # 这里的 3 表示你想要执行的循环次数
         try:
             elem = next(it)
             # print(elem)
         except StopIteration:
             print("Reached the end of the iterator.")
             break
+
+
     # print('elem[0].shape', elem[0].shape)
     # print(elem)
     # breakpoint()

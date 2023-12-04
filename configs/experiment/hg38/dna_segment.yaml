@@ -8,7 +8,7 @@ model:
   d_model: 128
   n_layer: 2
   d_inner: ${eval:4 * ${.d_model}}
-  vocab_size: 12
+  vocab_size: 120
   resid_dropout: 0.0
   embed_dropout: 0.1
   fused_mlp: False # figure out how to use fused MLP, maybe only with bf16 + a100
@@ -73,7 +73,7 @@ train:
   remove_test_loader_in_eval: true  # no test set in this benchmark
   pretrained_model_strict_load: False  # false allows encoder/decoder to be used if new model uses it
   # for loading backbone and not head, requires both of these flags below
-  pretrained_model_path: /local-scratch/nigam/projects/mwornow/projects/safari-internal/outputs/2023-04-14/2_128_1024.ckpt
+#  pretrained_model_path: /local-scratch/nigam/projects/mwornow/projects/safari-internal/outputs/2023-04-14/2_128_1024.ckpt
   pretrained_model_state_hook:
     _name_: load_backbone
     freeze_backbone: false  # seems to work much better if false (ie finetune entire model)

@@ -2,6 +2,8 @@ import random
 def find_sequence_at_positions(fna_file, tsv_file, output_file):
     before = 1
     after = 1
+    minSize = 0
+    maxSize = 50
     # 读取序列信息
     try:
         with open(fna_file, 'r') as file:
@@ -15,7 +17,8 @@ def find_sequence_at_positions(fna_file, tsv_file, output_file):
     except FileNotFoundError:
         return "TSV文件不存在"
 
-    results = set()
+    results = []
+    hashTable = set()
     i = 1
     for line in lines:
         # print(i)
@@ -27,16 +30,23 @@ def find_sequence_at_positions(fna_file, tsv_file, output_file):
             end_position = int(parts[2])
             strand = parts[4]  # 提取正反链信息
 
+            # 筛去重复的行
+            if start_position in hashTable:
+                continue
+            else :
+                hashTable.add(start_position)
+
             if 1 <= start_position <= len(sequence) and 1 <= end_position <= len(sequence) and start_position <= end_position:
-                before = random.randint(50, 100)
-                after = random.randint(50, 100)
+                before = random.randint(minSize, maxSize)
+                after = random.randint(minSize, maxSize)
                 subsequence = sequence[start_position - 1 - before :end_position + after]
+                # subsequence = sequence[start_position - 1:end_position]
                 if strand == "minus":  # 处理反向序列
                     subsequence = reverse_complement(subsequence)
 
                 if len(subsequence) <= 1000:  # 添加长度筛选条件
                     subsequence_with_context = f"{before} {after} {subsequence}"
-                    results.add(subsequence_with_context)
+                    results.append(subsequence_with_context)
                     # print(subsequence)
     if not results:
         return "没有找到有效的位点范围"
