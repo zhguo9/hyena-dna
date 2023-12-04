@@ -291,6 +291,7 @@ class DNASegmentDataset(torch.utils.data.Dataset):
         # print("processed sequence : ", seq)
         # print("processed label :", target)
         print(seq, target)
+        print("length of dataset : ", len(self.all_seqs))
         return seq, target
 
 
