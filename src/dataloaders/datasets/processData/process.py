@@ -1,5 +1,7 @@
+import random
 def find_sequence_at_positions(fna_file, tsv_file, output_file):
-    pad = 2
+    before = 1
+    after = 1
     # 读取序列信息
     try:
         with open(fna_file, 'r') as file:
@@ -26,12 +28,15 @@ def find_sequence_at_positions(fna_file, tsv_file, output_file):
             strand = parts[4]  # 提取正反链信息
 
             if 1 <= start_position <= len(sequence) and 1 <= end_position <= len(sequence) and start_position <= end_position:
-                subsequence = sequence[start_position - 1 - pad :end_position + pad]
+                before = random.randint(50, 100)
+                after = random.randint(50, 100)
+                subsequence = sequence[start_position - 1 - before :end_position + after]
                 if strand == "minus":  # 处理反向序列
                     subsequence = reverse_complement(subsequence)
 
                 if len(subsequence) <= 1000:  # 添加长度筛选条件
-                    results.add(subsequence)
+                    subsequence_with_context = f"{before} {after} {subsequence}"
+                    results.add(subsequence_with_context)
                     # print(subsequence)
     if not results:
         return "没有找到有效的位点范围"
@@ -54,8 +59,6 @@ def reverse_complement(sequence):
 
 fna_file = "test.fna"  # 替换为包含序列信息的FNA文件
 tsv_file = "testtsv.tsv"  # 替换为包含位点信息的TSV文件
-output_file = "../data/dna_segment/K12/train/processed.tsv"   # 指定输出文件名
+output_file = "../../../../data/dna_segment/K12/train/dataset_train.tsv"   # 指定输出文件名
 
 result = find_sequence_at_positions(fna_file, tsv_file, output_file)
-
-# print(result)

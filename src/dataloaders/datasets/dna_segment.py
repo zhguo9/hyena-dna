@@ -9,6 +9,7 @@ import functools
 # import pandas as pd
 import torch
 from random import randrange, random
+import random
 import numpy as np
 from pathlib import Path
 
@@ -195,33 +196,49 @@ class DNASegmentDataset(torch.utils.data.Dataset):
         for path in base_path.iterdir():
             print(path)
             with open(path, "r", encoding="gbk") as f:
+                # 读取一行
                 line = f.readline()
-                while line:
-                    line = line.rstrip()
-                    line = line[0:29]
+                # 提取前后长度以及sequence
+                parts = line.split()
+                if len(parts) == 0:
+                    break
+                before = int(parts[0])
+                after = int(parts[1])
+                line = parts[2]
+                # print(type(before),after,line)
+                while True:
+                    # 随机初始化前面、后面有多少个in（范围在1 ~ 3）
+                    inNumBef = random.randint(1,3)
+                    inNumAft = random.randint(1,3)
                     # 把 in 加入
-                    for i in range(pad):
+                    for i in range(before - inNumBef, before):
                         extra = str(i) + 'D' + 'S'
                         self.all_seqs.append((line + extra))
                         self.all_labels.append(iN)
 
                     # 把end加入
-                    extra = str(pad) + "D" + 'S'
+                    extra = str(before) + "D" + 'S'
                     self.all_seqs.append((line + extra))
                     self.all_labels.append(end)
 
                     # 把 begin 加入
-                    extra = str(pad + 1) + "D" + 'S'
+                    extra = str(before + 1) + "D" + 'S'
                     self.all_seqs.append((line + extra))
                     self.all_labels.append(begin)
 
                     # 把 in 加入
-                    for i in range(pad):
-                        extra = str(pad + 2 + i) + 'D' + 'S'
+                    for i in range(after, after + inNumAft):
+                        extra = str(i + 1) + 'D' + 'S'
                         self.all_seqs.append((line + extra))
                         self.all_labels.append(iN)
 
                     line = f.readline()
+                    parts = line.split()
+                    if len(parts) == 0:
+                        break
+                    before = int(parts[0])
+                    after = int(parts[1])
+                    line = parts[2]
         # for i in range(len(self.all_seqs)):
         #     print(i,"x : ",self.all_seqs[i], "y : ", self.all_labels[i])
 
@@ -263,6 +280,7 @@ class DNASegmentDataset(torch.utils.data.Dataset):
         # print("origin label : ", y)
         # print("processed sequence : ", seq)
         # print("processed label :", target)
+        # print(seq, target)
         return seq, target
 
 
@@ -274,9 +292,9 @@ if __name__ == '__main__':
 
     """
 
-    max_length = 32  # max len of seq grabbed
+    max_length = 300  # max len of seq grabbed
     use_padding = True
-    dest_path = "data/dna_segment/"
+    dest_path = "../../../data/dna_segment/"
 
     tokenizer = CharacterTokenizer(
         characters=['A', 'C', 'G', 'T', 'N', 'D', 'S'],
@@ -298,6 +316,13 @@ if __name__ == '__main__':
     print("len of dataSet:", len(ds))
     it = iter(ds)
     elem = next(it)
+    for _ in range(2000):  # 这里的 3 表示你想要执行的循环次数
+        try:
+            elem = next(it)
+            # print(elem)
+        except StopIteration:
+            print("Reached the end of the iterator.")
+            break
     # print('elem[0].shape', elem[0].shape)
     # print(elem)
     # breakpoint()
