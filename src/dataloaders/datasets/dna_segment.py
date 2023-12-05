@@ -221,10 +221,10 @@ class DNASegmentDataset(torch.utils.data.Dataset):
                         self.all_seqs.append((line + extra))
                         self.all_labels.append(iN)
 
-                    # # 把end加入
-                    # extra =  'D' + "D" + 'S' + str(before)
-                    # self.all_seqs.append((line + extra))
-                    # self.all_labels.append(end)
+                    # 把end加入
+                    extra =  'D' + "D" + 'S' + str(before)
+                    self.all_seqs.append((line + extra))
+                    self.all_labels.append(end)
 
                     # 把 begin 加入
                     extra = 'D' + "D" + 'S' + str(before + 1)
@@ -294,7 +294,7 @@ class DNASegmentDataset(torch.utils.data.Dataset):
         # print("origin label : ", y)
         # print("processed sequence : ", seq)
         # print("processed label :", target)
-        print(seq[-2:], target)
+        # print(seq[-2:], target)
         # print("length of dataset : ", len(self.all_seqs))
         return seq, target
 
