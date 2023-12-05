@@ -2,7 +2,7 @@ import random
 def find_sequence_at_positions(fna_file, tsv_file, output_file):
     before = 1
     after = 1
-    minSize = 0
+    minSize = 20
     maxSize = 50
     # 读取序列信息
     try:
@@ -39,7 +39,7 @@ def find_sequence_at_positions(fna_file, tsv_file, output_file):
             if 1 <= start_position <= len(sequence) and 1 <= end_position <= len(sequence) and start_position <= end_position:
                 before = random.randint(minSize, maxSize)
                 after = random.randint(minSize, maxSize)
-                subsequence = sequence[start_position - 1 - before :end_position + after]
+                subsequence = sequence[start_position - 1 - before :start_position + after]
                 # subsequence = sequence[start_position - 1:end_position]
                 if strand == "minus":  # 处理反向序列
                     subsequence = reverse_complement(subsequence)
@@ -47,6 +47,7 @@ def find_sequence_at_positions(fna_file, tsv_file, output_file):
                 if len(subsequence) <= 1000:  # 添加长度筛选条件
                     subsequence_with_context = f"{before} {after} {subsequence}"
                     results.append(subsequence_with_context)
+                    print(subsequence)
                     # print(subsequence)
     if not results:
         return "没有找到有效的位点范围"

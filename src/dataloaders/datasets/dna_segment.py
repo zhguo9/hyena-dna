@@ -8,6 +8,7 @@ import functools
 # import polars as pl
 # import pandas as pd
 import torch
+import time
 import re
 from random import randrange, random
 import random
@@ -207,20 +208,23 @@ class DNASegmentDataset(torch.utils.data.Dataset):
                 after = int(parts[1])
                 line = parts[2]
                 # print(type(before),after,line)
+                random.seed(41)
                 while True:
+
                     # 随机初始化前面、后面有多少个in（范围在1 ~ 3）
                     inNumBef = random.randint(1,3)
                     inNumAft = random.randint(1,3)
+                    print("inNumBef:",inNumBef,"    inNumAft:",inNumAft)
                     # 把 in 加入
                     for i in range(before - inNumBef, before):
                         extra = 'D' + 'D' + 'S' + str(i)
                         self.all_seqs.append((line + extra))
                         self.all_labels.append(iN)
 
-                    # 把end加入
-                    extra =  'D' + "D" + 'S' + str(before)
-                    self.all_seqs.append((line + extra))
-                    self.all_labels.append(end)
+                    # # 把end加入
+                    # extra =  'D' + "D" + 'S' + str(before)
+                    # self.all_seqs.append((line + extra))
+                    # self.all_labels.append(end)
 
                     # 把 begin 加入
                     extra = 'D' + "D" + 'S' + str(before + 1)
@@ -290,8 +294,8 @@ class DNASegmentDataset(torch.utils.data.Dataset):
         # print("origin label : ", y)
         # print("processed sequence : ", seq)
         # print("processed label :", target)
-        print(seq, target)
-        print("length of dataset : ", len(self.all_seqs))
+        print(seq[-2:], target)
+        # print("length of dataset : ", len(self.all_seqs))
         return seq, target
 
 
@@ -303,7 +307,7 @@ if __name__ == '__main__':
 
     """
 
-    max_length = 300  # max len of seq grabbed
+    max_length = 130  # max len of seq grabbed
     use_padding = True
     dest_path = "../../../data/dna_segment/"
 
@@ -327,7 +331,7 @@ if __name__ == '__main__':
     print("len of dataSet:", len(ds))
     it = iter(ds)
     elem = next(it)
-    for _ in range(8):  # 这里的 3 表示你想要执行的循环次数
+    for _ in range(2000):  # 这里的 3 表示你想要执行的循环次数
         try:
             elem = next(it)
             # print(elem)
