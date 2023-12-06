@@ -293,7 +293,7 @@ class DNASegmentDataset(torch.utils.data.Dataset):
         # print("origin label : ", y)
         # print("processed sequence : ", seq)
         # print("processed label :", target)
-        # print(seq, target)
+        print(seq, target)
         # print("length of dataset : ", len(self.all_seqs))
         return seq, target
 
@@ -306,7 +306,7 @@ if __name__ == '__main__':
 
     """
 
-    max_length = 70  # max len of seq grabbed
+    max_length = 50  # max len of seq grabbed
     use_padding = True
     dest_path = "../../../data/dna_segment/"
 

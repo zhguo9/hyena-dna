@@ -1,7 +1,7 @@
 _name_: dna_segment
 dataset_name: K12
 dest_path: null
-max_length: 70
+max_length: 50
 d_output: ${.${.dataset_name}.classes}
 use_padding: True
 padding_side: 'left'
