@@ -190,7 +190,8 @@ class DNASegmentDataset(torch.utils.data.Dataset):
         for i, x in enumerate(base_path.iterdir()):
             label_mapper[x.stem] = i
 
-        pad = 1
+        pad = 23
+
         begin = 0
         iN = 1
         end = 2
@@ -201,49 +202,47 @@ class DNASegmentDataset(torch.utils.data.Dataset):
                 # 读取一行
                 line = f.readline()
                 # 提取前后长度以及sequence
-                parts = line.split()
-                if len(parts) == 0:
-                    break
-                before = int(parts[0])
-                after = int(parts[1])
-                line = parts[2]
-                # print(type(before),after,line)
+                # parts = line.split()
+                # if len(parts) == 0:
+                #     break
+                before = pad
+                after = pad
+                # line = parts[2]
                 random.seed(41)
-                while True:
-
+                while line:
                     # 随机初始化前面、后面有多少个in（范围在1 ~ 3）
                     inNumBef = random.randint(1,3)
                     inNumAft = random.randint(1,3)
-                    print("inNumBef:",inNumBef,"    inNumAft:",inNumAft)
+                    # print("inNumBef:",inNumBef,"    inNumAft:",inNumAft)
                     # 把 in 加入
-                    for i in range(before - inNumBef, before):
-                        extra = 'D' + 'D' + 'S' + str(i)
-                        self.all_seqs.append((line + extra))
+                    for i in range(inNumBef):
+                        extra = 'D' + 'D' + 'S'
+                        self.all_seqs.append((line[i : i + 41] + extra))
                         self.all_labels.append(iN)
 
                     # 把end加入
-                    extra =  'D' + "D" + 'S' + str(before)
-                    self.all_seqs.append((line + extra))
+                    extra =  'D' + "D" + 'S'
+                    self.all_seqs.append((line[2:43] + extra))
                     self.all_labels.append(end)
 
                     # 把 begin 加入
-                    extra = 'D' + "D" + 'S' + str(before + 1)
-                    self.all_seqs.append((line + extra))
+                    extra = 'D' + "D" + 'S'
+                    self.all_seqs.append((line[3:44] + extra))
                     self.all_labels.append(begin)
 
                     # 把 in 加入
                     for i in range(inNumAft):
-                        extra = 'D' + 'D' + 'S' + str(before + i + 2)
-                        self.all_seqs.append((line + extra))
+                        extra = 'D' + 'D' + 'S'
+                        self.all_seqs.append((line[i+ 4: i + 45] + extra))
                         self.all_labels.append(iN)
 
                     line = f.readline()
-                    parts = line.split()
-                    if len(parts) == 0:
-                        break
-                    before = int(parts[0])
-                    after = int(parts[1])
-                    line = parts[2]
+                    # parts = line.split()
+                    # if len(parts) == 0:
+                    #     break
+                    # before = int(parts[0])
+                    # after = int(parts[1])
+                    # line = parts[2]
         # for i in range(len(self.all_seqs)):
         #     print(i,"x : ",self.all_seqs[i], "y : ", self.all_labels[i])
 
@@ -288,13 +287,13 @@ class DNASegmentDataset(torch.utils.data.Dataset):
         target = torch.LongTensor([y])  # offset by 1, includes eos
         # target = 0
         # target = torch.LongTensor([target])
-        seq[-3] = position
+        # seq[-3] = position
         # print(x,y,seq,target)
         # print("origin sequence:", x)
         # print("origin label : ", y)
         # print("processed sequence : ", seq)
         # print("processed label :", target)
-        # print(seq[-2:], target)
+        # print(seq, target)
         # print("length of dataset : ", len(self.all_seqs))
         return seq, target
 
@@ -307,7 +306,7 @@ if __name__ == '__main__':
 
     """
 
-    max_length = 130  # max len of seq grabbed
+    max_length = 70  # max len of seq grabbed
     use_padding = True
     dest_path = "../../../data/dna_segment/"
 
@@ -331,7 +330,7 @@ if __name__ == '__main__':
     print("len of dataSet:", len(ds))
     it = iter(ds)
     elem = next(it)
-    for _ in range(2000):  # 这里的 3 表示你想要执行的循环次数
+    for _ in range(8):  # 这里的 3 表示你想要执行的循环次数
         try:
             elem = next(it)
             # print(elem)

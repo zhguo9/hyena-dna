@@ -22,7 +22,7 @@ class CharacterTokenizer(PreTrainedTokenizer):
                 their corresponding ids:
                     "[CLS]": 0
                     "[SEP]": 1
-                    "[BOS]": 2
+                    "[BOS]": 2a
                     "[MASK]": 3
                     "[PAD]": 4
                     "[RESERVED]": 5
