@@ -293,7 +293,7 @@ class DNASegmentDataset(torch.utils.data.Dataset):
         # print("origin label : ", y)
         # print("processed sequence : ", seq)
         # print("processed label :", target)
-        print(seq, target)
+        # print(seq, target)
         # print("length of dataset : ", len(self.all_seqs))
         return seq, target
 
