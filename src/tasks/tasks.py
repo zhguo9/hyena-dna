@@ -152,7 +152,7 @@ class BaseTask:
         # print("shape of x after model:", x.shape)
         self._state = state
         x, w = decoder(x, state=state, **z)
-        # print("shape of x after decoder:",x.shape)
+        # x中每个元素是三维的，哪个数大，就是哪一类
         return x, y, w
 
 

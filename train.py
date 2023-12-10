@@ -323,6 +323,9 @@ class SequenceLightningModule(pl.LightningModule):
         # batch 包含 128(batch_size)个x组成的张量，128个y组成的张量
         self._process_state(batch, batch_idx, train=(prefix == "train"))
         x, y, w = self.forward(batch)
+        max_indices = torch.argmax(x, dim=1)
+        print("\ntarget ",torch.squeeze(y),"\noutput ",torch.squeeze(max_indices))
+        # print(x,y,w)
 
         # Loss
         if prefix == 'train':
@@ -391,11 +394,16 @@ class SequenceLightningModule(pl.LightningModule):
     def training_step(self, batch, batch_idx, dataloader_idx=0):
         # x, y, w = self.forward(batch)  # Get predictions (x) and labels (y)
 
+
         # Add print statements to output x, y, and actual labels
         # print("Predictions (x):", x)
         # print("Labels (y):", torch.reshape(y, (1,128)))
         # print("Actual Labels (actual_y):",torch.reshape(batch[1], (1, 128)))  # Assuming actual labels are in the second position of the batch
         loss = self._shared_step(batch, batch_idx, prefix="train")
+
+        # inputs, targets = batch
+        # outputs = self.forward(batch=batch)
+        # print(f"Target: {targets}, Output: {outputs}")
 
         # Log the loss explicitly so it shows up in WandB
         # Note that this currently runs into a bug in the progress bar with ddp (as of 1.4.6)
