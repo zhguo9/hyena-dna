@@ -661,6 +661,14 @@ def train(config):
     trainer = create_trainer(config)
     print("Creating trainer Over.\n")
 
+    # Check if GPU is available
+    if torch.cuda.is_available():
+        print("GPU is available.")
+        print(f"Current GPU device index: {torch.cuda.current_device()}")
+        print(f"Current GPU device name: {torch.cuda.get_device_name(torch.cuda.current_device())}")
+    else:
+        print("GPU is not available. Training on CPU.")
+
 
     model = SequenceLightningModule(config)
 
