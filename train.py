@@ -323,9 +323,6 @@ class SequenceLightningModule(pl.LightningModule):
         # batch 包含 128(batch_size)个x组成的张量，128个y组成的张量
         self._process_state(batch, batch_idx, train=(prefix == "train"))
         x, y, w = self.forward(batch)
-        max_indices = torch.argmax(x, dim=1)
-        print("\ntarget ",torch.squeeze(y),"\noutput ",torch.squeeze(max_indices))
-        # print(x,y,w)
 
         # Loss
         if prefix == 'train':
@@ -437,6 +434,11 @@ class SequenceLightningModule(pl.LightningModule):
         return loss
 
     def validation_step(self, batch, batch_idx, dataloader_idx=0):
+        # 增加打印代码
+        x, y, z = self.forward(batch)
+        max_indices = torch.argmax(x, dim=1)
+        print("\ntarget ",torch.squeeze(y),"\noutput ",torch.squeeze(max_indices))
+
         ema = (
             self.val_loader_names[dataloader_idx].endswith("/ema")
             and self.optimizers().optimizer.stepped
