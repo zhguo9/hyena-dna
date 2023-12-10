@@ -434,10 +434,6 @@ class SequenceLightningModule(pl.LightningModule):
         return loss
 
     def validation_step(self, batch, batch_idx, dataloader_idx=0):
-        # 增加打印代码
-        x, y, z = self.forward(batch)
-        max_indices = torch.argmax(x, dim=1)
-        print("\ntarget ",torch.squeeze(y),"\noutput ",torch.squeeze(max_indices))
 
         ema = (
             self.val_loader_names[dataloader_idx].endswith("/ema")
@@ -448,6 +444,22 @@ class SequenceLightningModule(pl.LightningModule):
         loss = self._shared_step(
             batch, batch_idx, prefix=self.val_loader_names[dataloader_idx]
         )
+
+        # 增加打印代码
+        x, y, z = self.forward(batch)
+        target = y
+        output = torch.argmax(x, dim=1)
+        diff_indices = torch.nonzero(target != output, as_tuple=False)
+        # 将不同的位置的索引分别提取出来
+        diff_target_indices = diff_indices[:, 0]
+        diff_output_indices = diff_indices[:, 1]
+        # 提取不同的元素
+        diff_target_elements = target[diff_target_indices]
+        diff_output_elements = output[diff_output_indices]
+        print("Different Target Elements:", diff_target_elements)
+        print("Different Output Elements:", diff_output_elements)
+        print("\ntarget ",torch.squeeze(diff_target_elements),"\noutput ",torch.squeeze(diff_output_elements))
+
         if ema:
             self.optimizers().swap_ema()
 
