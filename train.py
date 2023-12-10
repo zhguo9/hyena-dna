@@ -398,9 +398,11 @@ class SequenceLightningModule(pl.LightningModule):
         # print("Actual Labels (actual_y):",torch.reshape(batch[1], (1, 128)))  # Assuming actual labels are in the second position of the batch
         loss = self._shared_step(batch, batch_idx, prefix="train")
 
-        # inputs, targets = batch
-        # outputs = self.forward(batch=batch)
-        # print(f"Target: {targets}, Output: {outputs}")
+        # 增加打印代码
+        x, y, z = self.forward(batch)
+        target = y
+        output = torch.argmax(x, dim=1)
+        print("\ntarget ",torch.squeeze(target),"\noutput ",torch.squeeze(output))
 
         # Log the loss explicitly so it shows up in WandB
         # Note that this currently runs into a bug in the progress bar with ddp (as of 1.4.6)
@@ -446,20 +448,10 @@ class SequenceLightningModule(pl.LightningModule):
         )
 
         # 增加打印代码
-        x, y, z = self.forward(batch)
-        target = y
-        output = torch.argmax(x, dim=1)
-        # diff_indices = torch.nonzero(target != output, as_tuple=False)
-        # # 将不同的位置的索引分别提取出来
-        # diff_target_indices = diff_indices[:, 0]
-        # diff_output_indices = diff_indices[:, 1]
-        # # 提取不同的元素
-        # diff_target_elements = target[diff_target_indices]
-        # diff_output_elements = output[diff_output_indices]
-        # print("Different Target Elements:", diff_target_elements)
-        # print("Different Output Elements:", diff_output_elements)
-        # torch.set_printoptions(threshold=float('inf'))
-        print("\ntarget ",torch.squeeze(target),"\noutput ",torch.squeeze(output))
+        # x, y, z = self.forward(batch)
+        # target = y
+        # output = torch.argmax(x, dim=1)
+        # print("\ntarget ",torch.squeeze(target),"\noutput ",torch.squeeze(output))
 
         if ema:
             self.optimizers().swap_ema()
