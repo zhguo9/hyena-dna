@@ -190,7 +190,7 @@ class DNASegmentDataset(torch.utils.data.Dataset):
         for i, x in enumerate(base_path.iterdir()):
             label_mapper[x.stem] = i
 
-        pad = 23
+        pad = 26
 
         begin = 0
         iN = 1
@@ -293,7 +293,7 @@ class DNASegmentDataset(torch.utils.data.Dataset):
         # print("origin label : ", y)
         # print("processed sequence : ", seq)
         # print("processed label :", target)
-        # print(seq, target)
+        print(seq, target)
         # print("length of dataset : ", len(self.all_seqs))
         return seq, target
 

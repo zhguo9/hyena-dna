@@ -1,0 +1,980 @@
+NC_000117.1	1321	1593		minus	hypothetical protein		884027	protein-coding		NP_219503.1	90	CT_001
+NC_000117.1	1794	2096		plus	aspartyl/glutamyl-tRNA amidotransferase subunit C	gatC	884067	protein-coding		NP_219504.1	100	CT_002
+NC_000117.1	2108	3583		plus	aspartyl/glutamyl-tRNA amidotransferase subunit A	gatA	884087	protein-coding		NP_219505.1	491	CT_003
+NC_000117.1	3585	5051		plus	aspartyl/glutamyl-tRNA amidotransferase subunit B	gatB	884084	protein-coding		NP_219506.1	488	CT_004
+NC_000117.1	5150	6241		minus	hypothetical protein		884085	protein-coding		NP_219507.1	363	CT_005
+NC_000117.1	6369	6938		minus	hypothetical protein		884029	protein-coding		NP_219508.1	189	CT_006
+NC_000117.1	7251	8201		plus	hypothetical protein		884088	protein-coding		NP_219509.1	316	CT_007
+NC_000117.1	8217	9119		minus	ribonuclease HII	rnhB_1	884028	protein-coding		NP_219510.1	300	CT_008
+NC_000117.1	9373	9804		plus	DNA-binding protein	yfgA	884053	protein-coding		NP_219511.1	143	CT_009
+NC_000117.1	9791	11158		minus	acyltransferase	htrB	884050	protein-coding		NP_219512.1	455	CT_010
+NC_000117.1	11290	12546		minus	hypothetical protein		884048	protein-coding		NP_219513.1	418	CT_011
+NC_000117.1	12543	13337		minus	hypothetical protein	ybbP	884042	protein-coding		NP_219514.1	264	CT_012
+NC_000117.1	13612	14952		plus	cytochrome D ubiquinol oxidase subunit I	cydA	884038	protein-coding		NP_219515.1	446	CT_013
+NC_000117.1	14964	16025		plus	cytochrome D ubiquinol oxidase subunit II	cydB	884035	protein-coding		NP_219516.1	353	CT_014
+NC_000117.1	16123	17427		minus	ATPase	phoH	884095	protein-coding		NP_219517.1	434	CT_015
+NC_000117.1	17636	18364		plus	hypothetical protein		884090	protein-coding		NP_219518.1	242	CT_016
+NC_000117.1	18550	19851		plus	hypothetical protein		884091	protein-coding		NP_219519.1	433	CT_017
+NC_000117.1	19913	20386		minus	hypothetical protein		884096	protein-coding		NP_219520.1	157	CT_018
+NC_000117.1	20663	21082		minus	uncharacterized gene	tmRNA	884092	misc_RNA				CT_s01
+NC_000117.1	20663	21082		minus	10Sa RNA	tmRNA	884092	other				CT_s01
+NC_000117.1	21432	24542		plus	isoleucine--tRNA ligase	ileS	884097	protein-coding		NP_219521.1	1036	CT_019
+NC_000117.1	24601	26487		minus	signal peptidase I	lepB	884162	protein-coding		NP_219522.1	628	CT_020
+NC_000117.1	26673	27416		minus	hypothetical protein		884158	protein-coding		NP_219523.1	247	CT_021
+NC_000117.1	27492	27818		plus	50S ribosomal protein L31 type B	rl31	884156	protein-coding		NP_219524.1	108	CT_022
+NC_000117.1	28006	29085		plus	peptide chain release factor	prfA	884175	protein-coding		NP_219525.1	359	CT_023
+NC_000117.1	29069	29941		plus	release factor glutamine methyltransferase		884173	protein-coding		NP_219526.1	290	CT_024
+NC_000117.1	29938	31284		plus	signal recognition particle GTPase	ffh	884176	protein-coding		NP_219527.1	448	CT_025
+NC_000117.1	31275	31625		plus	30S ribosomal protein S16	rs16	884177	protein-coding		NP_219528.1	116	CT_026
+NC_000117.1	31641	32699		plus	tRNA (guanine N-1) methyltransferase	trmD	884073	protein-coding		NP_219529.1	352	CT_027
+NC_000117.1	32725	33090		plus	50S ribosomal protein L19	rl19	884154	protein-coding		NP_219530.1	121	CT_028
+NC_000117.1	33154	33807		plus	ribonuclease HII	rnhB_2	884152	protein-coding		NP_219531.1	217	CT_029
+NC_000117.1	33798	34415		plus	guanylate kinase	gmk	884151	protein-coding		NP_219532.1	205	CT_030
+NC_000117.1	34408	34710		plus	hypothetical protein		884149	protein-coding		NP_219533.1	100	CT_031
+NC_000117.1	34710	36362		plus	methionine--tRNA ligase	metG	884148	protein-coding		NP_219534.1	550	CT_032
+NC_000117.1	36502	38742		minus	exodeoxyribonuclease V subunit alpha	recD_1	884083	protein-coding		NP_219535.1	746	CT_033
+NC_000117.1	38990	40015		minus	membrane transport/efflux protein	ytfF	884132	protein-coding		NP_219536.1	341	CT_034
+NC_000117.1	40354	41127		plus	hypothetical protein		884082	protein-coding		NP_219537.1	257	CT_035
+NC_000117.1	41092	42303		minus	hypothetical protein		884200	protein-coding		NP_219538.1	403	CT_036
+NC_000117.1	42310	42666		minus	hypothetical protein		884081	protein-coding		NP_219539.1	118	CT_037
+NC_000117.1	42730	42801		minus	uncharacterized gene	tRNAAsn	884079	tRNA				CT_t01
+NC_000117.1	42730	42801		minus	tRNA-Asn	tRNAAsn	884079	other				CT_t01
+NC_000117.1	42865	43215		minus	hypothetical protein		884072	protein-coding		NP_219540.1	116	CT_038
+NC_000117.1	43231	43803		minus	deoxycytidine triphosphate deaminase	dcd	884070	protein-coding		NP_219541.1	190	CT_039
+NC_000117.1	43891	44043		plus	hypothetical protein		884066	protein-coding		NP_219542.1	50	CT_039.1
+NC_000117.1	44085	45089		plus	Holliday junction DNA helicase RuvB	ruvB	884059	protein-coding		NP_219543.1	334	CT_040
+NC_000117.1	45091	45903		plus	hypothetical protein		884057	protein-coding		NP_219544.1	270	CT_041
+NC_000117.1	45965	47965		minus	glycogen hydrolase	glgX	884056	protein-coding		NP_219545.1	666	CT_042
+NC_000117.1	48083	48586		minus	type III secretion system chaperone		884043	protein-coding		NP_219546.1	167	CT_043
+NC_000117.1	49052	49525		plus	single-stranded DNA-binding protein	ssb	884036	protein-coding		NP_219547.1	157	CT_044
+NC_000117.1	49866	51365		plus	cytosol aminopeptidase	pepA	884033	protein-coding		NP_219548.1	499	CT_045
+NC_000117.1	51504	52115		plus	histone-like protein	hctB	884071	protein-coding		NP_219549.1	203	CT_046
+NC_000117.1	52270	53214		plus	hypothetical protein		884074	protein-coding		NP_219550.1	314	CT_047
+NC_000117.1	53309	54022		plus	SAM-dependent methyltransferase	yraL	884037	protein-coding		NP_219551.1	237	CT_048
+NC_000117.1	54113	55585		plus	hypothetical protein		884046	protein-coding		NP_219552.1	490	CT_049
+NC_000117.1	55644	57254		minus	hypothetical protein		884049	protein-coding		NP_219553.1	536	CT_050
+NC_000117.1	57358	58920		minus	hypothetical protein		884040	protein-coding		NP_219554.1	520	CT_051
+NC_000117.1	58974	60110		minus	coproporphyrinogen-III oxidase	hemN_1	884044	protein-coding		NP_219555.1	378	CT_052
+NC_000117.1	60100	60546		minus	hypothetical protein		884052	protein-coding		NP_219556.1	148	CT_053
+NC_000117.1	60878	63595		plus	2-oxoglutarate dehydrogenase subunit E1	sucA	884178	protein-coding		NP_219557.1	905	CT_054
+NC_000117.1	63599	64696		plus	2-oxoglutarate dehydrogenase complex subunit dihydrolipoyllysine-residue succinyltransferase	sucB_1	884047	protein-coding		NP_219558.1	365	CT_055
+NC_000117.1	64725	65456		minus	hypothetical protein		884174	protein-coding		NP_219559.1	243	CT_056
+NC_000117.1	65465	67273		minus	4-hydroxy-3-methylbut-2-en-1-yl diphosphate synthase (flavodoxin)	gcpE	884045	protein-coding		NP_219560.1	602	CT_057
+NC_000117.1	67425	68528		minus	hypothetical protein		884054	protein-coding		NP_219561.1	367	CT_058
+NC_000117.1	68608	68883		minus	ferredoxin	fer	884034	protein-coding		NP_219562.1	91	CT_059
+NC_000117.1	68921	68995		minus	uncharacterized gene	tRNAPro_1	884064	tRNA				CT_t02
+NC_000117.1	68921	68995		minus	tRNA-Pro	tRNAPro_1	884064	other				CT_t02
+NC_000117.1	69065	70882		plus	type III secretion system protein		884075	protein-coding		NP_219563.1	605	CT_060
+NC_000117.1	70990	71751		plus	RNA polymerase sigma factor sigma-28		884068	protein-coding		NP_219564.1	253	CT_061
+NC_000117.1	71910	73148		plus	tyrosine--tRNA ligase	tyrS	884058	protein-coding		NP_219565.1	412	CT_062
+NC_000117.1	73158	74600		plus	6-phosphogluconate dehydrogenase	gnd	884061	protein-coding		NP_219566.1	480	CT_063
+NC_000117.1	74661	76469		minus	elongation factor 4	lepA	884077	protein-coding		NP_219567.1	602	CT_064
+NC_000117.1	76655	78241		minus	ADP, ATP carrier protein		884078	protein-coding		NP_219568.1	528	CT_065
+NC_000117.1	78592	79068		minus	hypothetical protein		884076	protein-coding		NP_219569.1	158	CT_066
+NC_000117.1	79726	80706		plus	ABC transporter substrate-binding protein	ytgA	884065	protein-coding		NP_219570.1	326	CT_067
+NC_000117.1	80699	81478		plus	ABC transporter ATP-binding protein	ytgB_1	884107	protein-coding		NP_219571.1	259	CT_068
+NC_000117.1	81479	82834		plus	ABC transporter permease	ytgC	884103	protein-coding		NP_219572.1	451	CT_069
+NC_000117.1	82824	83780		plus	ABC transporter permease	ytgD	884102	protein-coding		NP_219573.1	318	CT_070
+NC_000117.1	83807	84946		plus	1-deoxy-D-xylulose 5-phosphate reductoisomerase	yaeM	884112	protein-coding		NP_219574.1	379	CT_071
+NC_000117.1	85142	87001		plus	zinc metalloprotease	yaeL	884110	protein-coding		NP_219575.1	619	CT_072
+NC_000117.1	86948	87925		minus	hypothetical protein		884108	protein-coding		NP_219576.1	325	CT_073
+NC_000117.1	88083	89180		minus	recombination protein F	recF	884122	protein-coding		NP_219577.1	365	CT_074
+NC_000117.1	89180	90430		minus	DNA polymerase III subunit beta	dnaN	884117	protein-coding		NP_219578.1	416	CT_075
+NC_000117.1	90560	91015		plus	SsrA-binding protein	smpB	884115	protein-coding		NP_219579.1	151	CT_076
+NC_000117.1	90993	91943		minus	thiamine biosynthesis lipoprotein		884131	protein-coding		NP_219580.1	316	CT_077
+NC_000117.1	91913	92776		minus	bifunctional 5,10-methylene-tetrahydrofolate dehydrogenase/5,10-methylene-tetrahydrofolate cyclohydrolase	folD	884128	protein-coding		NP_219581.1	287	CT_078
+NC_000117.1	92894	93337		minus	hypothetical protein		884124	protein-coding		NP_219582.1	147	CT_079
+NC_000117.1	93614	93907		plus	late transcription unit protein B	ltuB	884137	protein-coding		NP_219583.1	97	CT_080
+NC_000117.1	93964	94260		plus	hypothetical protein		884135	protein-coding		NP_219584.1	98	CT_081
+NC_000117.1	94270	95952		plus	hypothetical protein		884133	protein-coding		NP_219585.1	560	CT_082
+NC_000117.1	95949	96431		plus	hypothetical protein		884142	protein-coding		NP_219586.1	160	CT_083
+NC_000117.1	96445	97530		minus	phospholipase		884141	protein-coding		NP_219587.1	361	CT_084
+NC_000117.1	97700	99439		minus	decarboxylase		884138	protein-coding		NP_219588.1	579	CT_085
+NC_000117.1	99565	99834		minus	50S ribosomal protein L28	rl28	884153	protein-coding		NP_219589.1	89	CT_086
+NC_000117.1	99983	101566		minus	4-alpha glucanotransferase	malQ	884150	protein-coding		NP_219590.1	527	CT_087
+NC_000117.1	101570	102010		minus	type III secretion chaperone	sycE	884143	protein-coding		NP_219591.1	146	CT_088
+NC_000117.1	102048	103313		minus	low calcium response protein E	lcrE	884160	protein-coding		NP_219592.1	421	CT_089
+NC_000117.1	103331	105457		minus	low calcium response protein D	lcrD	884159	protein-coding		NP_219593.1	708	CT_090
+NC_000117.1	105457	106539		minus	type III secretion system protein		884155	protein-coding		NP_219594.1	360	CT_091
+NC_000117.1	106796	107896		plus	GTPase	ychF	884164	protein-coding		NP_219595.1	366	CT_092
+NC_000117.1	107905	108810		minus	bifunctional riboflavin kinase/FMN adenylyltransferase	ribF	884163	protein-coding		NP_219596.1	301	CT_093
+NC_000117.1	108767	109492		minus	tRNA pseudouridine synthase B	truB	884161	protein-coding		NP_219597.1	241	CT_094
+NC_000117.1	109530	109901		minus	ribosome-binding factor A	rbfA	884166	protein-coding		NP_219598.1	123	CT_095
+NC_000117.1	109908	112586		minus	translation initiation factor IF-2	infB	884165	protein-coding		NP_219599.1	892	CT_096
+NC_000117.1	112543	113847		minus	transcription termination/antitermination protein NusA	nusA	884167	protein-coding		NP_219600.1	434	CT_097
+NC_000117.1	113965	115674		minus	30S ribosomal protein S1	rs1	884179	protein-coding		NP_219601.1	569	CT_098
+NC_000117.1	115919	116974		plus	thioredoxin reductase	trxB	884181	protein-coding		NP_219602.1	351	CT_099
+NC_000117.1	116980	117339		plus	holo-[acyl-carrier-protein] synthase	acpS	884180	protein-coding		NP_219603.1	119	CT_100
+NC_000117.1	117340	117801		minus	hypothetical protein		884183	protein-coding		NP_219604.1	153	CT_101
+NC_000117.1	117936	118397		plus	hypothetical protein		884182	protein-coding		NP_219605.1	153	CT_102
+NC_000117.1	118432	119328		plus	hypothetical protein		884185	protein-coding		NP_219606.1	298	CT_103
+NC_000117.1	119318	120214		minus	enoyl-(acyl carrier protein) reductase	fabI	884118	protein-coding		NP_219607.1	298	CT_104
+NC_000117.1	120452	122422		plus	hypothetical protein		884093	protein-coding		NP_219608.1	656	CT_105
+NC_000117.1	122535	123446		minus	tRNA pseudouridine synthase A	yceC	884116	protein-coding		NP_219609.1	303	CT_106
+NC_000117.1	123493	124602		plus	A/G-specific adenine glycosylase	mutY	884111	protein-coding		NP_219610.1	369	CT_107
+NC_000117.1	124652	125407		plus	hypothetical protein		884109	protein-coding		NP_219611.1	251	CT_108
+NC_000117.1	125420	126208		minus	hypothetical protein		884157	protein-coding		NP_219612.1	262	CT_109
+NC_000117.1	126336	127970		minus	chaperonin GroEL	groEL_1	884030	protein-coding		NP_219613.1	544	CT_110
+NC_000117.1	128008	128316		minus	co-chaperonin GroES	groES	884062	protein-coding		NP_219614.1	102	CT_111
+NC_000117.1	128488	130314		minus	oligoendopeptidase F	pepF	884032	protein-coding		NP_219615.1	608	CT_112
+NC_000117.1	130617	133220		plus	chaperone protein ClpB	clpB	884031	protein-coding		NP_219616.1	867	CT_113
+NC_000117.1	133246	134706		plus	hypothetical protein		884055	protein-coding		NP_219617.1	486	CT_114
+NC_000117.1	134936	135361		plus	inclusion membrane protein D		884060	protein-coding		NP_219618.1	141	CT_115
+NC_000117.1	135444	135842		plus	inclusion membrane protein E		884146	protein-coding		NP_219619.1	132	CT_116
+NC_000117.1	135847	136161		plus	inclusion membrane protein F		884080	protein-coding		NP_219620.1	104	CT_117
+NC_000117.1	136248	136751		plus	inclusion membrane protein G		884170	protein-coding		NP_219621.1	167	CT_118
+NC_000117.1	136917	137738		minus	inclusion membrane protein A	incA	884147	protein-coding		NP_219622.1	273	CT_119
+NC_000117.1	137816	138058		minus	hypothetical protein		884168	protein-coding		NP_219623.1	80	CT_120
+NC_000117.1	138142	138843		plus	ribulose-phosphate 3-epimerase	araD	884169	protein-coding		NP_219624.1	233	CT_121
+NC_000117.1	138830	139387		plus	elongation factor P	efp_1	884171	protein-coding		NP_219625.1	185	CT_122
+NC_000117.1	139400	139894		plus	acetyl-CoA carboxylase biotin carboxyl carrier protein subunit	accB	884172	protein-coding		NP_219626.1	164	CT_123
+NC_000117.1	139898	141271		plus	acetyl-CoA carboxylase biotin carboxylase subunit	accC	884063	protein-coding		NP_219627.1	457	CT_124
+NC_000117.1	141494	141946		plus	50S ribosomal protein L13	rl13	884106	protein-coding		NP_219628.1	150	CT_125
+NC_000117.1	141972	142361		plus	30S ribosomal protein S9	rs9	884121	protein-coding		NP_219629.1	129	CT_126
+NC_000117.1	142409	143260		minus	hypothetical protein		884101	protein-coding		NP_219630.1	283	CT_127
+NC_000117.1	143356	144093		minus	adenylate kinase	adk	884113	protein-coding		NP_219631.1	245	CT_128
+NC_000117.1	144300	144944		plus	ABC transporter permease	glnP	884130	protein-coding		NP_219632.1	214	CT_129
+NC_000117.1	144941	145642		plus	ABC transporter ATP-binding protein	glnQ	884094	protein-coding		NP_219633.1	233	CT_130
+NC_000117.1	145645	149061		minus	hypothetical protein		884114	protein-coding		NP_219634.1	1138	CT_131
+NC_000117.1	149058	150335		minus	hypothetical protein		884120	protein-coding		NP_219635.1	425	CT_132
+NC_000117.1	150413	151216		minus	methyltransferase		884100	protein-coding		NP_219636.1	267	CT_133
+NC_000117.1	151671	152084		plus	hypothetical protein		884134	protein-coding		NP_219637.1	137	CT_134
+NC_000117.1	152143	153225		plus	hypothetical protein		884125	protein-coding		NP_219638.1	360	CT_135
+NC_000117.1	153315	154034		plus	phospholipase-carboxylesterase family protein		884127	protein-coding		NP_219639.1	239	CT_136
+NC_000117.1	154053	154898		plus	threonylcarbamoyl-AMP synthase	ywlC	884086	protein-coding		NP_219640.1	281	CT_137
+NC_000117.1	154876	155823		plus	microsomal dipeptidase		884126	protein-coding		NP_219641.1	315	CT_138
+NC_000117.1	155820	157100		minus	oligopeptide ABC transporter substrate-binding protein	oppA_1	884129	protein-coding		NP_219642.1	426	CT_139
+NC_000117.1	157277	157963		plus	hypothetical protein		884136	protein-coding		NP_219643.1	228	CT_140
+NC_000117.1	158147	158593		plus	preprotein translocase SecA	secA_1	884089	protein-coding		NP_219644.1	148	CT_141
+NC_000117.1	158662	158734		plus	uncharacterized gene	tRNAThr_1	884144	tRNA				CT_t03
+NC_000117.1	158662	158734		plus	tRNA-Thr	tRNAThr_1	884144	other				CT_t03
+NC_000117.1	158744	158826		plus	uncharacterized gene	tRNATyr	884041	tRNA				CT_t04
+NC_000117.1	158744	158826		plus	tRNA-Tyr	tRNATyr	884041	other				CT_t04
+NC_000117.1	158993	159850		plus	hypothetical protein		884051	protein-coding		NP_219645.1	285	CT_142
+NC_000117.1	159852	160694		plus	hypothetical protein		884192	protein-coding		NP_219646.1	280	CT_143
+NC_000117.1	160694	161551		plus	hypothetical protein		884190	protein-coding		NP_219647.1	285	CT_144
+NC_000117.1	161737	163581		plus	serine/threonine protein kinase		884193	protein-coding		NP_219648.1	614	CT_145
+NC_000117.1	163592	165583		plus	NAD-dependent DNA ligase LigA	dnlJ	884189	protein-coding		NP_219649.1	663	CT_146
+NC_000117.1	165681	170030		plus	hypothetical protein		884191	protein-coding		NP_219650.1	1449	CT_147
+NC_000117.1	170093	171616		minus	FAD-dependent monooxygenase	mhpA	884186	protein-coding		NP_219651.1	507	CT_148
+NC_000117.1	171816	172763		minus	hypothetical protein		884188	protein-coding		NP_219652.1	315	CT_149
+NC_000117.1	173162	173320		plus	50S ribosomal protein L33	rl33	884187	protein-coding		NP_219653.1	52	CT_150
+NC_000117.1	173356	174867		plus	lipoprotein releasing system ABC transporter permease		884139	protein-coding		NP_219654.1	503	CT_151
+NC_000117.1	174874	175551		plus	lipoprotein releasing system ABC transporter ATP-binding protein	ycfV	884184	protein-coding		NP_219655.1	225	CT_152
+NC_000117.1	175702	178134		minus	MAC/perforin family protein		884123	protein-coding		NP_219656.1	810	CT_153
+NC_000117.1	178320	179471		minus	hypothetical protein		884119	protein-coding		NP_219657.1	383	CT_154
+NC_000117.1	179440	180381		minus	phosphatidylcholine-hydrolyzing phospholipase D		884098	protein-coding		NP_219658.1	313	CT_155
+NC_000117.1	180261	180602		minus	hypothetical protein		884099	protein-coding		NP_219659.1	113	CT_156
+NC_000117.1	180738	181952		minus	phospholipase		884104	protein-coding		NP_219660.1	404	CT_157
+NC_000117.1	182076	182792		minus	phospholipase		884105	protein-coding		NP_219661.3	238	CT_158
+NC_000117.1	182735	183667		minus	hypothetical protein		884069	protein-coding		NP_219662.1	310	CT_159
+NC_000117.1	183813	184316		minus	hypothetical protein		884194	protein-coding		NP_219663.1	167	CT_160
+NC_000117.1	184313	185053		minus	hypothetical protein		884140	protein-coding		NP_219664.1	246	CT_161
+NC_000117.1	185201	185440		minus	hypothetical protein		884198	protein-coding		NP_219665.1	79	CT_162
+NC_000117.1	185673	187319		plus	hypothetical protein		884039	protein-coding		NP_219666.1	548	CT_163
+NC_000117.1	187372	187632		plus	hypothetical protein		884199	protein-coding		NP_219667.1	86	CT_164
+NC_000117.1	188106	188552		plus	hypothetical protein		884197	protein-coding		NP_219668.1	148	CT_165
+NC_000117.1	188549	190468		plus	hypothetical protein		884963	protein-coding		NP_219669.1	639	CT_166
+NC_000117.1	190524	191855		plus	hypothetical protein		884965	protein-coding		NP_219670.1	443	CT_167
+NC_000117.1	191921	192223		plus	hypothetical protein		884960	protein-coding		NP_219671.1	100	CT_168
+NC_000117.1	192279	192563		plus	Trp operon repressor	trpR	884964	protein-coding		NP_219672.1	94	CT_169
+NC_000117.1	192912	194090		plus	tryptophan synthase subunit beta	trpB	884961	protein-coding		NP_219673.1	392	CT_170
+NC_000117.1	194083	194844		plus	tryptophan synthase subunit alpha	trpA	884962	protein-coding		NP_219674.1	253	CT_171
+NC_000117.1	195091	195582		minus	hypothetical protein		884959	protein-coding		NP_219675.1	163	CT_172
+NC_000117.1	195610	195780		minus	hypothetical protein		884958	protein-coding		NP_219676.1	56	CT_172.1
+NC_000117.1	195848	196120		minus	hypothetical protein		884957	protein-coding		NP_219677.1	90	CT_173
+NC_000117.1	196207	196662		minus	hypothetical protein		884956	protein-coding		NP_219678.1	151	CT_174
+NC_000117.1	196857	198446		plus	oligopeptide ABC transporter substrate-binding protein	oppA_2	884954	protein-coding		NP_219679.1	529	CT_175
+NC_000117.1	198473	198880		minus	disulfide oxidoreductase	dsbB	884955	protein-coding		NP_219680.1	135	CT_176
+NC_000117.1	198877	199593		minus	hypothetical protein	dsbG	884953	protein-coding		NP_219681.1	238	CT_177
+NC_000117.1	199739	200953		plus	hypothetical protein		884952	protein-coding		NP_219682.1	404	CT_178
+NC_000117.1	200955	201467		minus	hypothetical protein		884951	protein-coding		NP_219683.3	170	CT_179
+NC_000117.1	201611	202303		minus	ABC transporter ATP-binding protein	tauB	884947	protein-coding		NP_219684.1	230	CT_180
+NC_000117.1	202341	202414		minus	uncharacterized gene	tRNAIle	884950	tRNA				CT_t05
+NC_000117.1	202341	202414		minus	tRNA-Ile	tRNAIle	884950	other				CT_t05
+NC_000117.1	202420	202492		minus	uncharacterized gene	tRNAAla_1	884949	tRNA				CT_t06
+NC_000117.1	202420	202492		minus	tRNA-Ala	tRNAAla_1	884949	other				CT_t06
+NC_000117.1	202611	203321		minus	hypothetical protein		884948	protein-coding		NP_219685.1	236	CT_181
+NC_000117.1	203689	204453		plus	3-deoxy-manno-octulosonate cytidylyltransferase	kdsB	884946	protein-coding		NP_219686.1	254	CT_182
+NC_000117.1	204429	206048		plus	CTP synthetase	pyrG	884940	protein-coding		NP_219687.1	539	CT_183
+NC_000117.1	206035	206481		plus	Holliday junction resolvase		884945	protein-coding		NP_219688.1	148	CT_184
+NC_000117.1	206802	208121		plus	glucose-6-phosphate 1-dehydrogenase	zwf	884944	protein-coding		NP_219689.3	439	CT_185
+NC_000117.1	208146	208916		plus	6-phosphogluconolactonase	devB	884943	protein-coding		NP_219690.1	256	CT_186
+NC_000117.1	208913	209785		minus	DNA polymerase III subunit delta'	dnaX_1	884939	protein-coding		NP_219691.1	290	CT_187
+NC_000117.1	209799	210410		minus	thymidylate kinase	tdk	884942	protein-coding		NP_219692.1	203	CT_188
+NC_000117.1	210412	212922		minus	DNA gyrase subunit A	gyrA_1	884941	protein-coding		NP_219693.1	836	CT_189
+NC_000117.1	212937	215351		minus	DNA gyrase subunit B	gyrB_1	884937	protein-coding		NP_219694.1	804	CT_190
+NC_000117.1	215354	215704		minus	hypothetical protein		884929	protein-coding		NP_219695.1	116	CT_191
+NC_000117.1	215851	216624		minus	inclusion membrane protein		884938	protein-coding		NP_219696.1	257	CT_192
+NC_000117.1	216651	217769		minus	queuine tRNA ribosyltransferase	tgt	884936	protein-coding		NP_219697.1	372	CT_193
+NC_000117.1	217896	219308		minus	magnesium transport protein	mgtE	884933	protein-coding		NP_219698.1	470	CT_194
+NC_000117.1	219747	220838		minus	hypothetical protein		884935	protein-coding		NP_219699.1	363	CT_195
+NC_000117.1	221062	221382		plus	inclusion membrane protein		884934	protein-coding		NP_219700.1	106	CT_196
+NC_000117.1	221458	222474		plus	tRNA N6-adenosine threonylcarbamoyltransferase		884930	protein-coding		NP_219701.1	338	CT_197
+NC_000117.1	222438	223994		plus	oligopeptide ABC transporter substrate-binding protein	oppA_3	884932	protein-coding		NP_219702.1	518	CT_198
+NC_000117.1	224153	225094		plus	oligopeptide ABC transporter permease	oppB_1	884931	protein-coding		NP_219703.1	313	CT_199
+NC_000117.1	225126	225971		plus	oligopeptide ABC transporter permease	oppC_1	884927	protein-coding		NP_219704.1	281	CT_200
+NC_000117.1	225964	226797		plus	oligopeptide ABC transporter ATP-binding protein	oppD	884928	protein-coding		NP_219705.1	277	CT_201
+NC_000117.1	226812	227555		plus	oligopeptide ABC transporter ATP-binding protein	oppF	884925	protein-coding		NP_219706.1	247	CT_202
+NC_000117.1	227862	228617		plus	hypothetical protein		884926	protein-coding		NP_219707.1	251	CT_203
+NC_000117.1	228647	230062		plus	sodium:sulfate symporter	ybhI	884923	protein-coding		NP_219708.1	471	CT_204
+NC_000117.1	230082	231743		plus	pyrophosphate--fructose 6-phosphate 1-phosphotransferase	pfkA_1	884920	protein-coding		NP_219709.1	553	CT_205
+NC_000117.1	231752	232600		plus	acyltransferase		884924	protein-coding		NP_219710.1	282	CT_206
+NC_000117.1	232582	234228		plus	pyrophosphate--fructose 6-phosphate 1-phosphotransferase	pfkA_2	884922	protein-coding		NP_219711.1	548	CT_207
+NC_000117.1	234283	234356		minus	uncharacterized gene	tRNAMet_3	884921	tRNA				CT_t07
+NC_000117.1	234283	234356		minus	tRNA-Met	tRNAMet_3	884921	other				CT_t07
+NC_000117.1	234375	234448		minus	uncharacterized gene	tRNAMet_1	884919	tRNA				CT_t08
+NC_000117.1	234375	234448		minus	tRNA-Met	tRNAMet_1	884919	other				CT_t08
+NC_000117.1	234474	235769		minus	3-deoxy-D-manno-octulosonic acid transferase	gseA	884918	protein-coding		NP_219712.1	431	CT_208
+NC_000117.1	235766	238225		minus	leucine--tRNA ligase	leuS	884917	protein-coding		NP_219713.1	819	CT_209
+NC_000117.1	238422	239690		plus	glutamate-1-semialdehyde-2,1-aminomutase	hemL	884916	protein-coding		NP_219714.1	422	CT_210
+NC_000117.1	239682	240251		minus	hypothetical protein		884914	protein-coding		NP_219715.1	189	CT_211
+NC_000117.1	240271	240717		minus	hypothetical protein		884915	protein-coding		NP_219716.1	148	CT_212
+NC_000117.1	240707	241435		minus	ribose-5-phosphate isomerase A	rpiA	884912	protein-coding		NP_219717.1	242	CT_213
+NC_000117.1	241530	243173		minus	inclusion membrane protein		884910	protein-coding		NP_219718.1	547	CT_214
+NC_000117.1	243477	244523		plus	1,6-fructose bisphosphate aldolase	dhnA	884913	protein-coding		NP_219719.1	348	CT_215
+NC_000117.1	244537	245937		plus	glutamate/gamma-aminobutyrate antiporter	xasA	884908	protein-coding		NP_219720.1	466	CT_216
+NC_000117.1	246091	246795		plus	hypothetical protein	ydaO	884911	protein-coding		NP_219721.1	234	CT_217
+NC_000117.1	246926	247777		plus	5'-nucleotidase SurE	surE	884909	protein-coding		NP_219722.1	283	CT_218
+NC_000117.1	247889	248797		plus	4-hydroxybenzoate octaprenyltransferase	ubiA	884907	protein-coding		NP_219723.1	302	CT_219
+NC_000117.1	248794	249372		plus	aromatic acid decarboxylase	ubiX	884904	protein-coding		NP_219724.1	192	CT_220
+NC_000117.1	249369	250265		minus	hypothetical protein	yqfU	884906	protein-coding		NP_219725.1	298	CT_221
+NC_000117.1	250289	250362		minus	uncharacterized gene	tRNAAsp	884905	tRNA				CT_t09
+NC_000117.1	250289	250362		minus	tRNA-Asp	tRNAAsp	884905	other				CT_t09
+NC_000117.1	250370	250442		minus	uncharacterized gene	tRNAVal_1	884902	tRNA				CT_t10
+NC_000117.1	250370	250442		minus	tRNA-Val	tRNAVal_1	884902	other				CT_t10
+NC_000117.1	250554	250694		minus	uncharacterized gene		884903	pseudogene				CT_221.1
+NC_000117.1	251252	252064		minus	inclusion membrane protein		884901	protein-coding		NP_219728.1	270	CT_223
+NC_000117.1	252455	252898		minus	inclusion membrane protein		884900	protein-coding		NP_219729.1	147	CT_224
+NC_000117.1	252989	253357		minus	inclusion membrane protein		884898	protein-coding		NP_219730.1	122	CT_225
+NC_000117.1	253456	253986		minus	inclusion membrane protein		884899	protein-coding		NP_219731.1	176	CT_226
+NC_000117.1	254102	254503		minus	inclusion membrane protein		884896	protein-coding		NP_219732.1	133	CT_227
+NC_000117.1	254774	255364		minus	inclusion membrane protein		884894	protein-coding		NP_219733.1	196	CT_228
+NC_000117.1	255514	256161		minus	inclusion membrane protein		884895	protein-coding		NP_219734.1	215	CT_229
+NC_000117.1	256387	257634		plus	sodium:dicarboxylate symport protein		884893	protein-coding		NP_219735.1	415	CT_230
+NC_000117.1	257818	259290		plus	sodium-dependent amino acid transporter		884890	protein-coding		NP_219736.1	490	CT_231
+NC_000117.1	259395	259742		plus	inclusion membrane protein B	incB	884892	protein-coding		NP_219737.1	115	CT_232
+NC_000117.1	259819	260355		plus	inclusion membrane protein C	incC	884891	protein-coding		NP_219738.1	178	CT_233
+NC_000117.1	260413	263199		plus	hypothetical protein		884888	protein-coding		NP_219739.1	928	CT_234
+NC_000117.1	263228	263641		plus	Crp family transcriptional regulator		884889	protein-coding		NP_219740.1	137	CT_235
+NC_000117.1	263702	263935		minus	acyl carrier protein	acpP	884884	protein-coding		NP_219741.1	77	CT_236
+NC_000117.1	264304	265050		minus	3-oxoacyl-[acyl-carrier-protein] reductase	fabG	884887	protein-coding		NP_219742.1	248	CT_237
+NC_000117.1	265047	265973		minus	malonyl-CoA-[acyl-carrier-protein] transacylase	fabD	884886	protein-coding		NP_219743.1	308	CT_238
+NC_000117.1	265990	266973		minus	3-oxoacyl-ACP synthase III	fabH	884881	protein-coding		NP_219744.1	327	CT_239
+NC_000117.1	267111	267713		plus	recombination protein RecR	recR	884885	protein-coding		NP_219745.1	200	CT_240
+NC_000117.1	268088	270466		plus	outer membrane protein	yaeT	884882	protein-coding		NP_219746.1	792	CT_241
+NC_000117.1	270535	271056		plus	outer membrane protein		884883	protein-coding		NP_219747.1	173	CT_242
+NC_000117.1	271084	272148		plus	UDP-3-O-acylglucosamine N-acyltransferase	lpxD	884880	protein-coding		NP_219748.1	354	CT_243
+NC_000117.1	272145	273341		minus	hypothetical protein		884879	protein-coding		NP_219749.1	398	CT_244
+NC_000117.1	273563	274585		plus	pyruvate dehydrogenase E1 component subunit alpha	pdhA	884877	protein-coding		NP_219750.1	340	CT_245
+NC_000117.1	274578	275564		plus	pyruvate dehydrogenase E1 component subunit beta	pdhB	884876	protein-coding		NP_219751.1	328	CT_246
+NC_000117.1	275569	276858		plus	pyruvate dehydrogenase complex dihydrolipoyllysine-residue acetyltransferase component	pdhC	884878	protein-coding		NP_219752.1	429	CT_247
+NC_000117.1	276885	279329		minus	glycogen phosphorylase	glgP	884873	protein-coding		NP_219753.1	814	CT_248
+NC_000117.1	279485	279835		plus	hypothetical protein		884875	protein-coding		NP_219754.1	116	CT_249
+NC_000117.1	279889	281259		minus	chromosomal replication initiation protein DnaA	dnaA_1	884874	protein-coding		NP_219755.1	456	CT_250
+NC_000117.1	281336	283699		minus	membrane protein insertase		884867	protein-coding		NP_219756.1	787	CT_251
+NC_000117.1	284009	284827		minus	prolipoprotein diacylglycerol transferase	lgt	884872	protein-coding		NP_219757.1	272	CT_252
+NC_000117.1	285078	285725		plus	hypothetical protein		884871	protein-coding		NP_219758.1	215	CT_253
+NC_000117.1	285729	286499		plus	hypothetical protein		884869	protein-coding		NP_219759.1	256	CT_254
+NC_000117.1	286707	287090		minus	hypothetical protein		884870	protein-coding		NP_219760.1	127	CT_255
+NC_000117.1	287279	288523		plus	hypothetical protein		884868	protein-coding		NP_219761.1	414	CT_256
+NC_000117.1	288513	289727		plus	hypothetical protein		884866	protein-coding		NP_219762.1	404	CT_257
+NC_000117.1	289731	290855		minus	cysteine desulfurase	yhfO	884865	protein-coding		NP_219763.1	374	CT_258
+NC_000117.1	290861	291607		minus	protein phosphatase		884862	protein-coding		NP_219764.1	248	CT_259
+NC_000117.1	291930	292421		plus	hypothetical protein		884859	protein-coding		NP_219765.1	163	CT_260
+NC_000117.1	292430	293128		plus	DNA polymerase III subunit epsilon	dnaQ_1	884864	protein-coding		NP_219766.1	232	CT_261
+NC_000117.1	293125	293895		plus	menaquinone biosynthesis protein		884863	protein-coding		NP_219767.1	256	CT_262
+NC_000117.1	293888	294478		plus	hypothetical protein		884860	protein-coding		NP_219768.1	196	CT_263
+NC_000117.1	294499	296439		minus	ABC transporter ATP-binding protein/permease	msbA	884861	protein-coding		NP_219769.1	646	CT_264
+NC_000117.1	296405	297379		minus	acetyl-CoA carboxylase carboxyltransferase subunit alpha	accA	884858	protein-coding		NP_219770.1	324	CT_265
+NC_000117.1	297512	298693		minus	hypothetical protein		884855	protein-coding		NP_219771.1	393	CT_266
+NC_000117.1	298811	299113		minus	DNA-binding protein HU	ihfA	884857	protein-coding		NP_219772.1	100	CT_267
+NC_000117.1	299333	300112		minus	N-acetylmuramoyl alanine amidase	amiA	884856	protein-coding		NP_219773.1	259	CT_268
+NC_000117.1	300027	301478		minus	UDP-N-acetylmuramoyl-L-alanyl-D-glutamate--2,6-diaminopimelate ligase	murE	884854	protein-coding		NP_219774.1	483	CT_269
+NC_000117.1	301801	303744		minus	penicillin-binding protein	pbp3	884853	protein-coding		NP_219775.1	647	CT_270
+NC_000117.1	303731	304018		minus	hypothetical protein		884850	protein-coding		NP_219776.1	95	CT_271
+NC_000117.1	304018	304920		minus	ribosomal RNA small subunit methyltransferase H		884852	protein-coding		NP_219777.1	300	CT_272
+NC_000117.1	305198	305764		plus	hypothetical protein		884848	protein-coding		NP_219778.1	188	CT_273
+NC_000117.1	305771	306190		plus	hypothetical protein		884851	protein-coding		NP_219779.1	139	CT_274
+NC_000117.1	306433	307800		plus	chromosomal replication initiation protein	dnaA_2	884847	protein-coding		NP_219780.1	455	CT_275
+NC_000117.1	307839	308423		plus	polymer-forming cytoskeletal protein		884849	protein-coding		NP_219781.1	194	CT_276
+NC_000117.1	308395	309054		minus	hypothetical protein		884845	protein-coding		NP_219782.1	219	CT_277
+NC_000117.1	309056	310567		plus	Na(+)-translocating NADH-quinone reductase subunit B	nqr2	884842	protein-coding		NP_219783.1	503	CT_278
+NC_000117.1	310571	311521		plus	Na(+)-translocating NADH-quinone reductase subunit C	nqr3	884846	protein-coding		NP_219784.1	316	CT_279
+NC_000117.1	311511	312152		plus	Na(+)-translocating NADH-quinone reductase subunit D	nqr4	884843	protein-coding		NP_219785.1	213	CT_280
+NC_000117.1	312158	312892		plus	Na(+)-translocating NADH-quinone reductase subunit E	nqr5	884844	protein-coding		NP_219786.1	244	CT_281
+NC_000117.1	312916	313269		minus	glycine cleavage system protein H	gcsH	884837	protein-coding		NP_219787.1	117	CT_282
+NC_000117.1	313289	315385		minus	hypothetical protein		884841	protein-coding		NP_219788.1	698	CT_283
+NC_000117.1	315556	316980		minus	phospholipase D		884838	protein-coding		NP_219789.1	474	CT_284
+NC_000117.1	316986	317705		minus	lipoate protein ligase	lplA_1	884840	protein-coding		NP_219790.1	239	CT_285
+NC_000117.1	317970	320534		plus	ATP-dependent Clp protease ATP-binding subunit ClpC	clpC	884839	protein-coding		NP_219791.1	854	CT_286
+NC_000117.1	320515	321591		minus	tRNA-specific 2-thiouridylase MnmA		884836	protein-coding		NP_219792.1	358	CT_287
+NC_000117.1	321823	323514		plus	hypothetical protein		884832	protein-coding		NP_219793.1	563	CT_288
+NC_000117.1	323601	324740		minus	hypothetical protein		884831	protein-coding		NP_219794.1	379	CT_289
+NC_000117.1	324798	325475		minus	PTS fructose transporter subunit IIA	ptsN_1	884835	protein-coding		NP_219795.1	225	CT_290
+NC_000117.1	325478	325954		minus	PTS fructose transporter subunit IIA	ptsN_2	884834	protein-coding		NP_219796.1	158	CT_291
+NC_000117.1	325956	326393		minus	deoxyuridine 5'-triphosphate nucleotidohydrolase	dut	884833	protein-coding		NP_219797.1	145	CT_292
+NC_000117.1	326430	327356		minus	acetyl-CoA carboxylase carboxyltransferase subunit beta	accD	884830	protein-coding		NP_219798.1	308	CT_293
+NC_000117.1	327428	328048		minus	superoxide dismutase	sodM	884829	protein-coding		NP_219799.1	206	CT_294
+NC_000117.1	328180	329961		minus	phosphoglucomutase	mrsA_1	884828	protein-coding		NP_219800.1	593	CT_295
+NC_000117.1	330113	330580		minus	hypothetical protein		884826	protein-coding		NP_219801.1	155	CT_296
+NC_000117.1	330689	331384		plus	ribonuclease III	rnc	884827	protein-coding		NP_219802.1	231	CT_297
+NC_000117.1	331368	332732		plus	DNA repair protein RadA	radA	884816	protein-coding		NP_219803.1	454	CT_298
+NC_000117.1	332710	333435		plus	porphobilinogen deaminase	hemC	884823	protein-coding		NP_219804.1	241	CT_299
+NC_000117.1	333828	334175		plus	hypothetical protein		884824	protein-coding		NP_219805.1	115	CT_300
+NC_000117.1	334228	337032		minus	serine/threonine-protein kinase	pknD	884825	protein-coding		NP_219806.1	934	CT_301
+NC_000117.1	337047	339866		minus	valine--tRNA ligase	valS	884822	protein-coding		NP_219807.1	939	CT_302
+NC_000117.1	339993	340508		minus	hypothetical protein		884821	protein-coding		NP_219808.1	171	CT_303
+NC_000117.1	340429	340854		minus	V-type ATP synthase subunit K	atpK	884820	protein-coding		NP_219809.1	141	CT_304
+NC_000117.1	340917	342866		minus	V-type ATP synthase subunit I	atpI	884819	protein-coding		NP_219810.1	649	CT_305
+NC_000117.1	342872	343483		minus	V-type ATP synthase subunit D	atpD	884818	protein-coding		NP_219811.1	203	CT_306
+NC_000117.1	343468	344784		minus	V-type ATP synthase subunit beta	atpB	884817	protein-coding		NP_219812.1	438	CT_307
+NC_000117.1	344787	346562		minus	V-type ATP synthase subunit alpha	atpA	884810	protein-coding		NP_219813.1	591	CT_308
+NC_000117.1	346556	347356		minus	hypothetical protein		884814	protein-coding		NP_219814.1	266	CT_309
+NC_000117.1	347523	348149		minus	V-type ATP synthase subunit E	atpE	884815	protein-coding		NP_219815.1	208	CT_310
+NC_000117.1	348258	348968		plus	hypothetical protein		884813	protein-coding		NP_219816.1	236	CT_311
+NC_000117.1	348976	349347		minus	hypothetical protein		884812	protein-coding		NP_219817.1	123	CT_312
+NC_000117.1	349392	350375		minus	transaldolase	tal	884811	protein-coding		NP_219818.1	327	CT_313
+NC_000117.1	350487	354677		minus	DNA-directed RNA polymerase subunit beta'	rpoC	884808	protein-coding		NP_219819.1	1396	CT_314
+NC_000117.1	354702	358460		minus	DNA-directed RNA polymerase subunit beta	rpoB	884809	protein-coding		NP_219820.1	1252	CT_315
+NC_000117.1	358821	359213		minus	50S ribosomal protein L7/L12	rl7	884807	protein-coding		NP_219821.1	130	CT_316
+NC_000117.1	359245	359763		minus	50S ribosomal protein L10	rl10	884806	protein-coding		NP_219822.1	172	CT_317
+NC_000117.1	359785	360483		minus	50S ribosomal protein L1	rl1	884805	protein-coding		NP_219823.1	232	CT_318
+NC_000117.1	360506	360931		minus	50S ribosomal protein L11	rl11	884804	protein-coding		NP_219824.1	141	CT_319
+NC_000117.1	361037	361585		minus	transcription termination/antitermination protein NusG	nusG	884799	protein-coding		NP_219825.1	182	CT_320
+NC_000117.1	361589	361837		minus	preprotein translocase subunit SecE	secE	884803	protein-coding		NP_219826.1	82	CT_321
+NC_000117.1	361867	361939		minus	uncharacterized gene	tRNATrp	884802	tRNA				CT_t11
+NC_000117.1	361867	361939		minus	tRNA-Trp	tRNATrp	884802	other				CT_t11
+NC_000117.1	361980	363164		minus	elongation factor Tu	tufA	884801	protein-coding		NP_219827.1	394	CT_322
+NC_000117.1	363210	363281		minus	uncharacterized gene	tRNAThr_2	884800	tRNA				CT_t12
+NC_000117.1	363210	363281		minus	tRNA-Thr	tRNAThr_2	884800	other				CT_t12
+NC_000117.1	363512	363733		minus	translation initiation factor IF-1	infA	884795	protein-coding		NP_219828.1	73	CT_323
+NC_000117.1	364145	365056		plus	hypothetical protein		884798	protein-coding		NP_219829.1	303	CT_324
+NC_000117.1	365053	365499		plus	Fe-S metabolism protein SufE		884797	protein-coding		NP_219830.1	148	CT_325
+NC_000117.1	365551	367242		minus	hypothetical protein		884796	protein-coding		NP_219831.1	563	CT_326
+NC_000117.1	367229	367417		minus	hypothetical protein		884792	protein-coding		NP_219832.1	62	CT_326.1
+NC_000117.1	367607	367789		minus	hypothetical protein		884793	protein-coding		NP_219833.1	60	CT_326.2
+NC_000117.1	368396	368468		plus	uncharacterized gene	tRNAMet_2	884794	tRNA				CT_t13
+NC_000117.1	368396	368468		plus	tRNA-Met	tRNAMet_2	884794	other				CT_t13
+NC_000117.1	368509	369135		minus	N-(5'-phosphoribosyl)anthranilate isomerase	trpC	884791	protein-coding		NP_219834.1	208	CT_327
+NC_000117.1	369332	370156		plus	triosephosphate isomerase	tpiS	884786	protein-coding		NP_219835.1	274	CT_328
+NC_000117.1	370170	371720		plus	exodeoxyribonuclease VII large subunit	xseA	884790	protein-coding		NP_219836.1	516	CT_329
+NC_000117.1	371929	372201		plus	hypothetical protein		884789	protein-coding		NP_219837.1	90	CT_330
+NC_000117.1	372198	374120		plus	1-deoxy-D-xylulose-5-phosphate synthase	dxs	884788	protein-coding		NP_219838.1	640	CT_331
+NC_000117.1	374217	375674		plus	pyruvate kinase	pykF	884787	protein-coding		NP_219839.1	485	CT_332
+NC_000117.1	375697	381057		plus	excinuclease ABC subunit A	uvrA	884785	protein-coding		NP_219840.1	1786	CT_333
+NC_000117.1	381275	382675		plus	DNA polymerase III subunit gamma and tau	dnaX_2	884781	protein-coding		NP_219841.1	466	CT_334
+NC_000117.1	382668	382958		plus	nucleoid-associated protein		884784	protein-coding		NP_219842.1	96	CT_335
+NC_000117.1	382968	384683		minus	phosphoenolpyruvate-protein phosphotransferase	ptsI	884783	protein-coding		NP_219843.1	571	CT_336
+NC_000117.1	384683	385012		minus	phosphocarrier protein Hpr	ptsH	884777	protein-coding		NP_219844.1	109	CT_337
+NC_000117.1	385149	385610		minus	hypothetical protein		884782	protein-coding		NP_219845.1	153	CT_338
+NC_000117.1	385894	387423		plus	hypothetical protein		884779	protein-coding		NP_219846.1	509	CT_339
+NC_000117.1	387496	389532		minus	2-oxoisovalerate dehydrogenase subunit alpha/beta	pdhA/B	884780	protein-coding		NP_219847.1	678	CT_340
+NC_000117.1	389567	390745		minus	chaperone protein DnaJ	dnaJ	884775	protein-coding		NP_219848.1	392	CT_341
+NC_000117.1	390774	390950		minus	30S ribosomal protein S21	rs21	884778	protein-coding		NP_219849.3	58	CT_342
+NC_000117.1	391147	391779		minus	O-sialoglycoprotein endopeptidase		884776	protein-coding		NP_219850.1	210	CT_343
+NC_000117.1	392089	394548		plus	Lon protease	lon	884768	protein-coding		NP_219851.1	819	CT_344
+NC_000117.1	394650	395015		plus	hypothetical protein		884773	protein-coding		NP_219852.1	121	CT_345
+NC_000117.1	395365	396279		plus	ribonuclease Z	elaC	884774	protein-coding		NP_219853.1	304	CT_346
+NC_000117.1	396341	397288		plus	tyrosine recombinase XerC	xerC	884772	protein-coding		NP_219854.1	315	CT_347
+NC_000117.1	397342	398928		plus	ABC-F family ATPase	yjjK	884771	protein-coding		NP_219855.1	528	CT_348
+NC_000117.1	398964	399554		plus	septum formation protein Maf	maf	884769	protein-coding		NP_219856.1	196	CT_349
+NC_000117.1	399536	401236		plus	hypothetical protein		884770	protein-coding		NP_219857.1	566	CT_350
+NC_000117.1	401243	403336		plus	hypothetical protein		884766	protein-coding		NP_219858.1	697	CT_351
+NC_000117.1	403499	403804		plus	hypothetical protein		884767	protein-coding		NP_219860.1	101	CT_352
+NC_000117.1	403874	404419		minus	peptide deformylase	def	884763	protein-coding		NP_219861.1	181	CT_353
+NC_000117.1	404694	405527		minus	ribosomal RNA small subunit methyltransferase A	kgsA	884765	protein-coding		NP_219862.1	277	CT_354
+NC_000117.1	405543	406604		minus	hypothetical protein		884764	protein-coding		NP_219863.1	353	CT_355
+NC_000117.1	406909	409023		minus	hypothetical protein	yyaL	884761	protein-coding		NP_219864.1	704	CT_356
+NC_000117.1	409238	409321		plus	uncharacterized gene	tRNASer_1	884757	tRNA				CT_t14
+NC_000117.1	409238	409321		plus	tRNA-Ser	tRNASer_1	884757	other				CT_t14
+NC_000117.1	409341	409628		minus	hypothetical protein		884762	protein-coding		NP_219865.1	95	CT_357R
+NC_000117.1	409480	409812		plus	hypothetical protein		884760	protein-coding		NP_219866.1	110	CT_357
+NC_000117.1	409838	410374		plus	hypothetical protein		884758	protein-coding		NP_219867.1	178	CT_358
+NC_000117.1	410434	411024		minus	hypothetical protein		884756	protein-coding		NP_219868.1	196	CT_359
+NC_000117.1	411276	411902		minus	hypothetical protein		884759	protein-coding		NP_219869.1	208	CT_360
+NC_000117.1	412064	412924		minus	4-hydroxy-tetrahydrodipicolinate synthase	dapA	884755	protein-coding		NP_219870.1	286	CT_361
+NC_000117.1	412934	414229		minus	aspartokinase	lysC	884754	protein-coding		NP_219871.1	431	CT_362
+NC_000117.1	414222	415226		minus	aspartate-semialdehyde dehydrogenase	asd	884751	protein-coding		NP_219872.1	334	CT_363
+NC_000117.1	415236	415997		minus	4-hydroxy-tetrahydrodipicolinate reductase	dapB	884753	protein-coding		NP_219873.1	253	CT_364
+NC_000117.1	416174	417901		minus	hypothetical protein		884752	protein-coding		NP_219874.1	575	CT_365
+NC_000117.1	418071	419393		plus	phosphoshikimate 1-carboxyvinyltransferase	aroA	884747	protein-coding		NP_219875.1	440	CT_366
+NC_000117.1	419335	419889		plus	shikimate kinase	aroL	884749	protein-coding		NP_219876.1	184	CT_367
+NC_000117.1	419882	420955		plus	chorismate synthase	aroC	884745	protein-coding		NP_219877.1	357	CT_368
+NC_000117.1	420952	422073		plus	3-dehydroquinate synthase	aroB	884750	protein-coding		NP_219878.1	373	CT_369
+NC_000117.1	422054	423490		plus	bifunctional 3-dehydroquinate dehydratase/shikimate dehydrogenase	aroE	884748	protein-coding		NP_219879.1	478	CT_370
+NC_000117.1	423532	424317		plus	outer membrane protein		884746	protein-coding		NP_219880.1	261	CT_371
+NC_000117.1	424459	425787		plus	porin		884743	protein-coding		NP_219881.1	442	CT_372
+NC_000117.1	425856	426443		plus	pyruvoyl-dependent arginine decarboxylase		884742	protein-coding		NP_219882.1	195	CT_373
+NC_000117.1	426459	427910		plus	arginine/agmatine antiporter	arcD	884744	protein-coding		NP_219883.1	483	CT_374
+NC_000117.1	428082	429140		plus	oxidoreductase		884739	protein-coding		NP_219884.1	352	CT_375
+NC_000117.1	429182	430162		minus	malate dehydrogenase	mdhC	884741	protein-coding		NP_219885.1	326	CT_376
+NC_000117.1	430353	430493		minus	late transcription unit protein A	ltuA	884737	protein-coding		NP_219886.1	46	CT_377
+NC_000117.1	430608	432185		minus	glucose-6-phosphate isomerase	pgi	884740	protein-coding		NP_219887.1	525	CT_378
+NC_000117.1	432298	433641		minus	GTPase HflX	hflX	884738	protein-coding		NP_219888.1	447	CT_379
+NC_000117.1	433654	434454		minus	metal-dependent hydrolase	phnP	884736	protein-coding		NP_219889.1	266	CT_380
+NC_000117.1	434483	435256		minus	arginine ABC transporter substrate-binding protein ArtJ	artJ	884734	protein-coding		NP_219890.1	257	CT_381
+NC_000117.1	435325	436161		minus	3-deoxy-7-phosphoheptulonate synthase	aroG	884735	protein-coding		NP_219891.1	278	CT_382
+NC_000117.1	436298	436489		minus	hypothetical protein		884732	protein-coding		NP_219892.1	63	CT_382.1
+NC_000117.1	436672	437403		plus	hypothetical protein		884733	protein-coding		NP_219893.1	243	CT_383
+NC_000117.1	437414	439033		minus	hypothetical protein		884725	protein-coding		NP_219894.1	539	CT_384
+NC_000117.1	439048	439383		minus	hypothetical protein	ycfF	884731	protein-coding		NP_219895.1	111	CT_385
+NC_000117.1	439380	440249		minus	hypothetical protein		884730	protein-coding		NP_219896.1	289	CT_386
+NC_000117.1	440536	442611		plus	hypothetical protein		884726	protein-coding		NP_219897.1	691	CT_387
+NC_000117.1	442625	442972		minus	hypothetical protein		884729	protein-coding		NP_219898.3	115	CT_388
+NC_000117.1	443154	444380		plus	hypothetical protein		884728	protein-coding		NP_219899.1	408	CT_389
+NC_000117.1	444488	445672		plus	L,L-diaminopimelate aminotransferase	aspC	884727	protein-coding		NP_219900.1	394	CT_390
+NC_000117.1	445680	446687		plus	ABC transporter substrate-binding protein		884724	protein-coding		NP_219901.1	335	CT_391
+NC_000117.1	446693	447826		minus	hypothetical protein	yprS	884721	protein-coding		NP_219902.1	377	CT_392
+NC_000117.1	448027	449772		plus	proline--tRNA ligase	proS	884722	protein-coding		NP_219903.1	581	CT_393
+NC_000117.1	449841	451019		plus	heat-inducible transcription repressor	hrcA	884723	protein-coding		NP_219904.1	392	CT_394
+NC_000117.1	451016	451588		plus	stress response protein GrpE	grpE	884720	protein-coding		NP_219905.1	190	CT_395
+NC_000117.1	451614	453596		plus	chaperone protein DnaK	dnaK	884718	protein-coding		NP_219906.1	660	CT_396
+NC_000117.1	453889	455973		plus	ribonuclease R	vacB	884714	protein-coding		NP_219907.1	694	CT_397
+NC_000117.1	456229	456993		plus	hypothetical protein		884719	protein-coding		NP_219908.1	254	CT_398
+NC_000117.1	457055	457368		plus	uncharacterized gene		18155426	misc_RNA				CT_398.1
+NC_000117.1	457055	457368		plus	ribonuclease P RNA		18155426	other				CT_398.1
+NC_000117.1	457416	458402		minus	carbohydrate isomerase	yrbH	884717	protein-coding		NP_219909.1	328	CT_399
+NC_000117.1	458434	459600		minus	branched-chain alpha-keto acid dehydrogenase complex dihydrolipoyllysine-residue succinyltransferase	sucB_2	884716	protein-coding		NP_219910.1	388	CT_400
+NC_000117.1	459846	461084		minus	sodium:dicarboxylate symport protein	gltT	884712	protein-coding		NP_219911.1	412	CT_401
+NC_000117.1	461081	462340		minus	tetraacyldisaccharide 4' kinase	lpxK	884715	protein-coding		NP_219912.1	419	CT_402
+NC_000117.1	462356	463165		minus	SpoU family rRNA methylase	yjfH	884713	protein-coding		NP_219913.1	269	CT_403
+NC_000117.1	463153	463980		minus	SAM-dependent methyltransferase		884711	protein-coding		NP_219914.1	275	CT_404
+NC_000117.1	463977	464576		minus	riboflavin synthase	ribC	884709	protein-coding		NP_219915.1	199	CT_405
+NC_000117.1	464969	465433		plus	transcriptional repressor NrdR	nrdR	884710	protein-coding		NP_219916.1	154	CT_406
+NC_000117.1	465447	465821		plus	RNA polymerase-binding transcription factor	dksA	884708	protein-coding		NP_219917.1	124	CT_407
+NC_000117.1	465827	466330		plus	lipoprotein signal peptidase	lspA	884706	protein-coding		NP_219918.1	167	CT_408
+NC_000117.1	466432	467793		plus	sodium/alanine symporter		884707	protein-coding		NP_219919.1	453	CT_409
+NC_000117.1	468008	469285		plus	poly A polymerase	pcnB_1	884701	protein-coding		NP_219920.1	425	CT_410
+NC_000117.1	469346	471169		plus	lipid A disaccharide synthase	lpxB	884705	protein-coding		NP_219921.1	607	CT_411
+NC_000117.1	471276	474203		plus	outer membrane protein PmpA	pmpA	884704	protein-coding		NP_219922.1	975	CT_412
+NC_000117.1	474342	479597		plus	outer membrane protein PmpB	pmpB	884703	protein-coding		NP_219923.1	1751	CT_413
+NC_000117.1	479774	485086		plus	outer membrane protein PmpC	pmpC	884702	protein-coding		NP_219924.1	1770	CT_414
+NC_000117.1	485247	485330		minus	uncharacterized gene	tRNASer_3	884695	tRNA				CT_t15
+NC_000117.1	485247	485330		minus	tRNA-Ser	tRNASer_3	884695	other				CT_t15
+NC_000117.1	485639	486469		plus	metal ABC transporter substrate-binding protein	yebL	884699	protein-coding		NP_219925.1	276	CT_415
+NC_000117.1	486466	487176		plus	metal ABC transporter ATP-binding protein		884700	protein-coding		NP_219926.1	236	CT_416
+NC_000117.1	487167	488048		plus	metal ABC transporter permease		884697	protein-coding		NP_219927.1	293	CT_417
+NC_000117.1	487964	488971		minus	GTPase Obg		884698	protein-coding		NP_219928.1	335	CT_418
+NC_000117.1	489061	489312		minus	50S ribosomal protein L27	rl27	884696	protein-coding		NP_219929.1	83	CT_419
+NC_000117.1	489343	489666		minus	50S ribosomal protein L21	rl21	884693	protein-coding		NP_219930.1	107	CT_420
+NC_000117.1	489983	490055		minus	uncharacterized gene	tRNAPhe	884694	tRNA				CT_t16
+NC_000117.1	489983	490055		minus	tRNA-Phe	tRNAPhe	884694	other				CT_t16
+NC_000117.1	490216	490917		plus	hypothetical protein		884692	protein-coding		NP_219931.1	233	CT_421
+NC_000117.1	491102	491263		plus	hypothetical protein		884689	protein-coding		NP_219932.1	53	CT_421.1
+NC_000117.1	491280	491441		plus	hypothetical protein		884691	protein-coding		NP_219933.1	53	CT_421.2
+NC_000117.1	491454	491939		plus	endoribonuclease		884690	protein-coding		NP_219934.1	161	CT_422
+NC_000117.1	492072	493181		plus	hypothetical protein		884688	protein-coding		NP_219935.1	369	CT_423
+NC_000117.1	493370	493720		plus	anti-sigma F factor antagonist	rsbV_1	884686	protein-coding		NP_219936.1	116	CT_424
+NC_000117.1	493898	495763		plus	hypothetical protein		884685	protein-coding		NP_219937.1	621	CT_425
+NC_000117.1	495960	497069		plus	menaquinone biosynthesis protein		884687	protein-coding		NP_219938.1	369	CT_426
+NC_000117.1	497042	497863		plus	ubiquinone/menaquinone biosynthesis protein		884684	protein-coding		NP_219939.1	273	CT_427
+NC_000117.1	497799	498488		plus	demethylmenaquinone methyltransferase	ubiE	884682	protein-coding		NP_219940.1	229	CT_428
+NC_000117.1	498514	499503		minus	hypothetical protein		884683	protein-coding		NP_219941.1	329	CT_429
+NC_000117.1	499564	500391		minus	diaminopimelate epimerase	dapF	884681	protein-coding		NP_219942.1	275	CT_430
+NC_000117.1	500360	500938		minus	ATP-dependent Clp protease proteolytic subunit	clpP_1	884217	protein-coding		NP_219943.1	192	CT_431
+NC_000117.1	500950	502443		minus	serine hydroxymethyltransferase	glyA	884207	protein-coding		NP_219944.1	497	CT_432
+NC_000117.1	502807	503478		plus	hypothetical protein		884208	protein-coding		NP_219945.1	223	CT_433
+NC_000117.1	503581	504117		plus	2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase	ygbB	884209	protein-coding		NP_219946.1	178	CT_434
+NC_000117.1	504114	505166		minus	hypothetical protein	cysJ	884212	protein-coding		NP_219947.1	350	CT_435
+NC_000117.1	505183	505500		minus	30S ribosomal protein S10	rs10	884210	protein-coding		NP_219948.1	105	CT_436
+NC_000117.1	505508	507592		minus	elongation factor G	fusA	884230	protein-coding		NP_219949.1	694	CT_437
+NC_000117.1	507634	508107		minus	30S ribosomal protein S7	rs7	884211	protein-coding		NP_219950.1	157	CT_438
+NC_000117.1	508157	508546		minus	30S ribosomal protein S12	rs12	884680	protein-coding		NP_219951.2	129	CT_439
+NC_000117.1	508788	509126		plus	hypothetical protein		884213	protein-coding		NP_219952.1	112	CT_440
+NC_000117.1	509284	511218		plus	carboxy-terminal processing protease	tsp	884214	protein-coding		NP_219953.1	644	CT_441
+NC_000117.1	511340	511792		minus	hypothetical protein	crpA	884215	protein-coding		NP_219954.1	150	CT_442
+NC_000117.1	511971	513632		minus	outer membrane protein OmcB	omcB	884223	protein-coding		NP_219955.1	553	CT_443
+NC_000117.1	513779	514045		minus	lipoprotein OmcA	omcA	884216	protein-coding		NP_219956.1	88	CT_444
+NC_000117.1	514382	514606		plus	hypothetical protein		884220	protein-coding		NP_219957.1	74	CT_444.1
+NC_000117.1	514603	516123		minus	glutamate--tRNA ligase	gltX	884218	protein-coding		NP_219958.1	506	CT_445
+NC_000117.1	516395	516946		minus	hypothetical protein		884219	protein-coding		NP_219959.1	183	CT_446
+NC_000117.1	517351	519105		minus	single-stranded-DNA-specific exonuclease	recJ	884221	protein-coding		NP_219960.1	584	CT_447
+NC_000117.1	519223	523425		minus	preprotein translocase subunit SecD/SecF	secD/secF	884222	protein-coding		NP_219961.1	1400	CT_448
+NC_000117.1	523845	524177		minus	hypothetical protein		884229	protein-coding		NP_219962.1	110	CT_449
+NC_000117.1	524640	525401		plus	isoprenyl transferase		884224	protein-coding		NP_219963.1	253	CT_450
+NC_000117.1	525407	526324		plus	phosphatidate cytidylyltransferase	cdsA	884225	protein-coding		NP_219964.1	305	CT_451
+NC_000117.1	526321	526971		plus	cytidylate kinase	cmk	884226	protein-coding		NP_219965.1	216	CT_452
+NC_000117.1	526968	527618		plus	1-acyl-sn-glycerol-3-phosphate acyltransferase	plsC	884227	protein-coding		NP_219966.1	216	CT_453
+NC_000117.1	527633	529324		plus	arginine--tRNA ligase	argS	884196	protein-coding		NP_219967.1	563	CT_454
+NC_000117.1	529362	530696		minus	UDP-N-acetylglucosamine 1-carboxyvinyltransferase	murA	884228	protein-coding		NP_219968.1	444	CT_455
+NC_000117.1	530908	533925		plus	translocated actin-recruiting phosphoprotein		884231	protein-coding		NP_219969.1	1005	CT_456
+NC_000117.1	533977	534693		minus	transcriptional regulator		884236	protein-coding		NP_219970.1	238	CT_457
+NC_000117.1	534878	535381		minus	acetyltransferase	YhhY	884232	protein-coding		NP_219971.1	167	CT_458
+NC_000117.1	535378	536485		minus	peptide chain release factor 2	prfB	884235	protein-coding		NP_219972.1	369	CT_459
+NC_000117.1	536805	537065		plus	hypothetical protein		884233	protein-coding		NP_219973.1	86	CT_460
+NC_000117.1	537123	538112		plus	UDP-2,3-diacylglucosamine pyrophosphohydrolase		884234	protein-coding		NP_219974.1	329	CT_461
+NC_000117.1	538102	538761		plus	2-C-methyl-D-erythritol 4-phosphate cytidylyltransferase		884238	protein-coding		NP_219975.1	219	CT_462
+NC_000117.1	538770	539573		plus	tRNA pseudouridine synthase A	truA	884239	protein-coding		NP_219976.1	267	CT_463
+NC_000117.1	539525	540199		minus	HAD superfamily hydrolase		884248	protein-coding		NP_219977.1	224	CT_464
+NC_000117.1	540292	540933		plus	hypothetical protein		884237	protein-coding		NP_219978.1	213	CT_465
+NC_000117.1	541063	541145		plus	uncharacterized gene	tRNALeu_1	884240	tRNA				CT_t17
+NC_000117.1	541063	541145		plus	tRNA-Leu	tRNALeu_1	884240	other				CT_t17
+NC_000117.1	541227	541556		plus	hypothetical protein		884241	protein-coding		NP_219979.1	109	CT_466
+NC_000117.1	541534	542592		plus	two component system sensor histidine kinase	atoS	884242	protein-coding		NP_219980.1	352	CT_467
+NC_000117.1	542635	543795		plus	two component system response regulator	atoC	884243	protein-coding		NP_219981.1	386	CT_468
+NC_000117.1	543862	543935		plus	uncharacterized gene	tRNAArg_3	884201	tRNA				CT_t18
+NC_000117.1	543862	543935		plus	tRNA-Arg	tRNAArg_3	884201	other				CT_t18
+NC_000117.1	544022	544558		plus	hypothetical protein		884244	protein-coding		NP_219982.1	178	CT_469
+NC_000117.1	544528	545259		plus	DNA repair protein RecO		884245	protein-coding		NP_219983.1	243	CT_470
+NC_000117.1	545256	545858		minus	hypothetical protein		884246	protein-coding		NP_219984.1	200	CT_471
+NC_000117.1	545989	546070		minus	uncharacterized gene	tRNALeu_2	884247	tRNA				CT_t19
+NC_000117.1	545989	546070		minus	tRNA-Leu	tRNALeu_2	884247	other				CT_t19
+NC_000117.1	546322	547116		plus	hypothetical protein		884249	protein-coding		NP_219985.1	264	CT_472
+NC_000117.1	547122	547436		plus	hypothetical protein		884203	protein-coding		NP_219986.1	104	CT_473
+NC_000117.1	547375	548304		minus	hypothetical protein		884250	protein-coding		NP_219987.1	309	CT_474
+NC_000117.1	548392	550764		plus	phenylalanine--tRNA ligase subunit beta	pheT	884251	protein-coding		NP_219988.1	790	CT_475
+NC_000117.1	550761	551726		plus	hypothetical protein		884252	protein-coding		NP_219989.1	321	CT_476
+NC_000117.1	551745	552257		plus	DNA methyltransferase	ada	884253	protein-coding		NP_219990.1	170	CT_477
+NC_000117.1	552254	553990		minus	oligopeptide ABC transporter permease	oppC_2	884254	protein-coding		NP_219991.1	578	CT_478
+NC_000117.1	553992	555470		minus	oligopeptide ABC transporter permease	oppB_2	884255	protein-coding		NP_219992.1	492	CT_479
+NC_000117.1	555452	557542		minus	oligopeptide ABC transporter substrate-binding lipoprotein	oppA_4	884260	protein-coding		NP_219993.1	696	CT_480
+NC_000117.1	557793	557957		minus	hypothetical protein		884256	protein-coding		NP_219994.1	54	CT_480.1
+NC_000117.1	558150	558881		minus	hypothetical protein		884265	protein-coding		NP_219995.1	243	CT_481
+NC_000117.1	559043	559696		minus	hypothetical protein		884257	protein-coding		NP_219996.1	217	CT_482
+NC_000117.1	560164	560529		plus	hypothetical protein		884204	protein-coding		NP_219997.1	121	CT_483
+NC_000117.1	560508	561506		minus	hypothetical protein		884258	protein-coding		NP_219998.1	332	CT_484
+NC_000117.1	561663	562607		minus	ferrochelatase	hemZ	884259	protein-coding		NP_219999.1	314	CT_485
+NC_000117.1	562629	563414		minus	ABC transporter substrate-binding protein	fliY	884262	protein-coding		NP_220000.1	261	CT_486
+NC_000117.1	563460	564032		minus	methyltransferase	yhhF	884206	protein-coding		NP_220001.1	190	CT_487
+NC_000117.1	564029	564763		minus	phosphohydrolase		884261	protein-coding		NP_220002.1	244	CT_488
+NC_000117.1	564852	566177		minus	glucose-1-phosphate adenyltransferase	glgC	884264	protein-coding		NP_220003.1	441	CT_489
+NC_000117.1	566370	566621		plus	hypothetical protein		884263	protein-coding		NP_220004.1	83	CT_490
+NC_000117.1	566631	568025		minus	transcription termination factor	rho	884272	protein-coding		NP_220005.1	464	CT_491
+NC_000117.1	568022	568630		minus	dephospho-CoA kinase	yacE	884266	protein-coding		NP_220006.1	202	CT_492
+NC_000117.1	568624	571224		minus	DNA polymerase I	polA	884267	protein-coding		NP_220007.1	866	CT_493
+NC_000117.1	571241	572236		minus	protease	sohB	884268	protein-coding		NP_220008.1	331	CT_494
+NC_000117.1	572375	573997		minus	ADP, ATP carrier protein		884269	protein-coding		NP_220009.1	540	CT_495
+NC_000117.1	574209	574715		minus	hypothetical protein		884270	protein-coding		NP_220010.1	168	CT_496
+NC_000117.1	574902	574985		minus	uncharacterized gene	tRNASer_2	884277	tRNA				CT_t20
+NC_000117.1	574902	574985		minus	tRNA-Ser	tRNASer_2	884277	other				CT_t20
+NC_000117.1	575111	575260		minus	hypothetical protein		884274	protein-coding		NP_220011.1	49	CT_496.1
+NC_000117.1	575229	576647		plus	replicative DNA helicase	dnaB	884289	protein-coding		NP_220012.1	472	CT_497
+NC_000117.1	576941	578773		plus	tRNA uridine 5-carboxymethylaminomethyl modification protein GidA		884271	protein-coding		NP_220013.1	610	CT_498
+NC_000117.1	578763	579464		plus	lipoate-protein ligase A	lplA_2	884273	protein-coding		NP_220014.1	233	CT_499
+NC_000117.1	579521	579946		minus	nucleoside diphosphate kinase	ndk	884275	protein-coding		NP_220015.1	141	CT_500
+NC_000117.1	580106	580708		minus	Holliday junction DNA helicase RuvA	ruvA	884276	protein-coding		NP_220016.1	200	CT_501
+NC_000117.1	580728	581240		minus	crossover junction endodeoxyribonuclease RuvC	ruvC	884279	protein-coding		NP_220017.1	170	CT_502
+NC_000117.1	581348	581902		minus	hypothetical protein		884278	protein-coding		NP_220018.1	184	CT_503
+NC_000117.1	581987	582069		minus	uncharacterized gene	tRNALeu_3	884281	tRNA				CT_t21
+NC_000117.1	581987	582069		minus	tRNA-Leu	tRNALeu_3	884281	other				CT_t21
+NC_000117.1	582189	583055		minus	hypothetical protein		884290	protein-coding		NP_220019.1	288	CT_504
+NC_000117.1	583066	584070		minus	glyceraldehyde-3-phosphate dehydrogenase	gapA	884280	protein-coding		NP_220020.1	334	CT_505
+NC_000117.1	584114	584539		minus	50S ribosomal protein L17	rl17	884282	protein-coding		NP_220021.1	141	CT_506
+NC_000117.1	584548	585681		minus	DNA-directed RNA polymerase subunit alpha	rpoA	884283	protein-coding		NP_220022.1	377	CT_507
+NC_000117.1	585702	586100		minus	30S ribosomal protein S11	rs11	884284	protein-coding		NP_220023.1	132	CT_508
+NC_000117.1	586122	586490		minus	30S ribosomal protein S13	rs13	884285	protein-coding		NP_220024.1	122	CT_509
+NC_000117.1	586546	587919		minus	preprotein translocase subunit SecY	secY	884286	protein-coding		NP_220025.1	457	CT_510
+NC_000117.1	587942	588376		minus	50S ribosomal protein L15	rl15	884287	protein-coding		NP_220026.1	144	CT_511
+NC_000117.1	588369	588866		minus	30S ribosomal protein S5	rs5	884297	protein-coding		NP_220027.1	165	CT_512
+NC_000117.1	588881	589252		minus	50S ribosomal protein L18	rl18	884288	protein-coding		NP_220028.1	123	CT_513
+NC_000117.1	589274	589825		minus	50S ribosomal protein L6	rl6	884293	protein-coding		NP_220029.1	183	CT_514
+NC_000117.1	589853	590254		minus	30S ribosomal protein S8	rs8	884291	protein-coding		NP_220030.1	133	CT_515
+NC_000117.1	590272	590814		minus	50S ribosomal protein L5	rl5	884292	protein-coding		NP_220031.1	180	CT_516
+NC_000117.1	590816	591151		minus	50S ribosomal protein L24	rl24	884294	protein-coding		NP_220032.1	111	CT_517
+NC_000117.1	591164	591532		minus	50S ribosomal protein L14	rl14	884295	protein-coding		NP_220033.1	122	CT_518
+NC_000117.1	591549	591800		minus	30S ribosomal protein S17	rs17	884306	protein-coding		NP_220034.1	83	CT_519
+NC_000117.1	591793	592011		minus	50S ribosomal protein L29	rl29	884296	protein-coding		NP_220035.1	72	CT_520
+NC_000117.1	592013	592429		minus	50S ribosomal protein L16	rl16	884298	protein-coding		NP_220036.1	138	CT_521
+NC_000117.1	592462	593136		minus	30S ribosomal protein S3	rs3	884299	protein-coding		NP_220037.1	224	CT_522
+NC_000117.1	593146	593481		minus	50S ribosomal protein L22	rl22	884300	protein-coding		NP_220038.1	111	CT_523
+NC_000117.1	593500	593766		minus	30S ribosomal protein S19	rs19	884301	protein-coding		NP_220039.1	88	CT_524
+NC_000117.1	593772	594626		minus	50S ribosomal protein L2	rl2	884305	protein-coding		NP_220040.1	284	CT_525
+NC_000117.1	594650	594985		minus	50S ribosomal protein L23	rl23	884302	protein-coding		NP_220041.1	111	CT_526
+NC_000117.1	595001	595669		minus	50S ribosomal protein L4	rl4	884315	protein-coding		NP_220042.1	222	CT_527
+NC_000117.1	595678	596343		minus	50S ribosomal protein L3	rl3	884303	protein-coding		NP_220043.1	221	CT_528
+NC_000117.1	596778	597674		minus	hypothetical protein		884304	protein-coding		NP_220044.1	298	CT_529
+NC_000117.1	597840	598790		minus	methionyl-tRNA formyltransferase	fmt	884314	protein-coding		NP_220045.1	316	CT_530
+NC_000117.1	598780	599622		minus	acyl-[acyl-carrier-protein]--UDP-N-acetylglucosamine O-acyltransferase	lpxA	884307	protein-coding		NP_220046.1	280	CT_531
+NC_000117.1	599634	600095		minus	3-hydroxyacyl-ACP dehydratase	fabZ	884308	protein-coding		NP_220047.1	153	CT_532
+NC_000117.1	600092	600952		minus	UDP-3-O-[3-hydroxymyristoyl] N-acetylglucosamine deacetylase	lpxC	884309	protein-coding		NP_220048.1	286	CT_533
+NC_000117.1	601053	602681		minus	apolipoprotein N-acyltransferase	cutE	884310	protein-coding		NP_220049.1	542	CT_534
+NC_000117.1	602745	603227		minus	acyl-CoA thioesterase	yciA	884311	protein-coding		NP_220050.1	160	CT_535
+NC_000117.1	603363	604115		minus	DNA polymerase III subunit epsilon	dnaQ_2	884312	protein-coding		NP_220051.1	250	CT_536
+NC_000117.1	604119	604592		minus	ATPase/kinase	yjeE	884313	protein-coding		NP_220052.1	157	CT_537
+NC_000117.1	604571	605287		minus	hypothetical protein		884316	protein-coding		NP_220053.1	238	CT_538
+NC_000117.1	605752	605835		plus	uncharacterized gene	tRNALeu_5	884318	tRNA				CT_t22
+NC_000117.1	605752	605835		plus	tRNA-Leu	tRNALeu_5	884318	other				CT_t22
+NC_000117.1	606009	606317		plus	thioredoxin	trxA	884317	protein-coding		NP_220054.1	102	CT_539
+NC_000117.1	606367	606822		minus	tRNA (cytidine(34)-2'-O)-methyltransferase	yibK	884326	protein-coding		NP_220055.1	151	CT_540
+NC_000117.1	606838	607569		minus	peptidyl-prolyl cis-trans isomerase	mip	884327	protein-coding		NP_220056.1	243	CT_541
+NC_000117.1	607707	609455		minus	aspartate--tRNA(Asp/Asn) ligase	aspS	884319	protein-coding		NP_220057.1	582	CT_542
+NC_000117.1	609436	610722		minus	histidine--tRNA ligase	hisS	884320	protein-coding		NP_220058.1	428	CT_543
+NC_000117.1	611158	612528		plus	hexose phosphate transport protein	uhpC	884321	protein-coding		NP_220059.1	456	CT_544
+NC_000117.1	612542	616255		plus	DNA polymerase III subunit alpha	dnaE	884322	protein-coding		NP_220060.1	1237	CT_545
+NC_000117.1	616484	617353		minus	hypothetical protein		884323	protein-coding		NP_220061.1	289	CT_546
+NC_000117.1	617505	618461		plus	hypothetical protein		884324	protein-coding		NP_220062.1	318	CT_547
+NC_000117.1	618486	619070		plus	hypothetical protein		884335	protein-coding		NP_220063.1	194	CT_548
+NC_000117.1	619057	619497		plus	serine/threonine protein kinase RsbW	rsbW	884329	protein-coding		NP_220064.1	146	CT_549
+NC_000117.1	619504	619929		minus	hypothetical protein		884325	protein-coding		NP_220065.1	141	CT_550
+NC_000117.1	620037	621068		plus	D-alanyl-D-alanine carboxypeptidase	dacC	18155427	protein-coding		NP_220066.1	343	CT_551
+NC_000117.1	621483	621890		plus	hypothetical protein		884328	protein-coding		NP_220067.1	135	CT_552
+NC_000117.1	622015	622992		plus	methyltransferase	fmu	884330	protein-coding		NP_220068.1	325	CT_553
+NC_000117.1	623142	624377		plus	branched-chain amino acid transport system carrier protein	brnQ	884331	protein-coding		NP_220069.1	411	CT_554
+NC_000117.1	624552	628151		plus	helicase		884332	protein-coding		NP_220070.1	1199	CT_555
+NC_000117.1	628329	628808		plus	hypothetical protein		884333	protein-coding		NP_220071.1	159	CT_556
+NC_000117.1	629017	630414		plus	2-oxoglutarate dehydrogenase complex dihydrolipoyl dehydrogenase	lpdA	884341	protein-coding		NP_220072.1	465	CT_557
+NC_000117.1	630411	631346		plus	lipoyl synthase	lipA	884334	protein-coding		NP_220073.1	311	CT_558
+NC_000117.1	631450	632430		plus	type III secretion system protein	yscJ	884336	protein-coding		NP_220074.1	326	CT_559
+NC_000117.1	632431	633267		plus	hypothetical protein		884337	protein-coding		NP_220075.1	278	CT_560
+NC_000117.1	633543	634214		plus	type III secretion system protein	yscL	884342	protein-coding		NP_220076.1	223	CT_561
+NC_000117.1	634227	635147		plus	type III secretion system protein	yscR	884338	protein-coding		NP_220077.1	306	CT_562
+NC_000117.1	635159	635443		plus	type III secretion system protein	yscS	884350	protein-coding		NP_220078.1	94	CT_563
+NC_000117.1	635450	636319		plus	type III secretion system protein	yscT	884347	protein-coding		NP_220079.1	289	CT_564
+NC_000117.1	636397	636840		minus	hypothetical protein		884340	protein-coding		NP_220080.1	147	CT_565
+NC_000117.1	636931	637923		minus	hypothetical protein		884343	protein-coding		NP_220081.1	330	CT_566
+NC_000117.1	637929	638453		minus	hypothetical protein		884344	protein-coding		NP_220082.1	174	CT_567
+NC_000117.1	638438	638893		minus	hypothetical protein		884345	protein-coding		NP_220083.1	151	CT_568
+NC_000117.1	638877	639206		minus	type II secretion system protein G		884357	protein-coding		NP_220084.1	109	CT_569
+NC_000117.1	639268	640443		minus	type II secretion system protein F	gspF	884346	protein-coding		NP_220085.1	391	CT_570
+NC_000117.1	640455	641960		minus	type II secretion system protein E	gspE	884348	protein-coding		NP_220086.1	501	CT_571
+NC_000117.1	641944	644226		minus	type II secretion system protein D	gspD	884363	protein-coding		NP_220087.1	760	CT_572
+NC_000117.1	644227	645456		minus	hypothetical protein		884349	protein-coding		NP_220088.1	409	CT_573
+NC_000117.1	645584	646654		minus	aminopeptidase	pepP	884351	protein-coding		NP_220089.1	356	CT_574
+NC_000117.1	646665	648395		minus	DNA mismatch repair protein	mutL	884352	protein-coding		NP_220090.1	576	CT_575
+NC_000117.1	648690	649388		plus	type III secretion low calcium response chaperone	lcrH_1	884353	protein-coding		NP_220091.1	232	CT_576
+NC_000117.1	649405	649764		plus	hypothetical protein		884354	protein-coding		NP_220092.1	119	CT_577
+NC_000117.1	649801	651264		plus	type III secretion system translocator CopB		884355	protein-coding		NP_220093.1	487	CT_578
+NC_000117.1	651295	652614		plus	type III secretion system translocator CopD		884356	protein-coding		NP_220094.1	439	CT_579
+NC_000117.1	652692	653675		minus	S-adenosylmethionine/S-adenosylhomocysteine transporter		884358	protein-coding		NP_220095.1	327	CT_580
+NC_000117.1	653980	655887		plus	threonine--tRNA ligase	thrS	884359	protein-coding		NP_220096.1	635	CT_581
+NC_000117.1	656338	657105		plus	ParA family chromosome partitioning ATPase	minD	884360	protein-coding		NP_220097.1	255	CT_582
+NC_000117.1	657110	657901		plus	virulence protein GP6-D	gp6D	884361	protein-coding		NP_220098.1	263	CT_583
+NC_000117.1	657867	658418		plus	hypothetical protein		884367	protein-coding		NP_220099.1	183	CT_584
+NC_000117.1	658617	659657		plus	tryptophan--tRNA ligase	trpS	884362	protein-coding		NP_220100.1	346	CT_585
+NC_000117.1	659682	661688		plus	excinuclease ABC subunit B	uvrB	884370	protein-coding		NP_220101.1	668	CT_586
+NC_000117.1	661850	663124		plus	enolase	eno	884364	protein-coding		NP_220102.1	424	CT_587
+NC_000117.1	663251	665203		plus	serine phosphatase RsbU	rbsU	884365	protein-coding		NP_220103.1	650	CT_588
+NC_000117.1	665328	667136		plus	hypothetical protein		884366	protein-coding		NP_220104.1	602	CT_589
+NC_000117.1	667151	670015		minus	hypothetical protein		884376	protein-coding		NP_220105.1	954	CT_590
+NC_000117.1	670112	670810		minus	succinate dehydrogenase iron sulfur subunit	sdhB	884368	protein-coding		NP_220106.1	232	CT_591
+NC_000117.1	671047	672768		minus	succinate dehydrogenase flavoprotein subunit	sdhA	18155428	protein-coding		NP_220107.1	573	CT_592
+NC_000117.1	672765	673334		minus	uncharacterized gene		884369	pseudogene				CT_593
+NC_000117.1	673773	674564		minus	hydrolase	ycfH	884372	protein-coding		NP_220110.1	263	CT_594
+NC_000117.1	674649	676727		minus	thiol:disulfide Interchange protein	dsbD	884373	protein-coding		NP_220111.1	692	CT_595
+NC_000117.1	676880	677578		plus	biopolymer transport protein	exbB	884385	protein-coding		NP_220112.1	232	CT_596
+NC_000117.1	677575	677982		plus	biopolymer transport protein	exbD	884374	protein-coding		NP_220113.1	135	CT_597
+NC_000117.1	677985	678692		plus	hypothetical protein		884381	protein-coding		NP_220114.1	235	CT_598
+NC_000117.1	678692	679987		plus	translocation protein TolB	tolB	884377	protein-coding		NP_220115.1	431	CT_599
+NC_000117.1	679984	680550		plus	peptidoglycan-associated lipoprotein	pal	884378	protein-coding		NP_220116.1	188	CT_600
+NC_000117.1	680540	681142		plus	hypothetical protein	papQ	884379	protein-coding		NP_220117.1	200	CT_601
+NC_000117.1	681213	681605		plus	hypothetical protein		884383	protein-coding		NP_220118.1	130	CT_602
+NC_000117.1	681602	682189		minus	thioredoxin peroxidase	ahpC	884380	protein-coding		NP_220119.1	195	CT_603
+NC_000117.1	682214	682286		minus	uncharacterized gene	tRNAArg_1	884382	tRNA				CT_t23
+NC_000117.1	682214	682286		minus	tRNA-Arg	tRNAArg_1	884382	other				CT_t23
+NC_000117.1	682398	683999		minus	chaperonin GroEL	groEL_2	884384	protein-coding		NP_220120.1	533	CT_604
+NC_000117.1	684076	685305		minus	hypothetical protein		884391	protein-coding		NP_220121.1	409	CT_605
+NC_000117.1	685503	686132		plus	non-canonical purine NTP pyrophosphatase		884386	protein-coding		NP_220122.1	209	CT_606
+NC_000117.1	686106	686345		minus	hypothetical protein		884387	protein-coding		NP_220123.1	79	CT_606.1
+NC_000117.1	686330	687019		minus	uracil DNA glycosylase	ung	884388	protein-coding		NP_220124.1	229	CT_607
+NC_000117.1	687100	689004		plus	ATP-dependent DNA helicase	uvrD	884389	protein-coding		NP_220125.1	634	CT_608
+NC_000117.1	689008	690318		plus	RNA polymerase sigma-54 factor	rpoN	884398	protein-coding		NP_220126.1	436	CT_609
+NC_000117.1	690426	691121		minus	virulence protein CADD		884390	protein-coding		NP_220127.1	231	CT_610
+NC_000117.1	691118	691849		minus	gamma-glutamyl ligase		884392	protein-coding		NP_220128.1	243	CT_611
+NC_000117.1	691821	692300		minus	dihydrofolate reductase	folA	884394	protein-coding		NP_220129.1	159	CT_612
+NC_000117.1	692297	693649		minus	bifunctional 2-amino-4-hydroxy-6-hydroxymethyldihydropteridine pyrophosphokinase/dihydropteroate synthase	folP	884393	protein-coding		NP_220130.1	450	CT_613
+NC_000117.1	693646	694020		minus	dihydroneopterin aldolase	folX	884397	protein-coding		NP_220131.1	124	CT_614
+NC_000117.1	694039	695754		minus	RNA polymerase sigma factor	sigA	884395	protein-coding		NP_220132.1	571	CT_615
+NC_000117.1	695903	697192		minus	hypothetical protein		884396	protein-coding		NP_220133.1	429	CT_616
+NC_000117.1	697641	697937		plus	30S ribosomal protein S20	rs20	884412	protein-coding		NP_220134.1	98	CT_617
+NC_000117.1	698170	698970		plus	hypothetical protein		884410	protein-coding		NP_220135.1	266	CT_618
+NC_000117.1	699026	701659		minus	hypothetical protein		884399	protein-coding		NP_220136.1	877	CT_619
+NC_000117.1	701774	704290		plus	hypothetical protein		884400	protein-coding		NP_220137.1	838	CT_620
+NC_000117.1	704354	706852		minus	hypothetical protein		884401	protein-coding		NP_220138.1	832	CT_621
+NC_000117.1	707080	709023		minus	hypothetical protein		884402	protein-coding		NP_220139.1	647	CT_622
+NC_000117.1	709131	710429		minus	hypothetical protein		884405	protein-coding		NP_220140.1	432	CT_623
+NC_000117.1	710672	712282		minus	lipid II flippase MurJ		884403	protein-coding		NP_220141.1	536	CT_624
+NC_000117.1	712455	713321		plus	endonuclease IV	nfo	884404	protein-coding		NP_220142.1	288	CT_625
+NC_000117.1	713418	714047		minus	30S ribosomal protein S4	rs4	884406	protein-coding		NP_220143.1	209	CT_626
+NC_000117.1	714431	715414		plus	hypothetical protein	yceA	884407	protein-coding		NP_220144.1	327	CT_627
+NC_000117.1	715486	716361		minus	farnesyl diphosphate synthase	ispA	884408	protein-coding		NP_220145.1	291	CT_628
+NC_000117.1	717087	717770		minus	transcriptional regulator	cpxR	884417	protein-coding		NP_220147.1	227	CT_630
+NC_000117.1	717949	718203		plus	hypothetical protein		884411	protein-coding		NP_220148.1	84	CT_631
+NC_000117.1	718303	718376		plus	uncharacterized gene	tRNAPro_2	884413	tRNA				CT_t24
+NC_000117.1	718303	718376		plus	tRNA-Pro	tRNAPro_2	884413	other				CT_t24
+NC_000117.1	718384	719973		minus	hypothetical protein		884421	protein-coding		NP_220149.1	529	CT_632
+NC_000117.1	720271	721287		plus	delta-aminolevulinic acid dehydratase	hemB	884414	protein-coding		NP_220150.1	338	CT_633
+NC_000117.1	721313	722710		minus	Na(+)-translocating NADH-quinone reductase subunit A		884415	protein-coding		NP_220151.1	465	CT_634
+NC_000117.1	722732	723166		minus	hypothetical protein		884441	protein-coding		NP_220152.1	144	CT_635
+NC_000117.1	723280	725427		plus	transcription elongation factor GreA	greA	884416	protein-coding		NP_220153.1	715	CT_636
+NC_000117.1	725436	725508		minus	uncharacterized gene	tRNAAla_2	884418	tRNA				CT_t25
+NC_000117.1	725436	725508		minus	tRNA-Ala	tRNAAla_2	884418	other				CT_t25
+NC_000117.1	725615	726817		plus	aromatic amino acid aminotransferase	tyrB	884419	protein-coding		NP_220154.1	400	CT_637
+NC_000117.1	726792	727559		plus	uncharacterized gene		18155429	pseudogene				CT_638
+NC_000117.1	727817	730897		minus	exodeoxyribonuclease V subunit beta	recB	884422	protein-coding		NP_220157.1	1026	CT_639
+NC_000117.1	730899	733913		minus	exodeoxyribonuclease V subunit gamma	recC	884423	protein-coding		NP_220158.1	1004	CT_640
+NC_000117.1	733926	735605		plus	membrane efflux protein	ygeD	884424	protein-coding		NP_220159.1	559	CT_641
+NC_000117.1	735625	736440		minus	hypothetical protein		884425	protein-coding		NP_220160.1	271	CT_642
+NC_000117.1	737335	739908		plus	DNA topoisomerase I	topA	884426	protein-coding		NP_220161.1	857	CT_643
+NC_000117.1	739938	740942		minus	tRNA-dihydrouridine synthase	yohI	884442	protein-coding		NP_220162.1	334	CT_644
+NC_000117.1	740921	741217		minus	hypothetical protein		884427	protein-coding		NP_220163.1	98	CT_645
+NC_000117.1	741318	742697		plus	hypothetical protein		884429	protein-coding		NP_220164.1	459	CT_646
+NC_000117.1	742697	743275		plus	hypothetical protein		884430	protein-coding		NP_220165.1	192	CT_647
+NC_000117.1	743266	744540		plus	hypothetical protein		884431	protein-coding		NP_220166.1	424	CT_648
+NC_000117.1	744543	745079		plus	5-formyltetrahydrofolate cyclo-ligase	ygfA	884432	protein-coding		NP_220167.1	178	CT_649
+NC_000117.1	745340	746398		plus	recombinase RecA	recA	884433	protein-coding		NP_220168.1	352	CT_650
+NC_000117.1	746684	748510		plus	hypothetical protein		884434	protein-coding		NP_220169.1	608	CT_651
+NC_000117.1	748507	749997		plus	exodeoxyribonuclease V subunit alpha	recD_2	884435	protein-coding		NP_220170.1	496	CT_652
+NC_000117.1	750063	750242		plus	hypothetical protein		884436	protein-coding		NP_220171.1	59	CT_652.1
+NC_000117.1	750343	751062		minus	ABC transporter ATP-binding protein	yhbG	884437	protein-coding		NP_220172.1	239	CT_653
+NC_000117.1	751071	751559		minus	hypothetical protein		884438	protein-coding		NP_220173.1	162	CT_654
+NC_000117.1	751556	752365		minus	2-dehydro-3-deoxyphosphooctonate aldolase	kdsA	884439	protein-coding		NP_220174.1	269	CT_655
+NC_000117.1	752671	752743		plus	uncharacterized gene	tRNAArg_2	884440	tRNA				CT_t26
+NC_000117.1	752671	752743		plus	tRNA-Arg	tRNAArg_2	884440	other				CT_t26
+NC_000117.1	752850	753143		plus	hypothetical protein		884454	protein-coding		NP_220175.1	97	CT_656
+NC_000117.1	753143	753460		plus	hypothetical protein		884443	protein-coding		NP_220176.1	105	CT_657
+NC_000117.1	753544	754548		plus	RNA pseudouridine synthase	sfhB	884444	protein-coding		NP_220177.1	334	CT_658
+NC_000117.1	754647	754883		plus	hypothetical protein		884446	protein-coding		NP_220178.1	78	CT_659
+NC_000117.1	755022	756494		minus	DNA topoisomerase IV subunit A		884445	protein-coding		NP_220179.1	490	CT_660
+NC_000117.1	756509	758326		minus	DNA topoisomerase IV subunit B		884449	protein-coding		NP_220180.1	605	CT_661
+NC_000117.1	758706	759713		plus	glutamyl-tRNA reductase	hemA	884447	protein-coding		NP_220181.1	335	CT_662
+NC_000117.1	760425	760826		plus	type III secretion system chaperone		884448	protein-coding		NP_220182.1	133	CT_663
+NC_000117.1	760830	763319		plus	hypothetical protein		884462	protein-coding		NP_220183.1	829	CT_664
+NC_000117.1	763363	763614		plus	hypothetical protein		884450	protein-coding		NP_220184.1	83	CT_665
+NC_000117.1	763641	763892		plus	hypothetical protein		884451	protein-coding		NP_220185.1	83	CT_666
+NC_000117.1	763911	764360		plus	hypothetical protein		884452	protein-coding		NP_220186.1	149	CT_667
+NC_000117.1	764380	765051		plus	hypothetical protein		884460	protein-coding		NP_220187.1	223	CT_668
+NC_000117.1	765053	766381		plus	ATP synthase	yscN	884453	protein-coding		NP_220188.1	442	CT_669
+NC_000117.1	766404	766910		plus	hypothetical protein		884455	protein-coding		NP_220189.1	168	CT_670
+NC_000117.1	766914	767765		plus	hypothetical protein		884456	protein-coding		NP_220190.1	283	CT_671
+NC_000117.1	767775	768896		plus	type III secretion system protein		884457	protein-coding		NP_220191.1	373	CT_672
+NC_000117.1	769031	770503		plus	serine/threonine protein kinase	pkn5	884459	protein-coding		NP_220192.1	490	CT_673
+NC_000117.1	770500	773266		plus	type II secretion system protein	yscC	884465	protein-coding		NP_220193.1	921	CT_674
+NC_000117.1	773399	773471		plus	uncharacterized gene	tRNAThr_3	884458	tRNA				CT_t27
+NC_000117.1	773399	773471		plus	tRNA-Thr	tRNAThr_3	884458	other				CT_t27
+NC_000117.1	773578	774648		minus	protein-arginine kinase	karG	884461	protein-coding		NP_220194.1	356	CT_675
+NC_000117.1	774638	775159		minus	protein-arginine kinase activator protein		884463	protein-coding		NP_220195.1	173	CT_676
+NC_000117.1	775264	775336		minus	uncharacterized gene	tRNALys	884464	tRNA				CT_t28
+NC_000117.1	775264	775336		minus	tRNA-Lys	tRNALys	884464	other				CT_t28
+NC_000117.1	775353	775427		minus	uncharacterized gene	tRNAGlu	884468	tRNA				CT_t29
+NC_000117.1	775353	775427		minus	tRNA-Glu	tRNAGlu	884468	other				CT_t29
+NC_000117.1	775530	776069		minus	ribosome recycling factor	rrf	884466	protein-coding		NP_220196.1	179	CT_677
+NC_000117.1	776066	776803		minus	uridylate kinase	pyrH	884467	protein-coding		NP_220197.1	245	CT_678
+NC_000117.1	776816	777664		minus	elongation factor TS	tsf	884475	protein-coding		NP_220198.1	282	CT_679
+NC_000117.1	777661	778509		minus	30S ribosomal protein S2	rs2	884469	protein-coding		NP_220199.1	282	CT_680
+NC_000117.1	778591	778662		minus	uncharacterized gene	tRNAGly_2	884470	tRNA				CT_t30
+NC_000117.1	778591	778662		minus	tRNA-Gly	tRNAGly_2	884470	other				CT_t30
+NC_000117.1	778879	780060		minus	major outer membrane porin	ompA	884473	protein-coding		NP_220200.1	393	CT_681
+NC_000117.1	780668	783910		plus	penicillin-binding protein	pbpB	884472	protein-coding		NP_220201.1	1080	CT_682
+NC_000117.1	783974	784981		plus	hypothetical protein		884471	protein-coding		NP_220202.1	335	CT_683
+NC_000117.1	785324	786775		plus	cysteine desulfurase activator complex subunit SufB		884479	protein-coding		NP_220203.1	483	CT_684
+NC_000117.1	786778	787545		plus	ABC transporter ATP-binding protein		884474	protein-coding		NP_220204.1	255	CT_685
+NC_000117.1	787549	788736		plus	FeS assembly protein SufD		884476	protein-coding		NP_220205.1	395	CT_686
+NC_000117.1	788729	789934		plus	cysteine desulfurase		884483	protein-coding		NP_220206.1	401	CT_687
+NC_000117.1	790070	790915		plus	chromosome partitioning protein ParB	parB	884477	protein-coding		NP_220207.1	281	CT_688
+NC_000117.1	790907	791737		minus	ABC transporter ATP-binding protein	dppF	884490	protein-coding		NP_220208.1	276	CT_689
+NC_000117.1	791730	792695		minus	oligopeptide ABC transporter ATP-binding protein	dppD	884478	protein-coding		NP_220209.1	321	CT_690
+NC_000117.1	792856	793530		plus	hypothetical protein		884480	protein-coding		NP_220210.1	224	CT_691
+NC_000117.1	793533	794813		plus	phosphate permease		884481	protein-coding		NP_220211.1	426	CT_692
+NC_000117.1	794941	796152		plus	phosphoglycerate kinase	pgk	884491	protein-coding		NP_220212.1	403	CT_693
+NC_000117.1	796412	797383		plus	hypothetical protein		884482	protein-coding		NP_220213.1	323	CT_694
+NC_000117.1	797434	798630		plus	hypothetical protein		884484	protein-coding		NP_220214.1	398	CT_695
+NC_000117.1	798716	799894		plus	hypothetical protein		884485	protein-coding		NP_220215.1	392	CT_696
+NC_000117.1	799891	800526		minus	endonuclease III	nth	884486	protein-coding		NP_220216.1	211	CT_697
+NC_000117.1	800533	801867		minus	tRNA modification GTPase		884487	protein-coding		NP_220217.1	444	CT_698
+NC_000117.1	802134	803039		plus	phosphatidylserine decarboxylase	psdD	884488	protein-coding		NP_220218.1	301	CT_699
+NC_000117.1	803104	804429		plus	hypothetical protein		884492	protein-coding		NP_220219.1	441	CT_700
+NC_000117.1	804652	807597		plus	preprotein translocase subunit SecA	secA_2	884489	protein-coding		NP_220220.1	969	CT_701
+NC_000117.1	807691	808218		minus	hypothetical protein		884494	protein-coding		NP_220221.1	175	CT_702
+NC_000117.1	808295	809767		minus	GTPase Der		884507	protein-coding		NP_220222.1	490	CT_703
+NC_000117.1	809883	811115		minus	poly A polymerase	pcnB_2	884493	protein-coding		NP_220223.1	410	CT_704
+NC_000117.1	811130	812389		minus	ATP-dependent Clp protease ATP-binding subunit ClpX	clpX	884500	protein-coding		NP_220224.1	419	CT_705
+NC_000117.1	812399	813010		minus	ATP-dependent Clp protease proteolytic subunit	clpP_2	884495	protein-coding		NP_220225.1	203	CT_706
+NC_000117.1	813177	814505		minus	trigger factor	tig	884496	protein-coding		NP_220226.1	442	CT_707
+NC_000117.1	814540	814611		minus	uncharacterized gene	tRNAGly_1	884497	tRNA				CT_t31
+NC_000117.1	814540	814611		minus	tRNA-Gly	tRNAGly_1	884497	other				CT_t31
+NC_000117.1	814862	818353		plus	helicase		884498	protein-coding		NP_220227.1	1163	CT_708
+NC_000117.1	818358	819458		plus	rod shape-determining protein MreB	mreB	884499	protein-coding		NP_220228.1	366	CT_709
+NC_000117.1	819455	821254		plus	phosphoenolpyruvate carboxykinase	pckA	884505	protein-coding		NP_220229.1	599	CT_710
+NC_000117.1	821366	823669		plus	hypothetical protein		884501	protein-coding		NP_220230.1	767	CT_711
+NC_000117.1	823696	824868		plus	type III secretion system effector protein		884502	protein-coding		NP_220231.1	390	CT_712
+NC_000117.1	824894	825916		minus	outer membrane protein B	porB	884503	protein-coding		NP_220232.1	340	CT_713
+NC_000117.1	826049	827053		minus	glycerol-3-phosphate dehydrogenase	gpdA	884504	protein-coding		NP_220233.1	334	CT_714
+NC_000117.1	827050	828417		minus	UDP-N-acetylglucosamine pyrophosphorylase		884510	protein-coding		NP_220234.1	455	CT_715
+NC_000117.1	828429	828794		minus	hypothetical protein		884506	protein-coding		NP_220235.1	121	CT_716
+NC_000117.1	828787	830091		minus	type III secretion system ATP synthase		884508	protein-coding		NP_220236.1	434	CT_717
+NC_000117.1	830165	830689		minus	hypothetical protein		884528	protein-coding		NP_220237.1	174	CT_718
+NC_000117.1	830694	831698		minus	type III secretion system protein		884509	protein-coding		NP_220238.1	334	CT_719
+NC_000117.1	831971	832753		minus	hypothetical protein		884511	protein-coding		NP_220239.1	260	CT_720
+NC_000117.1	832750	833904		minus	aminotransferase	yfhO_2	884512	protein-coding		NP_220240.1	384	CT_721
+NC_000117.1	833859	834539		minus	2,3-bisphosphoglycerate-dependent phosphoglycerate mutase	pgm	884513	protein-coding		NP_220241.1	226	CT_722
+NC_000117.1	834836	835561		plus	RNA pseudouridine synthase	yjbC	884514	protein-coding		NP_220242.1	241	CT_723
+NC_000117.1	835680	836204		plus	hypothetical protein		884515	protein-coding		NP_220243.1	174	CT_724
+NC_000117.1	836231	836785		plus	biotin--protein ligase	birA	884517	protein-coding		NP_220244.1	184	CT_725
+NC_000117.1	836792	837931		minus	cell division protein		884516	protein-coding		NP_220245.1	379	CT_726
+NC_000117.1	838023	840002		minus	metal transporting ATPase	zntA	884518	protein-coding		NP_220246.1	659	CT_727
+NC_000117.1	840026	840772		minus	hypothetical protein		884522	protein-coding		NP_220247.1	248	CT_728
+NC_000117.1	840809	842095		minus	serine--tRNA ligase	serS	884519	protein-coding		NP_220248.1	428	CT_729
+NC_000117.1	842137	843264		plus	bifunctional diaminohydroxyphosphoribosylaminopyrimidine deaminase/5-amino-6-(5-phosphoribosylamino)uracil reductase	ribD	884520	protein-coding		NP_220249.1	375	CT_730
+NC_000117.1	843374	844648		plus	bifunctional 3,4-dihydroxy-2-butanone 4-phosphate synthase/GTP cyclohydrolase II	ribA/ribB	884521	protein-coding		NP_220250.1	424	CT_731
+NC_000117.1	844617	845090		plus	6,7-dimethyl-8-ribityllumazine synthase	ribE	884527	protein-coding		NP_220251.1	157	CT_732
+NC_000117.1	845141	846487		minus	hypothetical protein		884523	protein-coding		NP_220252.1	448	CT_733
+NC_000117.1	846872	847537		plus	lipoprotein		884524	protein-coding		NP_220253.1	221	CT_734
+NC_000117.1	847642	849009		plus	Na+/alanine symporter	dagA_2	884525	protein-coding		NP_220254.1	455	CT_735
+NC_000117.1	849067	849519		plus	hypothetical protein	ybcL	884536	protein-coding		NP_220255.1	150	CT_736
+NC_000117.1	849528	850187		minus	hypothetical protein		884533	protein-coding		NP_220256.1	219	CT_737
+NC_000117.1	850184	850972		minus	Zn-dependent hydrolase	yycJ	884526	protein-coding		NP_220257.1	262	CT_738
+NC_000117.1	850976	853375		minus	DNA translocase FtsK	ftsK	884529	protein-coding		NP_220258.1	799	CT_739
+NC_000117.1	853555	853628		minus	uncharacterized gene	tRNAHis	884530	tRNA				CT_t32
+NC_000117.1	853555	853628		minus	tRNA-His	tRNAHis	884530	other				CT_t32
+NC_000117.1	854128	855677		plus	uncharacterized gene	16SrRNA_1	884531	rRNA				CT_r01
+NC_000117.1	854128	855677		plus	16S ribosomal RNA	16SrRNA_1	884531	other				CT_r01
+NC_000117.1	855993	858862		plus	uncharacterized gene	23SrRNA_1	884532	rRNA				CT_r02
+NC_000117.1	855993	858862		plus	23S ribosomal RNA	23SrRNA_1	884532	other				CT_r02
+NC_000117.1	858982	859098		plus	uncharacterized gene	5SrRNA_1	884534	rRNA				CT_r03
+NC_000117.1	858982	859098		plus	5S ribosomal RNA	5SrRNA_1	884534	other				CT_r03
+NC_000117.1	859615	860910		minus	Na(+)-translocating NADH-quinone reductase subunit F	dmpP	884545	protein-coding		NP_220259.1	431	CT_740
+NC_000117.1	861053	861397		minus	hypothetical protein		884535	protein-coding		NP_220260.1	114	CT_741
+NC_000117.1	861502	862692		minus	rRNA methyltransferse	ygcA	884537	protein-coding		NP_220261.1	396	CT_742
+NC_000117.1	862880	863257		minus	histone H1-like protein	hctA	884538	protein-coding		NP_220262.1	125	CT_743
+NC_000117.1	863653	866118		plus	hypothetical protein		884539	protein-coding		NP_220263.1	821	CT_744
+NC_000117.1	866113	867387		minus	protoporphyrinogen oxidase	hemG	884540	protein-coding		NP_220264.1	424	CT_745
+NC_000117.1	867384	868757		minus	coproporphyrinogen-III oxidase	hemN_2	884541	protein-coding		NP_220265.1	457	CT_746
+NC_000117.1	868730	869740		minus	uroporphyrinogen decarboxylase	hemE	884542	protein-coding		NP_220266.1	336	CT_747
+NC_000117.1	869753	872992		minus	transcription-repair coupling factor	mfd	884556	protein-coding		NP_220267.1	1079	CT_748
+NC_000117.1	872968	875595		minus	alanine--tRNA ligase	alaS	884543	protein-coding		NP_220268.1	875	CT_749
+NC_000117.1	876174	877723		plus	uncharacterized gene	16SrRNA_2	884544	rRNA				CT_r04
+NC_000117.1	876174	877723		plus	16S ribosomal RNA	16SrRNA_2	884544	other				CT_r04
+NC_000117.1	878039	880902		plus	uncharacterized gene	23SrRNA_2	884546	rRNA				CT_r05
+NC_000117.1	878039	880902		plus	23S ribosomal RNA	23SrRNA_2	884546	other				CT_r05
+NC_000117.1	881027	881143		plus	uncharacterized gene	5SrRNA_2	884547	rRNA				CT_r06
+NC_000117.1	881027	881143		plus	5S ribosomal RNA	5SrRNA_2	884547	other				CT_r06
+NC_000117.1	881422	883422		plus	transketolase	tktB	884548	protein-coding		NP_220269.1	666	CT_750
+NC_000117.1	883419	884288		minus	AMP nucleosidase	amn	884549	protein-coding		NP_220270.1	289	CT_751
+NC_000117.1	884508	885080		plus	elongation factor P	efp_2	884550	protein-coding		NP_220271.1	190	CT_752
+NC_000117.1	885096	885320		minus	hypothetical protein		884551	protein-coding		NP_220272.1	74	CT_753
+NC_000117.1	885367	886239		minus	hypothetical protein	icc	884552	protein-coding		NP_220273.1	290	CT_754
+NC_000117.1	886320	887858		minus	chaperonin GroEL	groEL_3	884553	protein-coding		NP_220274.1	512	CT_755
+NC_000117.1	887936	888006		minus	uncharacterized gene	tRNACys	884563	tRNA				CT_t33
+NC_000117.1	887936	888006		minus	tRNA-Cys	tRNACys	884563	other				CT_t33
+NC_000117.1	888306	889658		plus	UDP-N-acetylmuramoyl-tripeptide--D-alanyl-D-alanine ligase	murF	884555	protein-coding		NP_220275.1	450	CT_756
+NC_000117.1	889804	890814		plus	phospho-N-acetylmuramoyl-pentapeptide-transferase	mraY	884554	protein-coding		NP_220276.1	336	CT_757
+NC_000117.1	890826	892076		plus	UDP-N-acetylmuramoylalanine--D-glutamate ligase	murD	884569	protein-coding		NP_220277.1	416	CT_758
+NC_000117.1	892073	892810		plus	muramidase	nlpD	884559	protein-coding		NP_220278.1	245	CT_759
+NC_000117.1	892826	893983		plus	lipid II flippase FtsW	ftsW	884560	protein-coding		NP_220279.1	385	CT_760
+NC_000117.1	893892	894950		plus	UDP-N-acetylglucosamine--N-acetylmuramyl-(pentapeptide) pyrophosphoryl-undecaprenol N-acetylglucosamine transferase	murG	884557	protein-coding		NP_220280.1	352	CT_761
+NC_000117.1	894955	897366		plus	bifunctional UDP-N-acetylmuramate--L-alanine ligase/D-alanine--D-alanine ligase	murC/ddlA	884562	protein-coding		NP_220281.1	803	CT_762
+NC_000117.1	897403	897822		minus	hypothetical protein		884558	protein-coding		NP_220282.1	139	CT_763
+NC_000117.1	897980	898786		minus	hypothetical protein		884576	protein-coding		NP_220283.1	268	CT_764
+NC_000117.1	898940	899272		plus	anti-sigma F factor antagonist	rsbV_2	884561	protein-coding		NP_220284.1	110	CT_765
+NC_000117.1	899276	900295		plus	tRNA dimethylallyltransferase	miaA	884567	protein-coding		NP_220285.1	339	CT_766
+NC_000117.1	900300	901352		minus	hypothetical protein		884564	protein-coding		NP_220286.1	350	CT_767
+NC_000117.1	901442	903130		plus	hypothetical protein		884195	protein-coding		NP_220287.1	562	CT_768
+NC_000117.1	903584	903943		plus	ribosome silencing factor	ybeB	884565	protein-coding		NP_220288.1	119	CT_769
+NC_000117.1	903954	905210		plus	3-oxoacyl-ACP synthase	fabF	884566	protein-coding		NP_220289.1	418	CT_770
+NC_000117.1	905207	905659		plus	hydrolase		884568	protein-coding		NP_220290.1	150	CT_771
+NC_000117.1	905740	906369		minus	inorganic pyrophosphatase	ppa	884578	protein-coding		NP_220291.1	209	CT_772
+NC_000117.1	906617	907657		plus	leucine dehydrogenase	ldh	884570	protein-coding		NP_220292.1	346	CT_773
+NC_000117.1	907623	908651		minus	3'(2'),5'-bisphosphate nucleotidase	cysQ	884571	protein-coding		NP_220293.1	342	CT_774
+NC_000117.1	908950	909711		plus	1-acyl-sn-glycerol-3-phosphate acyltransferase		884572	protein-coding		NP_220294.1	253	CT_775
+NC_000117.1	909719	911332		plus	long chain fatty acid--[acyl-carrier-protein] ligase	aas	884573	protein-coding		NP_220295.1	537	CT_776
+NC_000117.1	911375	912508		plus	8-amino-7-oxononanoate synthase	bioF	884580	protein-coding		NP_220296.1	377	CT_777
+NC_000117.1	912427	914688		minus	primosomal protein N'	priA	884574	protein-coding		NP_220297.1	753	CT_778
+NC_000117.1	914643	915332		minus	hypothetical protein		884575	protein-coding		NP_220298.1	229	CT_779
+NC_000117.1	915488	915982		plus	hypothetical protein		884577	protein-coding		NP_220299.1	164	CT_780
+NC_000117.1	916214	917794		plus	lysine--tRNA ligase	lysS	884579	protein-coding		NP_220300.1	526	CT_781
+NC_000117.1	917791	919284		minus	cysteine--tRNA ligase	cysS	884587	protein-coding		NP_220301.1	497	CT_782
+NC_000117.1	919539	920588		plus	hypothetical protein		884583	protein-coding		NP_220302.1	349	CT_783
+NC_000117.1	920666	921028		minus	ribonuclease P protein component	rnpA	884581	protein-coding		NP_220303.1	120	CT_784
+NC_000117.1	921041	921178		minus	50S ribosomal protein L34	rl34	884582	protein-coding		NP_220304.1	45	CT_785
+NC_000117.1	921655	921792		plus	50S ribosomal protein L36	rl36	884589	protein-coding		NP_220305.1	45	CT_786
+NC_000117.1	921816	922121		plus	30S ribosomal protein S14	rs14	884584	protein-coding		NP_220306.1	101	CT_787
+NC_000117.1	922155	922655		minus	hypothetical protein		884590	protein-coding		NP_220307.1	166	CT_788
+NC_000117.1	922777	923028		minus	hypothetical protein		884585	protein-coding		NP_220308.1	83	CT_789
+NC_000117.1	923307	923801		plus	hypothetical protein		884586	protein-coding		NP_220309.1	164	CT_790
+NC_000117.1	923846	925642		minus	excinuclease ABC subunit C	uvrC	884594	protein-coding		NP_220310.1	598	CT_791
+NC_000117.1	925667	928129		minus	DNA mismatch repair protein MutS	mutS	884588	protein-coding		NP_220311.1	820	CT_792
+NC_000117.1	928192	928461		plus	hypothetical protein		884591	protein-coding		NP_220312.1	89	CT_793
+NC_000117.1	928463	930250		plus	DNA primase	dnaG	884592	protein-coding		NP_220313.1	595	CT_794
+NC_000117.1	930335	930622		plus	hypothetical protein		884598	protein-coding		NP_220314.1	95	CT_794.1
+NC_000117.1	930749	931240		plus	hypothetical protein		884593	protein-coding		NP_220315.1	163	CT_795
+NC_000117.1	931322	934333		minus	glycine--tRNA ligase	glyQ	884595	protein-coding		NP_220316.1	1003	CT_796
+NC_000117.1	934794	935402		plus	CDP-diacylglycerol--glycerol-3-phosphate 3-phosphatidyltransferase	pgsA_2	884596	protein-coding		NP_220317.1	202	CT_797
+NC_000117.1	935409	936833		minus	glycogen synthase	glgA	884597	protein-coding		NP_220318.1	474	CT_798
+NC_000117.1	937062	937133		plus	uncharacterized gene	tRNAGln	884600	tRNA				CT_t34
+NC_000117.1	937062	937133		plus	tRNA-Gln	tRNAGln	884600	other				CT_t34
+NC_000117.1	937410	937967		plus	50S ribosomal protein L25/general stress protein Ctc		884205	protein-coding		NP_220319.1	185	CT_799
+NC_000117.1	937975	938514		plus	peptidyl-tRNA hydrolase	pth	884599	protein-coding		NP_220320.1	179	CT_800
+NC_000117.1	938652	938990		plus	30S ribosomal protein S6	rs6	884601	protein-coding		NP_220321.1	112	CT_801
+NC_000117.1	939007	939252		plus	30S ribosomal protein S18	rs18	884602	protein-coding		NP_220322.1	81	CT_802
+NC_000117.1	939273	939776		plus	50S ribosomal protein L9	rl9	884603	protein-coding		NP_220323.1	167	CT_803
+NC_000117.1	939840	940706		plus	4-diphosphocytidyl-2C-methyl-D-erythritol kinase	ychB	884606	protein-coding		NP_220324.1	288	CT_804
+NC_000117.1	941009	942361		minus	hypothetical protein		884604	protein-coding		NP_220325.1	450	CT_805
+NC_000117.1	942540	945410		minus	insulinase/protease	ptr	884609	protein-coding		NP_220326.1	956	CT_806
+NC_000117.1	945467	946462		minus	glycerol-3-phosphate acyltransferase	plsB	884605	protein-coding		NP_220327.1	331	CT_807
+NC_000117.1	946475	948013		minus	ribonuclease E	cafE	884607	protein-coding		NP_220328.1	512	CT_808
+NC_000117.1	948577	948888		plus	hypothetical protein		884608	protein-coding		NP_220329.3	103	CT_809
+NC_000117.1	949148	949327		plus	50S ribosomal protein L32	rl32	884612	protein-coding		NP_220330.1	59	CT_810
+NC_000117.1	949350	950315		plus	phosphate acyltransferase	plsX	884610	protein-coding		NP_220331.1	321	CT_811
+NC_000117.1	950536	955131		plus	outer membrane protein PmpD	pmpD	884611	protein-coding		NP_220332.1	1531	CT_812
+NC_000117.1	955374	956168		plus	inclusion membrane protein		884614	protein-coding		NP_220333.1	264	CT_813
+NC_000117.1	956252	956653		minus	hypothetical protein		884616	protein-coding		NP_220334.1	133	CT_814
+NC_000117.1	956572	956934		minus	hypothetical protein		884615	protein-coding		NP_220335.1	120	CT_814.1
+NC_000117.1	957180	958556		plus	phosphoglucosamine mutase	mrsA_2	884613	protein-coding		NP_220336.1	458	CT_815
+NC_000117.1	958567	960387		plus	glutamine--fructose-6-phosphate aminotransferase	glmS	884625	protein-coding		NP_220337.1	606	CT_816
+NC_000117.1	960490	961686		plus	tyrosine-specific transport protein	tyrP_1	884618	protein-coding		NP_220338.1	398	CT_817
+NC_000117.1	961868	963061		plus	tyrosine-specific transport protein	tyrP_2	884617	protein-coding		NP_220339.1	397	CT_818
+NC_000117.1	963103	963819		plus	hypothetical protein	yccA	884619	protein-coding		NP_220340.1	238	CT_819
+NC_000117.1	963917	964771		minus	signal recognition particle receptor FtsY	ftsY	884620	protein-coding		NP_220341.1	284	CT_820
+NC_000117.1	964841	966001		plus	succinyl-CoA ligase subunit beta	sucC	884621	protein-coding		NP_220342.1	386	CT_821
+NC_000117.1	966016	966891		plus	succinyl-CoA ligase subunit alpha	sucD	884622	protein-coding		NP_220343.1	291	CT_822
+NC_000117.1	967030	968523		plus	serine protease	htrA	884623	protein-coding		NP_220344.1	497	CT_823
+NC_000117.1	968723	971647		plus	Zn-dependent peptidase		884626	protein-coding		NP_220345.1	974	CT_824
+NC_000117.1	971661	972944		minus	DNA recombination protein		884660	protein-coding		NP_220346.1	427	CT_825
+NC_000117.1	972948	973739		minus	CDP-diacylglycerol--serine O-phosphatidyltransferase	pssA	884624	protein-coding		NP_220347.1	263	CT_826
+NC_000117.1	974375	977518		plus	ribonucleoside-diphosphate reductase subunit alpha	nrdA	884629	protein-coding		NP_220348.1	1047	CT_827
+NC_000117.1	977556	978596		plus	ribonucleoside-diphosphate reductase subunit beta	nrdB	884627	protein-coding		NP_220349.1	346	CT_828
+NC_000117.1	978967	979530		plus	tRNA (guanine-N(7)-)-methyltransferase	yggH	884628	protein-coding		NP_220350.3	187	CT_829
+NC_000117.1	979521	979594		minus	uncharacterized gene	tRNAVal_2	884630	tRNA				CT_t35
+NC_000117.1	979521	979594		minus	tRNA-Val	tRNAVal_2	884630	other				CT_t35
+NC_000117.1	979646	980230		plus	rRNA methylase	ytgB_2	884633	protein-coding		NP_220351.1	194	CT_830
+NC_000117.1	980227	981102		minus	UDP-N-acetylenolpyruvoylglucosamine reductase	murB	884631	protein-coding		NP_220352.1	291	CT_831
+NC_000117.1	981235	981741		minus	transcription termination factor NusB	nusB	884632	protein-coding		NP_220353.1	168	CT_832
+NC_000117.1	982172	982699		plus	translation initiation factor IF-3	infC	884636	protein-coding		NP_220354.1	175	CT_833
+NC_000117.1	982710	982904		plus	50S ribosomal protein L35	rl35	884641	protein-coding		NP_220355.1	64	CT_834
+NC_000117.1	982923	983294		plus	50S ribosomal protein L20	rl20	884634	protein-coding		NP_220356.1	123	CT_835
+NC_000117.1	983301	984329		plus	phenylalanine--tRNA ligase subunit alpha	pheS	884635	protein-coding		NP_220357.1	342	CT_836
+NC_000117.1	984330	984413		plus	uncharacterized gene	tRNASer_4	884637	tRNA				CT_t36
+NC_000117.1	984330	984413		plus	tRNA-Ser	tRNASer_4	884637	other				CT_t36
+NC_000117.1	984639	986615		plus	hypothetical protein		884638	protein-coding		NP_220358.1	658	CT_837
+NC_000117.1	986612	987712		minus	hypothetical protein		884639	protein-coding		NP_220359.1	366	CT_838
+NC_000117.1	987715	988779		minus	hypothetical protein		884640	protein-coding		NP_220360.1	354	CT_839
+NC_000117.1	988877	989842		plus	tRNA(Ile)-lysidine synthase	mesJ	884642	protein-coding		NP_220361.1	321	CT_840
+NC_000117.1	990003	992744		plus	ATP-dependent zinc metalloprotease FtsH	ftsH	884646	protein-coding		NP_220362.1	913	CT_841
+NC_000117.1	992959	995046		minus	polyribonucleotide nucleotidyltransferase	pnp	884643	protein-coding		NP_220363.1	695	CT_842
+NC_000117.1	995075	995344		minus	30S ribosomal protein S15	rs15	884645	protein-coding		NP_220364.1	89	CT_843
+NC_000117.1	995570	996061		plus	nucleoside deaminase	yfhC	884202	protein-coding		NP_220365.1	163	CT_844
+NC_000117.1	996033	996311		plus	hypothetical protein		884647	protein-coding		NP_220366.1	92	CT_845
+NC_000117.1	996283	996987		minus	hypothetical protein		884644	protein-coding		NP_220367.1	234	CT_846
+NC_000117.1	997122	997640		minus	hypothetical protein		884648	protein-coding		NP_220368.1	172	CT_847
+NC_000117.1	997656	998162		minus	hypothetical protein		884679	protein-coding		NP_220369.1	168	CT_848
+NC_000117.1	998190	998669		minus	hypothetical protein		884654	protein-coding		NP_220370.1	159	CT_849
+NC_000117.1	998988	999176		plus	hypothetical protein		884649	protein-coding		NP_220371.1	62	CT_849.1
+NC_000117.1	999195	1000412		plus	hypothetical protein		884650	protein-coding		NP_220372.1	405	CT_850
+NC_000117.1	1000369	1001244		minus	methionine aminopeptidase	map	884653	protein-coding		NP_220373.1	291	CT_851
+NC_000117.1	1001302	1001916		minus	hypothetical protein		884651	protein-coding		NP_220374.1	204	CT_852
+NC_000117.1	1001934	1002533		minus	hypothetical protein		884652	protein-coding		NP_220375.1	199	CT_853
+NC_000117.1	1002728	1004497		minus	ABC transporter permease/substrate-binding protein		884655	protein-coding		NP_220376.1	589	CT_854
+NC_000117.1	1004550	1005941		plus	fumarate hydratase	fumC	884656	protein-coding		NP_220377.1	463	CT_855
+NC_000117.1	1006022	1007725		minus	sulfate transporter	ychM	884657	protein-coding		NP_220378.1	567	CT_856
+NC_000117.1	1008482	1009747		plus	Na(+)/H(+) antiporter		884658	protein-coding		NP_220379.1	421	CT_857
+NC_000117.1	1009861	1011666		plus	hypothetical protein		884659	protein-coding		NP_220380.1	601	CT_858
+NC_000117.1	1011761	1012684		plus	4-hydroxy-3-methylbut-2-enyl diphosphate reductase	lytB	884663	protein-coding		NP_220381.1	307	CT_859
+NC_000117.1	1012736	1014217		minus	type III secretion system translocator CopD2		884661	protein-coding		NP_220382.1	493	CT_860
+NC_000117.1	1014229	1015749		minus	type III secretion system translocator CopB2		884662	protein-coding		NP_220383.1	506	CT_861
+NC_000117.1	1015776	1016372		minus	type III secretion low calcium response chaperone	lcrH_2	884665	protein-coding		NP_220384.1	198	CT_862
+NC_000117.1	1016294	1017742		minus	hypothetical protein		884664	protein-coding		NP_220385.1	482	CT_863
+NC_000117.1	1018111	1018192		plus	uncharacterized gene	tRNALeu_4	884670	tRNA				CT_t37
+NC_000117.1	1018111	1018192		plus	tRNA-Leu	tRNALeu_4	884670	other				CT_t37
+NC_000117.1	1018603	1019505		minus	site-specific tyrosine recombinase XerD	xerD	884666	protein-coding		NP_220386.1	300	CT_864
+NC_000117.1	1019754	1020743		plus	hypothetical protein		884668	protein-coding		NP_220387.1	329	CT_865
+NC_000117.1	1020758	1022974		plus	1,4-alpha-glucan branching protein	glgB	884667	protein-coding		NP_220388.1	738	CT_866
+NC_000117.1	1022985	1024004		minus	deubiquitinase		884676	protein-coding		NP_220389.1	339	CT_867
+NC_000117.1	1024215	1025471		minus	deubiquitinase		884669	protein-coding		NP_220390.1	418	CT_868
+NC_000117.1	1025648	1028542		minus	outer membrane protein PmpE	pmpE	884671	protein-coding		NP_220391.1	964	CT_869
+NC_000117.1	1028545	1031649		minus	outer membrane protein PmpF	pmpF	884672	protein-coding		NP_220392.1	1034	CT_870
+NC_000117.1	1031814	1034855		plus	outer membrane protein PmpG	pmpG	884677	protein-coding		NP_220393.1	1013	CT_871
+NC_000117.1	1034886	1037936		plus	outer membrane protein PmpH	pmpH	884673	protein-coding		NP_220394.1	1016	CT_872
+NC_000117.1	1038518	1038835		plus	hypothetical protein		884674	protein-coding		NP_220395.1	105	CT_873
+NC_000117.1	1039010	1041646		minus	outer membrane protein PmpI	pmpI	884675	protein-coding		NP_220396.1	878	CT_874
+NC_000117.1	1041920	1176		plus	hypothetical protein		884145	protein-coding		NP_219502.1	591	CT_875
