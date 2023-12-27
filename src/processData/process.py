@@ -4,8 +4,8 @@ def find_sequence_at_positions(fna_file, tsv_file, output_file):
     after = 1
     minSize = 20
     maxSize = 50
-    prefix = 26
-    suffix = 26
+    prefix = 2
+    suffix = 2
     # 读取序列信息
     try:
         with open(fna_file, 'r') as file:
@@ -42,7 +42,7 @@ def find_sequence_at_positions(fna_file, tsv_file, output_file):
             before = random.randint(minSize, maxSize)
             after = random.randint(minSize, maxSize)
             # 把start附近的截取
-            subsequence = sequence[start_position - 1 - prefix: start_position + suffix]
+            subsequence = sequence[start_position - prefix: start_position + suffix]
             # subsequence = sequence[start_position - 1:end_position]
             if strand == "minus":  # 处理反向序列
                 subsequence = reverse_complement(subsequence)
@@ -52,11 +52,11 @@ def find_sequence_at_positions(fna_file, tsv_file, output_file):
                 results.append(subsequence_with_context)
 
             # 把end前后的截取
-            subsequence = sequence[end_position - 1 - prefix: end_position + suffix]
+            subsequence = sequence[end_position - prefix + 1: end_position + suffix + 1]
             # subsequence = sequence[start_position - 1:end_position]
             if strand == "minus":  # 处理反向序列
                 subsequence = reverse_complement(subsequence)
-
+            print(len(subsequence))
             subsequence_with_context = f"{subsequence}"
             results.append(subsequence_with_context)
 

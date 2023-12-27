@@ -190,7 +190,8 @@ class DNASegmentDataset(torch.utils.data.Dataset):
         for i, x in enumerate(base_path.iterdir()):
             label_mapper[x.stem] = i
 
-        pad = 26
+        pad = 30
+        position = 20
 
         begin = 0
         iN = 1
@@ -217,7 +218,7 @@ class DNASegmentDataset(torch.utils.data.Dataset):
                     # 把 in 加入
                     for i in range(inNumBef):
                         extra = 'D' + 'D' + 'S'
-                        self.all_seqs.append((line[i : i + 41] + extra))
+                        self.all_seqs.append((line[i : i + position * 2 + 1] + extra))
                         self.all_labels.append(iN)
 
                     # 把end加入
@@ -285,16 +286,7 @@ class DNASegmentDataset(torch.utils.data.Dataset):
 
         # need to wrap in list
         target = torch.LongTensor([y])  # offset by 1, includes eos
-        # target = 0
-        # target = torch.LongTensor([target])
-        # seq[-3] = position
-        # print(x,y,seq,target)
-        # print("origin sequence:", x)
-        # print("origin label : ", y)
-        # print("processed sequence : ", seq)
-        # print("processed label :", target)
         # print(seq, target)
-        # print("length of dataset : ", len(self.all_seqs))
         return seq, target
 
 
