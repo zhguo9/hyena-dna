@@ -210,6 +210,7 @@ class DNASegmentDataset(torch.utils.data.Dataset):
                 after = pad
                 # line = parts[2]
                 random.seed(41)
+                tmp = 0
                 while line:
                     # 随机初始化前面、后面有多少个in（范围在1 ~ 3）
                     inNumBef = random.randint(1,3)
@@ -241,10 +242,12 @@ class DNASegmentDataset(torch.utils.data.Dataset):
                         self.all_labels.append(iN)
 
                     line = f.readline()
-                    # print(self.all_seqs)
                     # for i in self.all_seqs:
-                    #     print(len(i))
-                    # break
+                    #     print(i)
+                    # if tmp == 5:
+                    #     break
+                    # else:
+                    #     tmp += 1
 
 
     def __len__(self):
