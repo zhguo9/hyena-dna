@@ -87,6 +87,7 @@ output_file = "../../data/dna_segment/K12/train/dataset_train.tsv"  # 指定输�
 
 import os
 
+
 def process_files_in_folder(folder_path):
     for root, dirs, files in os.walk(folder_path):
         print(root)
