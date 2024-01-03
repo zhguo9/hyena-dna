@@ -214,30 +214,37 @@ class DNASegmentDataset(torch.utils.data.Dataset):
                     # 随机初始化前面、后面有多少个in（范围在1 ~ 3）
                     inNumBef = random.randint(1,3)
                     inNumAft = random.randint(1,3)
+                    # inNumBef = 4
+                    # inNumAft = 4
                     # print("inNumBef:",inNumBef,"    inNumAft:",inNumAft)
                     # 把 in 加入
                     for i in range(inNumBef):
                         extra = 'D' + 'D' + 'S'
-                        self.all_seqs.append((line[i : i + position * 2 + 1] + extra))
+                        # print(len(line[i: i + position * 2]))
+                        self.all_seqs.append((line[i: i + position * 2] + extra))
                         self.all_labels.append(iN)
 
                     # 把end加入
                     extra =  'D' + "D" + 'S'
-                    self.all_seqs.append((line[2: position * 2 + 3] + extra))
+                    self.all_seqs.append((line[inNumBef: inNumBef + position * 2] + extra))
                     self.all_labels.append(end)
 
                     # 把 begin 加入
                     extra = 'D' + "D" + 'S'
-                    self.all_seqs.append((line[3: position * 2 + 4] + extra))
+                    self.all_seqs.append((line[inNumBef + 1: inNumBef + 1 + position * 2] + extra))
                     self.all_labels.append(begin)
 
                     # 把 in 加入
                     for i in range(inNumAft):
                         extra = 'D' + 'D' + 'S'
-                        self.all_seqs.append((line[i+ 4: i + position * 2 + 5] + extra))
+                        self.all_seqs.append((line[inNumBef + i + 2:inNumBef + i + position * 2 + 2] + extra))
                         self.all_labels.append(iN)
 
                     line = f.readline()
+                    # print(self.all_seqs)
+                    # for i in self.all_seqs:
+                    #     print(len(i))
+                    # break
 
 
     def __len__(self):
