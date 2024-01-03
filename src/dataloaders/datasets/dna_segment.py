@@ -191,7 +191,7 @@ class DNASegmentDataset(torch.utils.data.Dataset):
             label_mapper[x.stem] = i
 
         pad = 30
-        position = 20
+        position = 40
 
         begin = 0
         iN = 1
@@ -223,29 +223,21 @@ class DNASegmentDataset(torch.utils.data.Dataset):
 
                     # 把end加入
                     extra =  'D' + "D" + 'S'
-                    self.all_seqs.append((line[2:43] + extra))
+                    self.all_seqs.append((line[2: position * 2 + 3] + extra))
                     self.all_labels.append(end)
 
                     # 把 begin 加入
                     extra = 'D' + "D" + 'S'
-                    self.all_seqs.append((line[3:44] + extra))
+                    self.all_seqs.append((line[3: position * 2 + 4] + extra))
                     self.all_labels.append(begin)
 
                     # 把 in 加入
                     for i in range(inNumAft):
                         extra = 'D' + 'D' + 'S'
-                        self.all_seqs.append((line[i+ 4: i + 45] + extra))
+                        self.all_seqs.append((line[i+ 4: i + position * 2 + 5] + extra))
                         self.all_labels.append(iN)
 
                     line = f.readline()
-                    # parts = line.split()
-                    # if len(parts) == 0:
-                    #     break
-                    # before = int(parts[0])
-                    # after = int(parts[1])
-                    # line = parts[2]
-        # for i in range(len(self.all_seqs)):
-        #     print(i,"x : ",self.all_seqs[i], "y : ", self.all_labels[i])
 
 
     def __len__(self):

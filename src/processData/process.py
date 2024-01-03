@@ -4,8 +4,8 @@ def find_sequence_at_positions(fna_file, tsv_file, output_file):
     after = 1
     minSize = 20
     maxSize = 50
-    prefix = 2
-    suffix = 2
+    prefix = 50
+    suffix = 50
     # 读取序列信息
     try:
         with open(fna_file, 'r') as file:
