@@ -399,10 +399,10 @@ class SequenceLightningModule(pl.LightningModule):
         loss = self._shared_step(batch, batch_idx, prefix="train")
 
         # 增加打印代码
-        # x, y, z = self.forward(batch)
-        # target = y
-        # output = torch.argmax(x, dim=1)
-        # print("\ntarget ",torch.squeeze(target),"\noutput ",torch.squeeze(output))
+        x, y, z = self.forward(batch)
+        target = y
+        output = torch.argmax(x, dim=1)
+        print("\ntarget ",torch.squeeze(target),"\noutput ",torch.squeeze(output))
 
         # Log the loss explicitly so it shows up in WandB
         # Note that this currently runs into a bug in the progress bar with ddp (as of 1.4.6)
@@ -448,10 +448,10 @@ class SequenceLightningModule(pl.LightningModule):
         )
 
         # 增加打印代码
-        x, y, z = self.forward(batch)
-        target = y
-        output = torch.argmax(x, dim=1)
-        print("\ntarget ",torch.squeeze(target),"\noutput ",torch.squeeze(output))
+        # x, y, z = self.forward(batch)
+        # target = y
+        # output = torch.argmax(x, dim=1)
+        # print("\ntarget ",torch.squeeze(target),"\noutput ",torch.squeeze(output))
 
         if ema:
             self.optimizers().swap_ema()
