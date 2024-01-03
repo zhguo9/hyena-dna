@@ -31,34 +31,31 @@ def find_sequence_at_positions(fna_file, tsv_file, output_file):
             start_position = int(parts[1])
             end_position = int(parts[2])
             strand = parts[4]  # 提取正反链信息
-
             # 筛去重复的行
             if start_position in hashTable:
                 continue
-            else :
+            else:
                 hashTable.add(start_position)
-
+            # print(start_position)
+            # print(hashTable)
             # if 1 <= start_position <= len(sequence) and 1 <= end_position <= len(sequence) and start_position <= end_position:
             before = random.randint(minSize, maxSize)
             after = random.randint(minSize, maxSize)
             # 把start附近的截取
             subsequence = sequence[start_position - prefix: start_position + suffix]
-            # subsequence = sequence[start_position - 1:end_position]
             if strand == "minus":  # 处理反向序列
                 subsequence = reverse_complement(subsequence)
-
             if len(subsequence) <= 1000:  # 添加长度筛选条件
                 subsequence_with_context = f"{subsequence}"
                 results.append(subsequence_with_context)
 
             # 把end前后的截取
             subsequence = sequence[end_position - prefix + 1: end_position + suffix + 1]
-            # subsequence = sequence[start_position - 1:end_position]
             if strand == "minus":  # 处理反向序列
                 subsequence = reverse_complement(subsequence)
-            print(len(subsequence))
-            subsequence_with_context = f"{subsequence}"
-            results.append(subsequence_with_context)
+            if len(subsequence) <= 1000:
+                subsequence_with_context = f"{subsequence}"
+                results.append(subsequence_with_context)
 
 
     if not results:
@@ -88,10 +85,10 @@ import os
 
 def process_files_in_folder(folder_path):
     for root, dirs, files in os.walk(folder_path):
+        print(root)
         for file in files:
             if file.endswith(".fna"):
                 fna_file = os.path.join(root, file)
-                print(file)
                 tsv_file = file.replace(".fna", "tsv.tsv")  # Assuming corresponding tsv files have the same name with different extension
                 tsv_file = os.path.join(root, tsv_file)
                 output_file = "C:\\Users\silence\Documents\git\dna\dataset.tsv"
