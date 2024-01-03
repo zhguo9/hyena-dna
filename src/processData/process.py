@@ -48,6 +48,8 @@ def find_sequence_at_positions(fna_file, tsv_file, output_file):
             if len(subsequence) <= 1000:  # 添加长度筛选条件
                 subsequence_with_context = f"{subsequence}"
                 results.append(subsequence_with_context)
+                print(subsequence)
+                print(start_position)
 
             # 把end前后的截取
             subsequence = sequence[end_position - prefix + 1: end_position + suffix + 1]
@@ -56,6 +58,8 @@ def find_sequence_at_positions(fna_file, tsv_file, output_file):
             if len(subsequence) <= 1000:
                 subsequence_with_context = f"{subsequence}"
                 results.append(subsequence_with_context)
+                print(subsequence)
+                print(end_position)
 
 
     if not results:
@@ -91,11 +95,30 @@ def process_files_in_folder(folder_path):
                 fna_file = os.path.join(root, file)
                 tsv_file = file.replace(".fna", "tsv.tsv")  # Assuming corresponding tsv files have the same name with different extension
                 tsv_file = os.path.join(root, tsv_file)
-                output_file = "C:\\Users\silence\Documents\git\dna\dataset.tsv"
+                output_file = "C:\\Users\silence\Documents\git\dna\\tmp.tsv"
 
                 result = find_sequence_at_positions(fna_file, tsv_file, output_file)
                 print(result)
 
+    # 去除重复行
+    unique_lines = set()  # 用于存储唯一的行
+
+    try:
+        # 读取文件并去除重复行
+        with open(output_file, 'r') as in_file:
+            for line in in_file:
+                unique_lines.add(line.strip())  # 添加去除空格的行到集合中
+
+        # 将唯一行写入新文件
+        datafile = "C:\\Users\silence\Documents\git\dna\\dataset.tsv"
+        with open(datafile, 'a') as out_file:
+            for line in unique_lines:
+                out_file.write(f"{line}\n")
+
+        return f"去除重复行后的内容已保存到 {datafile} 文件中。"
+
+    except IOError:
+        return "处理文件时出错。"
 # 请替换下面的路径为您的实际路径
 base_folder = "C:\\Users\silence\Documents\git\dna\数据集"
 
