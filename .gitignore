@@ -9,7 +9,9 @@ data.tar.gz
 .idea/
 outputs/
 
-数据集/*
+seg_data/
+
+数据集/
 
 
 # Created by https://www.gitignore.io/api/python
