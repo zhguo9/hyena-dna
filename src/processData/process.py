@@ -1,11 +1,7 @@
 import random
 def find_sequence_at_positions(fna_file, tsv_file, output_file):
-    before = 1
-    after = 1
-    minSize = 20
-    maxSize = 50
-    prefix = 50
-    suffix = 50
+    prefix = 15
+    suffix = 15
     # 读取序列信息
     try:
         with open(fna_file, 'r') as file:
@@ -39,8 +35,6 @@ def find_sequence_at_positions(fna_file, tsv_file, output_file):
             # print(start_position)
             # print(hashTable)
             # if 1 <= start_position <= len(sequence) and 1 <= end_position <= len(sequence) and start_position <= end_position:
-            before = random.randint(minSize, maxSize)
-            after = random.randint(minSize, maxSize)
             # 把start附近的截取
             subsequence = sequence[start_position - prefix: start_position + suffix]
             if strand == "minus":  # 处理反向序列
@@ -96,7 +90,7 @@ def process_files_in_folder(folder_path):
                 fna_file = os.path.join(root, file)
                 tsv_file = file.replace(".fna", "tsv.tsv")  # Assuming corresponding tsv files have the same name with different extension
                 tsv_file = os.path.join(root, tsv_file)
-                output_file = "C:\\Users\silence\Documents\git\dna\\tmp.tsv"
+                output_file = "C:\\Users\silence\Documents\git\hyena-dna\\tmp.tsv"
 
                 result = find_sequence_at_positions(fna_file, tsv_file, output_file)
                 print(result)
@@ -111,8 +105,8 @@ def process_files_in_folder(folder_path):
                 unique_lines.add(line.strip())  # 添加去除空格的行到集合中
 
         # 将唯一行写入新文件
-        datafile = "C:\\Users\silence\Documents\git\dna\\dataset.tsv"
-        with open(datafile, 'a') as out_file:
+        datafile = "C:\\Users\silence\Documents\git\hyena-dna\\dataset.tsv"
+        with open(datafile, 'w') as out_file:
             for line in unique_lines:
                 out_file.write(f"{line}\n")
 
@@ -121,6 +115,6 @@ def process_files_in_folder(folder_path):
     except IOError:
         return "处理文件时出错。"
 # 请替换下面的路径为您的实际路径
-base_folder = "C:\\Users\silence\Documents\git\dna\数据集"
+base_folder = "C:\\Users\silence\Documents\git\hyena-dna\segg"
 
 process_files_in_folder(base_folder)
