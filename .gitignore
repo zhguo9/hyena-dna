@@ -9,6 +9,7 @@ data.tar.gz
 .idea/
 outputs/
 
+数据集/*
 
 
 # Created by https://www.gitignore.io/api/python
@@ -120,3 +121,4 @@ dmypy.json
 .pyre/
 
 # End of https://www.gitignore.io/api/python
+/数据集/
