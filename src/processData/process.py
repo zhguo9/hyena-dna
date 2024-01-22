@@ -41,7 +41,7 @@ def find_sequence_at_positions(fna_file, tsv_file, output_file):
                 subsequence = reverse_complement(subsequence)
             if len(subsequence) <= 1000:  # 添加长度筛选条件
                 subsequence_with_context = f"{subsequence}"
-                results.append(subsequence_with_context)
+                results.append(subsequence_with_context.upper())
                 print(subsequence)
                 print(start_position)
 
@@ -51,7 +51,7 @@ def find_sequence_at_positions(fna_file, tsv_file, output_file):
                 subsequence = reverse_complement(subsequence)
             if len(subsequence) <= 1000:
                 subsequence_with_context = f"{subsequence}"
-                results.append(subsequence_with_context)
+                results.append(subsequence_with_context.upper())
                 print(subsequence)
                 print(end_position)
 
@@ -115,6 +115,6 @@ def process_files_in_folder(folder_path):
     except IOError:
         return "处理文件时出错。"
 # 请替换下面的路径为您的实际路径
-base_folder = "C:\\Users\silence\Documents\git\hyena-dna\segg"
+base_folder = "C:\\Users\silence\Documents\git\hyena-dna\seg_data"
 
 process_files_in_folder(base_folder)

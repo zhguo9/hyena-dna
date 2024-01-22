@@ -280,7 +280,7 @@ class DNASegmentDataset(torch.utils.data.Dataset):
 
         # need to wrap in list
         target = torch.LongTensor([y])  # offset by 1, includes eos
-        # print(seq, target)
+        print(seq, target)
         return seq, target
 
 
