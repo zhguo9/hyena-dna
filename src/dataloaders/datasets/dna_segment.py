@@ -190,7 +190,7 @@ class DNASegmentDataset(torch.utils.data.Dataset):
         for i, x in enumerate(base_path.iterdir()):
             label_mapper[x.stem] = i
 
-        position = 13
+        position = 98
 
         begin = 0
         iN = 1
@@ -277,7 +277,6 @@ class DNASegmentDataset(torch.utils.data.Dataset):
 
         # convert to tensor
         seq = torch.LongTensor(seq)  # hack, remove the initial cls tokens for now
-
         # need to wrap in list
         target = torch.LongTensor([y])  # offset by 1, includes eos
         # print(seq, target)
@@ -292,7 +291,7 @@ if __name__ == '__main__':
 
     """
 
-    max_length = 30  # max len of seq grabbed
+    max_length = 200  # max len of seq grabbed
     use_padding = True
     dest_path = "../../../data/dna_segment/"
 
@@ -319,7 +318,7 @@ if __name__ == '__main__':
     for _ in range(8):  # 这里的 3 表示你想要执行的循环次数
         try:
             elem = next(it)
-            # print(elem)
+            print(elem)
         except StopIteration:
             print("Reached the end of the iterator.")
             break

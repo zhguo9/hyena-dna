@@ -732,4 +732,14 @@ def main(config: OmegaConf):
 
 
 if __name__ == "__main__":
+    import os
+
+    # 设置 HTTP 代理
+    os.environ['http_proxy'] = 'http://127.0.0.1:7890'
+
+    # 设置 HTTPS 代理（如果需要的话）
+    os.environ['https_proxy'] = 'http://127.0.0.1:7890'
+
+    # 然后你可以使用 urllib 或 requests 发送 HTTP 请求，Python 将会通过代理服务器进行连接
+
     main()

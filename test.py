@@ -11,3 +11,6 @@ for seq_id, sequence in sequences.items():
     print(f"Sequence ID: {seq_id}")
     print(f"Sequence Length: {len(sequence)}")
     print(f"Sequence: {sequence.seq}\n")
+
+# 快速排序
+
