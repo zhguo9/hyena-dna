@@ -230,10 +230,10 @@ class DNASegmentDataset(torch.utils.data.Dataset):
                     self.all_labels.append(begin)
 
                     # 把 in 加入
-                    for i in range(inNumAft):
-                        extra = 'D' + 'D' + 'S'
-                        self.all_seqs.append((line[inNumBef + i + 2:inNumBef + i + position * 2 + 2] + extra))
-                        self.all_labels.append(iN)
+                    # for i in range(inNumAft):
+                    #     extra = 'D' + 'D' + 'S'
+                    #     self.all_seqs.append((line[inNumBef + i + 2:inNumBef + i + position * 2 + 2] + extra))
+                    #     self.all_labels.append(iN)
 
                     line = f.readline()
                     # for i in self.all_seqs:
