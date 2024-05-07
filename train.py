@@ -448,10 +448,10 @@ class SequenceLightningModule(pl.LightningModule):
         )
 
         # 增加打印代码
-        # x, y, z = self.forward(batch)
-        # target = y
-        # output = torch.argmax(x, dim=1)
-        # print("\ntarget ",torch.squeeze(target),"\noutput ",torch.squeeze(output))
+        x, y, z = self.forward(batch)
+        target = y
+        output = torch.argmax(x, dim=1)
+        print("\ntarget ",torch.squeeze(target),"\noutput ",torch.squeeze(output))
 
         if ema:
             self.optimizers().swap_ema()
@@ -719,12 +719,12 @@ def train(config):
         print("Running validation before training")
         trainer.validate(model)
 
-    if config.train.ckpt is not None:
-        print("------ train with ckpt -----------")
-        trainer.fit(model, ckpt_path=config.train.ckpt)
-    else:
-        print("------ train without ckpt -----------")
-        trainer.fit(model)
+    # if config.train.ckpt is not None:
+    #     print("------ train with ckpt -----------")
+    #     trainer.fit(model, ckpt_path=config.train.ckpt)
+    # else:
+    #     print("------ train without ckpt -----------")
+    #     trainer.fit(model)
     if config.train.test:
         print("------ test -----------")
         trainer.test(model)

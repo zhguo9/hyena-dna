@@ -1,7 +1,7 @@
 import random
 def find_sequence_at_positions(fna_file, tsv_file, output_file):
-    prefix = 10
-    suffix = 10
+    prefix = 16
+    suffix = 16
     # 读取序列信息
     try:
         with open(fna_file, 'r') as file:
@@ -117,4 +117,5 @@ def process_files_in_folder(folder_path):
 # 请替换下面的路径为您的实际路径
 base_folder = "C:\Guo\Git\hyena-dna\seg_data"
 
-process_files_in_folder(base_folder)
+if __name__ == "__main__":
+    process_files_in_folder(base_folder)
