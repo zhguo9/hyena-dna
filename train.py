@@ -4,7 +4,7 @@ import random
 import time
 from functools import partial, wraps
 from typing import Callable, List, Sequence
-
+from src.processData.createDataSet import fna2Dataset
 import hydra
 import numpy as np
 import pytorch_lightning as pl
@@ -451,7 +451,7 @@ class SequenceLightningModule(pl.LightningModule):
         x, y, z = self.forward(batch)
         target = y
         output = torch.argmax(x, dim=1)
-        print("\ntarget ",torch.squeeze(target),"\noutput ",torch.squeeze(output))
+        # print("\ntarget ",torch.squeeze(target),"\noutput ",torch.squeeze(output))
 
         if ema:
             self.optimizers().swap_ema()
@@ -680,6 +680,14 @@ class SaveModelCallback(pl.Callback):
             trainer.save_checkpoint(f"model_epoch_{epoch}.ckpt")
 
 def train(config):
+
+    # 处理数据集
+    fna_path = config.fna_path
+    tsv_path = fna_path.replace(".fna", ".tsv")
+    fna2Dataset(fna_path,
+                tsv_path,
+                "C:\Guo\Git\hyena-dna\data\dna_segment\K12\\test\dataset_test.tsv")
+
     # 创建自定义回调函数实例，并指定保存参数的 epoch
     save_callback = SaveModelCallback(save_epoch=config.train.save_epoch)
     # 将回调函数添加到回调列表中
