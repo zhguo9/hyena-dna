@@ -205,8 +205,10 @@ class DNASegmentDataset(torch.utils.data.Dataset):
                 tmp = 0
                 while line:
                     # 随机初始化前面、后面有多少个in（范围在1 ~ 3）
-                    inNumBef = random.randint(1,3)
-                    inNumAft = random.randint(1,3)
+                    # inNumBef = random.randint(1,3)
+                    # inNumAft = random.randint(1,3)
+                    inNumBef = 1
+                    inNumAft = 1
                     # inNumBef = 4
                     # inNumAft = 4
                     # print("inNumBef:",inNumBef,"    inNumAft:",inNumAft)
