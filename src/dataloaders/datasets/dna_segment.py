@@ -293,7 +293,7 @@ if __name__ == '__main__':
 
     """
 
-    max_length = 200  # max len of seq grabbed
+    max_length = 35  # max len of seq grabbed
     use_padding = True
     dest_path = "../../../data/dna_segment/"
 
