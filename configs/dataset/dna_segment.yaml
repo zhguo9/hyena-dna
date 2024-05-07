@@ -15,4 +15,4 @@ segment_dataset:
   classes: 2
 K12:
   train_len: 274
-  classes: 3
+  classes: 6
