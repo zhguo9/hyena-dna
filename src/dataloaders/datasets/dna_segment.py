@@ -218,9 +218,9 @@ class DNASegmentDataset(torch.utils.data.Dataset):
                         self.all_labels.append(iN)
 
                     # 把end加入
-                    extra =  'D' + "D" + 'S'
-                    self.all_seqs.append((line[inNumBef: inNumBef + position * 2] + extra))
-                    self.all_labels.append(end)
+                    # extra =  'D' + "D" + 'S'
+                    # self.all_seqs.append((line[inNumBef: inNumBef + position * 2] + extra))
+                    # self.all_labels.append(end)
 
                     # 把 begin 加入
                     extra = 'D' + "D" + 'S'
