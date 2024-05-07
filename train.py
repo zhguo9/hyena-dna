@@ -130,6 +130,9 @@ class SequenceLightningModule(pl.LightningModule):
         except AttributeError:
             pass
 
+        self.predictions = []
+        self.words = []
+
         super().__init__()
         # Passing in config expands it one level, so can access by self.hparams.train instead of self.hparams.config.train
         self.save_hyperparameters(config, logger=False)
@@ -448,9 +451,16 @@ class SequenceLightningModule(pl.LightningModule):
         )
 
         # 增加打印代码
-        x, y, z = self.forward(batch)
-        target = y
-        output = torch.argmax(x, dim=1)
+        # x, y, z = self.forward(batch)
+        # target = y
+        # output = torch.argmax(x, dim=1)
+
+        # 进行预测并保存结果
+        x, _, _ = self.forward(batch)
+        predictions = torch.argmax(x, dim=1)
+        self.predictions.append(predictions.tolist())
+        self.words.append(batch)
+        print(batch, predictions)
         # print("\ntarget ",torch.squeeze(target),"\noutput ",torch.squeeze(output))
 
         if ema:
