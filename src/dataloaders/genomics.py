@@ -291,11 +291,13 @@ class DnaSegment(HG38):
                                     return_augs=False)
             for split, max_len in zip(['train', 'val'], [self.max_length, self.max_length_val])
         ]
+
         # print("dataset for train:")
         # print("Length of dataset:", len(self.dataset_train))
-        # for i in range(min(8, len(self.dataset_train))):  # 打印前1个样本
-        #     seq, target = self.dataset_train[i]
-        #     print(f"Sample {i + 1}: Sequence - {seq} Target - {target} {seq.shape}")
+        for i in range(min(8, len(self.dataset_train))):  # 打印前1个样本
+            seq, target = self.dataset_train[i]
+            print("dataset is on :", seq.device, target.device)
+            # print(f"Sample {i + 1}: Sequence - {seq} Target - {target} {seq.shape}")
 
     def test_dataloader(self, *args: Any, **kwargs: Any) -> Union[DataLoader, List[DataLoader]]:
         """ The test dataloader, it's a dummy loader just to make the trainer happy, we don't use it."""

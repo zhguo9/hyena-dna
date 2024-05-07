@@ -448,10 +448,10 @@ class SequenceLightningModule(pl.LightningModule):
         )
 
         # 增加打印代码
-        x, y, z = self.forward(batch)
-        target = y
-        output = torch.argmax(x, dim=1)
-        print("\ntarget ",torch.squeeze(target),"\noutput ",torch.squeeze(output))
+        # x, y, z = self.forward(batch)
+        # target = y
+        # output = torch.argmax(x, dim=1)
+        # print("\ntarget ",torch.squeeze(target),"\noutput ",torch.squeeze(output))
 
         if ema:
             self.optimizers().swap_ema()
@@ -668,12 +668,28 @@ def create_trainer(config, **kwargs):
 
     return trainer
 
+class SaveModelCallback(pl.Callback):
+    def __init__(self, save_epoch):
+        super().__init__()
+        self.save_epoch = save_epoch
+
+    def on_epoch_end(self, trainer, pl_module):
+        epoch = trainer.current_epoch
+        if epoch == self.save_epoch:
+            print(f"Saving model parameters at epoch {epoch}")
+            trainer.save_checkpoint(f"model_epoch_{epoch}.ckpt")
 
 def train(config):
+    # 创建自定义回调函数实例，并指定保存参数的 epoch
+    save_callback = SaveModelCallback(save_epoch=config.train.save_epoch)
+    # 将回调函数添加到回调列表中
+    callbacks = [save_callback]
+
+
     if config.train.seed is not None:
         pl.seed_everything(config.train.seed, workers=True)
     print("Creating trainer...\n")
-    trainer = create_trainer(config)
+    trainer = create_trainer(config, callbacks=callbacks)
     print("Creating trainer Over.\n")
 
     # Check if GPU is available
@@ -729,6 +745,7 @@ def main(config: OmegaConf):
     utils.train.print_config(config, resolve=True)
 
     train(config)
+
 
 
 if __name__ == "__main__":

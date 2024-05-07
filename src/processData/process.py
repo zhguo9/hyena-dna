@@ -1,7 +1,7 @@
 import random
 def find_sequence_at_positions(fna_file, tsv_file, output_file):
-    prefix = 350
-    suffix = 350
+    prefix = 10
+    suffix = 10
     # 读取序列信息
     try:
         with open(fna_file, 'r') as file:
@@ -42,8 +42,8 @@ def find_sequence_at_positions(fna_file, tsv_file, output_file):
             if len(subsequence) <= 1000:  # 添加长度筛选条件
                 subsequence_with_context = f"{subsequence}"
                 results.append(subsequence_with_context.upper())
-                print(subsequence)
-                print(start_position)
+                # print(subsequence)
+                # print(start_position)
 
             # 把end前后的截取
             subsequence = sequence[end_position - prefix + 1: end_position + suffix + 1]
@@ -52,8 +52,8 @@ def find_sequence_at_positions(fna_file, tsv_file, output_file):
             if len(subsequence) <= 1000:
                 subsequence_with_context = f"{subsequence}"
                 results.append(subsequence_with_context.upper())
-                print(subsequence)
-                print(end_position)
+                # print(subsequence)
+                # print(end_position)
 
 
     if not results:
@@ -90,7 +90,7 @@ def process_files_in_folder(folder_path):
                 fna_file = os.path.join(root, file)
                 tsv_file = file.replace(".fna", "tsv.tsv")  # Assuming corresponding tsv files have the same name with different extension
                 tsv_file = os.path.join(root, tsv_file)
-                output_file = "/home/silence/Git/hyena-dna/tmp.tsv"
+                output_file = "C:\Guo\Git\hyena-dna\\tmp.tsv"
 
                 result = find_sequence_at_positions(fna_file, tsv_file, output_file)
                 print(result)
@@ -105,7 +105,7 @@ def process_files_in_folder(folder_path):
                 unique_lines.add(line.strip())  # 添加去除空格的行到集合中
 
         # 将唯一行写入新文件
-        datafile = "/home/silence/Git/hyena-dna/dataset.tsv"
+        datafile = "C:\Guo\Git\hyena-dna\dataset.tsv"
         with open(datafile, 'w') as out_file:
             for line in unique_lines:
                 out_file.write(f"{line}\n")
@@ -115,6 +115,6 @@ def process_files_in_folder(folder_path):
     except IOError:
         return "处理文件时出错。"
 # 请替换下面的路径为您的实际路径
-base_folder = "/home/silence/Git/hyena-dna/seg_data"
+base_folder = "C:\Guo\Git\hyena-dna\seg_data"
 
 process_files_in_folder(base_folder)
