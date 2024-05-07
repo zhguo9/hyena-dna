@@ -460,7 +460,7 @@ class SequenceLightningModule(pl.LightningModule):
         predictions = torch.argmax(x, dim=1)
         self.predictions.append(predictions.tolist())
         self.words.append(batch)
-        print(batch, predictions)
+        print(predictions)
         # print("\ntarget ",torch.squeeze(target),"\noutput ",torch.squeeze(output))
 
         if ema:
