@@ -802,7 +802,7 @@ def train(config):
         # result_json = json.dumps(result)
 
         print(len(predictions))
-
+#
     if config.train.ckpt is not None:
         print("------ train with ckpt -----------")
         trainer.fit(model, ckpt_path=config.train.ckpt)
