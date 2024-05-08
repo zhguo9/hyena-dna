@@ -1,3 +1,3 @@
-import torch 
-print(torch.__version__)
-print(torch.cuda.is_available())
+result = "dsfasdfas"
+with open("result.txt", "w") as file:
+    file.write(result)  # 添加换行符

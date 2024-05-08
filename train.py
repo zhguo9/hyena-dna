@@ -463,7 +463,7 @@ class SequenceLightningModule(pl.LightningModule):
         # for i in predictions:
         #     if ()
         # print(predictions)
-        print(predictions)
+        # print(predictions)
         # print(batch[0])
         # print("\ntarget ",torch.squeeze(target),"\noutput ",torch.squeeze(output))
 
@@ -752,19 +752,24 @@ def train(config):
             words.append(word)
         words = [arr[arr != 12] for arr in words]
         words = [arr[arr != 13] for arr in words]
+        words = [arr[arr != 6] for arr in words]
+        print(len(words), words)
         words = np.concatenate([arr.flatten() for arr in words])
         print(len(words), words)
         words = words[:-1]
         words = np.array(words)
         words = words.flatten()
-        print(predictions)
-        predictions = predictions[:-1]
+        # print(predictions)
+        # predictions = predictions[:-1]
         predictions = np.array(predictions)
         predictions = predictions.flatten()
-        # print(words.shape, predictions.shape)
+        # print(len(predictions), predictions)
         start = 0
         end = 0
         result = []
+        # print(le)
+        with open("C:\Guo\Git\hyena-dna\data\dna_segment\K12\\test\dataset_test.tsv", 'r') as file:
+            lines = file.readlines()
         for i in range(len(predictions)):
             if predictions[i] == 1:
                 pass
@@ -773,7 +778,7 @@ def train(config):
                 fragment = "".join(mapping[n] for n in words[start:end])
                 result.append(fragment)
                 start = end
-        # print(type(result), result)
+        print(type(result), result)
         # print(predictions[0:100],predictions.shape)
         begin_position = 16
         correct = 0
@@ -788,30 +793,28 @@ def train(config):
             if begin_position > len(predictions):
                 break
         print(correct, whole, correct / whole)
-        # print(predictions[6143])
-        # print(predictions[6144])
-        # for i in range(0, 32 * 10, 32):
-        #     group = predictions[i: i + 32]
-        #     print(group[16])
-        # print(result)
+
         # 把结果以json返回给后端
         result = "  |  ".join(result)
         # print(type(result))
+        with open("result.txt", "w") as file:
+            file.write(result)  # 添加换行符
+        print("fengexian")
         for i in range(0, len(result), 70):
             print(result[i: i + 70])
         # result_json = json.dumps(result)
 
         print(len(predictions))
 #
-    if config.train.ckpt is not None:
-        print("------ train with ckpt -----------")
-        trainer.fit(model, ckpt_path=config.train.ckpt)
-    else:
-        print("------ train without ckpt -----------")
-        trainer.fit(model)
-    if config.train.test:
-        print("------ test -----------")
-        trainer.test(model)
+    # if config.train.ckpt is not None:
+    #     print("------ train with ckpt -----------")
+    #     trainer.fit(model, ckpt_path=config.train.ckpt)
+    # else:
+    #     print("------ train without ckpt -----------")
+    #     trainer.fit(model)
+    # if config.train.test:
+    #     print("------ test -----------")
+    #     trainer.test(model)
 
 
 
@@ -826,7 +829,7 @@ def main(config: OmegaConf):
     config = utils.train.process_config(config)
 
     # Pretty print config using Rich library
-    utils.train.print_config(config, resolve=True)
+    # utils.train.print_config(config, resolve=True)
 
     train(config)
 
