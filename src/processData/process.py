@@ -1,7 +1,7 @@
 import random
 def find_sequence_at_positions(fna_file, tsv_file, output_file):
-    prefix = 16
-    suffix = 16
+    prefix = 32
+    suffix = 32
     # 读取序列信息
     try:
         with open(fna_file, 'r') as file:

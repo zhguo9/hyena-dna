@@ -459,7 +459,7 @@ class SequenceLightningModule(pl.LightningModule):
         x, _, _ = self.forward(batch)
         predictions = torch.argmax(x, dim=1)
         self.predictions.append(predictions.tolist())
-        self.words.append(batch)
+        self.words.append(batch[0])
         # for i in predictions:
         #     if ()
         # print(predictions)
@@ -694,7 +694,7 @@ class SaveModelCallback(pl.Callback):
             trainer.save_checkpoint(f"model_epoch_{epoch}.ckpt")
 
 def train(config):
-
+    mapping = {7: 'A', 8: 'C', 9: 'G', 10: 'T'}
     # 处理数据集
     fna_path = config.fna_path
     tsv_path = fna_path.replace(".fna", ".tsv")
@@ -740,6 +740,68 @@ def train(config):
     if config.train.validate_at_start:
         print("Running validation before training")
         trainer.validate(model)
+        words1 = model.words
+        predictions = model.predictions
+
+
+        # print(len(words), words)
+        # print(len(predictions), predictions)
+        words = []
+        for word in words1:
+            word = word.cpu().numpy()
+            words.append(word)
+        words = [arr[arr != 12] for arr in words]
+        words = [arr[arr != 13] for arr in words]
+        words = np.concatenate([arr.flatten() for arr in words])
+        print(len(words), words)
+        words = words[:-1]
+        words = np.array(words)
+        words = words.flatten()
+        print(predictions)
+        predictions = predictions[:-1]
+        predictions = np.array(predictions)
+        predictions = predictions.flatten()
+        # print(words.shape, predictions.shape)
+        start = 0
+        end = 0
+        result = []
+        for i in range(len(predictions)):
+            if predictions[i] == 1:
+                pass
+            else:
+                end = i
+                fragment = "".join(mapping[n] for n in words[start:end])
+                result.append(fragment)
+                start = end
+        # print(type(result), result)
+        # print(predictions[0:100],predictions.shape)
+        begin_position = 16
+        correct = 0
+        whole = 0
+        for i in range(200):
+            if predictions[begin_position] == 0:
+                correct += 1
+            else:
+                pass
+            begin_position += 32
+            whole += 1
+            if begin_position > len(predictions):
+                break
+        print(correct, whole, correct / whole)
+        # print(predictions[6143])
+        # print(predictions[6144])
+        # for i in range(0, 32 * 10, 32):
+        #     group = predictions[i: i + 32]
+        #     print(group[16])
+        # print(result)
+        # 把结果以json返回给后端
+        result = "  |  ".join(result)
+        # print(type(result))
+        for i in range(0, len(result), 70):
+            print(result[i: i + 70])
+        # result_json = json.dumps(result)
+
+        print(len(predictions))
 
     if config.train.ckpt is not None:
         print("------ train with ckpt -----------")

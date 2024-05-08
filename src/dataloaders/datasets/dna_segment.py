@@ -190,59 +190,80 @@ class DNASegmentDataset(torch.utils.data.Dataset):
         for i, x in enumerate(base_path.iterdir()):
             label_mapper[x.stem] = i
 
-        position = 98
+        position = 16
 
         begin = 0
         iN = 1
         end = 2
 
-        for path in base_path.iterdir():
-            print(path)
-            with open(path, "r", encoding="gbk") as f:
-                # 读取一行
-                line = f.readline()
-                random.seed(41)
-                tmp = 0
-                while line:
-                    # 随机初始化前面、后面有多少个in（范围在1 ~ 3）
-                    # inNumBef = random.randint(1,3)
-                    # inNumAft = random.randint(1,3)
-                    inNumBef = 1
-                    inNumAft = 1
-                    # inNumBef = 4
-                    # inNumAft = 4
-                    # print("inNumBef:",inNumBef,"    inNumAft:",inNumAft)
-                    # 把 in 加入
-                    for i in range(inNumBef):
-                        extra = 'D' + 'D' + 'S'
-                        # print(len(line[i: i + position * 2]))
-                        self.all_seqs.append((line[i: i + position * 2] + extra))
-                        self.all_labels.append(iN)
-
-                    # 把end加入
-                    extra =  'D' + "D" + 'S'
-                    self.all_seqs.append((line[inNumBef: inNumBef + position * 2] + extra))
-                    self.all_labels.append(end)
-
-                    # 把 begin 加入
-                    extra = 'D' + "D" + 'S'
-                    self.all_seqs.append((line[inNumBef + 1: inNumBef + 1 + position * 2] + extra))
-                    self.all_labels.append(begin)
-
-                    # 把 in 加入
-                    # for i in range(inNumAft):
-                    #     extra = 'D' + 'D' + 'S'
-                    #     self.all_seqs.append((line[inNumBef + i + 2:inNumBef + i + position * 2 + 2] + extra))
-                    #     self.all_labels.append(iN)
-
+        if split == "train":
+            base_path = Path(dest_path) / dataset_name / split
+            for path in base_path.iterdir():
+                # print(path)
+                with open(path, "r", encoding="gbk") as f:
+                    # 读取一行
                     line = f.readline()
-                    # for i in self.all_seqs:
-                    #     print(i)
-                    # if tmp == 5:
-                    #     break
-                    # else:
-                    #     tmp += 1
+                    random.seed(41)
+                    tmp = 0
+                    while line:
+                        # 随机初始化前面、后面有多少个in（范围在1 ~ 3）
+                        # print(len(line), line)
+                        # inNumBef = random.randint(1,3)
+                        # inNumAft = random.randint(1,3)
+                        inNumBef = 1
+                        inNumAft = 1
+                        # inNumBef = 4
+                        # inNumAft = 4
+                        # print("inNumBef:",inNumBef,"    inNumAft:",inNumAft)
+                        # 把 in 加入
+                        for i in range(inNumBef):
+                            extra = 'D' + 'D' + 'S'
+                            # print(len(line[i: i + position * 2]))
+                            self.all_seqs.append((line[i+16: i + 16 + position * 2] + extra))
+                            self.all_labels.append(iN)
 
+                        # 把end加入
+                        extra =  'D' + "D" + 'S'
+                        # print(len())
+                        self.all_seqs.append((line[inNumBef+ 16 : inNumBef + 16 + position * 2] + extra))
+                        self.all_labels.append(end)
+
+                        # 把 begin 加入
+                        extra = 'D' + "D" + 'S'
+                        # print(len(line[inNumBef + 1 + 4: inNumBef + 1 + 4 + 32]))
+                        self.all_seqs.append((line[inNumBef + 1 + 16 : inNumBef + 1 +  16 + 32] + extra))
+                        self.all_labels.append(begin)
+
+                        # 把 in 加入
+                        # for i in range(inNumAft):
+                        #     extra = 'D' + 'D' + 'S'
+                        #     self.all_seqs.append((line[inNumBef + i + 2:inNumBef + i + position * 2 + 2] + extra))
+                        #     self.all_labels.append(iN)
+
+                        line = f.readline()
+                        # for i in self.all_seqs:
+                        #     print(i)
+                        # if tmp == 5:
+                        #     break
+                        # else:
+                        #     tmp += 1
+
+        if split == "test":
+            base_path = Path(dest_path) / dataset_name / split
+            for path in base_path.iterdir():
+                # print(path)
+                with open(path, "r", encoding="gbk") as f:
+                    # 读取一行
+                    line = f.readline()
+                    random.seed(41)
+                    tmp = 0
+                    while line:
+                        # 随机初始化前面、后面有多少个in（范围在1 ~ 3）
+                        extra = 'D' + 'D' + 'S'
+                        for i in range (32):
+                            self.all_seqs.append((line[i : i + 32] + extra))
+                            self.all_labels.append(0)
+                        line = f.readline()
 
     def __len__(self):
         return len(self.all_seqs)
@@ -293,7 +314,7 @@ if __name__ == '__main__':
 
     """
 
-    max_length = 35  # max len of seq grabbed
+    max_length = 36  # max len of seq grabbed
     use_padding = True
     dest_path = "../../../data/dna_segment/"
 
@@ -308,7 +329,7 @@ if __name__ == '__main__':
     ds = DNASegmentDataset(
         max_length=max_length,
         use_padding=use_padding,
-        split='train',  #
+        split='val',  #
         tokenizer=tokenizer,
         tokenizer_name='char',
         dest_path=dest_path,
