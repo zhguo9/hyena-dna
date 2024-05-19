@@ -261,7 +261,7 @@ class DNASegmentDataset(torch.utils.data.Dataset):
                         # 随机初始化前面、后面有多少个in（范围在1 ~ 3）
                         extra = 'D' + 'D' + 'S'
                         for i in range (32):
-                            print(len(line),line[i : i + 32])
+                            # print(len(line),line[i : i + 32])
                             self.all_seqs.append((line[i : i + 32] + extra))
                             self.all_labels.append(0)
                         line = f.readline()
